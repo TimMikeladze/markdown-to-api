@@ -9,10 +9,11 @@ Array [
         "title",
         "slug",
         "path",
+        "strippedContent",
       ],
     },
     "path": "tests/basic/hello.md",
-    "score": 8.200044412723667,
+    "score": 10.740574668720372,
     "slug": "hello-world",
     "terms": Array [
       "hello",

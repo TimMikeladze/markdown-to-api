@@ -5,7 +5,7 @@ import slugify from 'slugify';
 import MiniSearch from 'minisearch';
 import { remark } from 'remark';
 import strip from 'strip-markdown';
-import { existsSync, readFileSync } from 'fs';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { parse } from 'yaml';
 import deepmerge from 'deepmerge';
 
@@ -28,6 +28,7 @@ export interface Options {
   config?: any;
   configPath?: string;
   directory: string;
+  indexPath?: string;
 }
 
 export interface Config {
@@ -73,32 +74,18 @@ export class MarkdownToGraphQL {
     this.config = this.loadConfig();
   }
 
-  public async init() {
+  public async init(): Promise<MarkdownToGraphQL> {
     this.filePaths = await this.loadFilePaths();
     this.files = await this.loadFiles();
-    this.miniSearch = await this.buildIndex();
-  }
-
-  public loadConfig() {
-    let config = {};
-    if (this.options.configPath) {
-      config = parse(readFileSync(this.options.configPath, 'utf8'));
-    } else if (this.options.config) {
-      config = this.options.config;
-    } else if (existsSync(`${this.options.directory}/config.yml`)) {
-      config = parse(readFileSync(`${this.options.directory}/config.yml`, 'utf8'));
-    } else if (existsSync(`${this.options.directory}/config.yaml`)) {
-      config = parse(readFileSync(`${this.options.directory}/config.yaml`, 'utf8'));
+    if (existsSync(this.getIndexPath())) {
+      this.miniSearch = await this.loadIndexJSON();
+    } else {
+      this.miniSearch = await this.buildIndex();
     }
-
-    return deepmerge(defaultConfig, config);
+    return this;
   }
 
-  public getConfig(): Config {
-    return this.config;
-  }
-
-  public static async parseFile(path: string): Promise<ParsedFile> {
+  public async parseFile(path: string): Promise<ParsedFile> {
     const output = matter(await readFile(path, 'utf8'));
 
     let {
@@ -126,6 +113,15 @@ export class MarkdownToGraphQL {
       id = `${parts.slice(0, parts.length - 1).join('/')}/${slug}`;
     }
 
+    const defaultFieldKeys = Object.keys(defaultConfig.fields || {});
+
+    const extraFieldKeys = Object.keys(this.config.fields || {}).map((x) => (this.config.fields?.[x] && !defaultFieldKeys.includes(x) ? x : null)).filter(Boolean) as string[];
+
+    const extraFields = extraFieldKeys.reduce<Record<string, string>>((res, key) => ({
+      ...res,
+      [key]: (output.data as any)[key],
+    }), {});
+
     const strippedContent = (await MarkdownToGraphQL.stripper.process(output.content)).toString();
 
     return {
@@ -136,10 +132,30 @@ export class MarkdownToGraphQL {
         path,
         tags,
         description,
+        ...extraFields,
       },
       content: output.content,
       strippedContent,
     };
+  }
+
+  public loadConfig() {
+    let config = {};
+    if (this.options.configPath) {
+      config = parse(readFileSync(this.options.configPath, 'utf8'));
+    } else if (this.options.config) {
+      config = this.options.config;
+    } else if (existsSync(`${this.options.directory}/config.yml`)) {
+      config = parse(readFileSync(`${this.options.directory}/config.yml`, 'utf8'));
+    } else if (existsSync(`${this.options.directory}/config.yaml`)) {
+      config = parse(readFileSync(`${this.options.directory}/config.yaml`, 'utf8'));
+    }
+
+    return deepmerge(defaultConfig, config);
+  }
+
+  public getConfig(): Config {
+    return this.config;
   }
 
   public async loadFilePaths() {
@@ -152,7 +168,7 @@ export class MarkdownToGraphQL {
   }
 
   public async loadFiles(): Promise<Map<string, ParsedFile>> {
-    const parsedFiles = await Promise.all(this.filePaths.map(MarkdownToGraphQL.parseFile));
+    const parsedFiles = await Promise.all(this.filePaths.map((x) => this.parseFile(x)));
 
     const requiredFields = Object.keys(this.config.fields || {}).map((x) => (this.config.fields?.[x]?.required ? x : null)).filter(Boolean);
 
@@ -181,15 +197,21 @@ export class MarkdownToGraphQL {
     return files;
   }
 
-  public async buildIndex(): Promise<MiniSearch> {
+  // eslint-disable-next-line class-methods-use-this
+  public getIndexFields() {
     const fields = ['title', 'slug', 'path', 'tags', 'description'];
-
-    const miniSearch = new MiniSearch({
+    return {
       fields: [...fields, 'strippedContent'],
       storeFields: fields,
+    };
+  }
+
+  public async buildIndex(): Promise<MiniSearch> {
+    const miniSearch = new MiniSearch({
+      ...this.getIndexFields(),
     });
 
-    await miniSearch.addAllAsync(Array.from(this.files.values()).map((x) => ({ ...x.data, content: x.content })));
+    await miniSearch.addAllAsync(Array.from(this.files.values()).map((x) => ({ ...x.data, ...x })));
 
     return miniSearch;
   }
@@ -204,6 +226,27 @@ export class MarkdownToGraphQL {
 
   public getIndex() {
     return this.miniSearch;
+  }
+
+  public indexToJSON(): any {
+    return JSON.stringify(this.miniSearch.toJSON());
+  }
+
+  public writeIndexJSON(): void {
+    writeFileSync(this.getIndexPath(), this.indexToJSON(), 'utf8');
+  }
+
+  public getIndexPath(): string {
+    return this.options.indexPath || `${this.options.directory}/index.json`;
+  }
+
+  public loadIndexJSON() {
+    if (this.getIndexPath()) {
+      return MiniSearch.loadJSON(readFileSync(this.getIndexPath(), 'utf8'), {
+        ...this.getIndexFields(),
+      });
+    }
+    throw new Error('No index path provided');
   }
 
   public getFilePaths(): string[] {

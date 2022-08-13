@@ -1,0 +1,2722 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loadIndexJSON loads index 1`] = `
+Object {
+  "averageFieldLength": Array [
+    1,
+    1,
+    5,
+    2,
+    null,
+    124.66666666666667,
+  ],
+  "documentCount": 3,
+  "documentIds": Object {
+    "0": "tests/cats/pumas/messi",
+    "1": "tests/cats/pumas/about",
+    "2": "tests/cats/tigers/about",
+  },
+  "fieldIds": Object {
+    "description": 4,
+    "path": 2,
+    "slug": 1,
+    "strippedContent": 5,
+    "tags": 3,
+    "title": 0,
+  },
+  "fieldLength": Object {
+    "0": Array [
+      1,
+      1,
+      5,
+      2,
+      null,
+      94,
+    ],
+    "1": Array [
+      1,
+      1,
+      5,
+      2,
+      null,
+      66,
+    ],
+    "2": Array [
+      1,
+      1,
+      5,
+      2,
+      null,
+      214,
+    ],
+  },
+  "index": Array [
+    Array [
+      "md",
+      Object {
+        "2": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "months",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "mountain",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "most",
+      Object {
+        "5": Object {
+          "2": 3,
+        },
+      },
+    ],
+    Array [
+      "mother",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "modern",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "may",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "mature",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "major",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "many",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "mascots",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "male",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "malaysia",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "miracinonyx",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "messi",
+      Object {
+        "0": Object {
+          "0": 1,
+        },
+        "1": Object {
+          "0": 1,
+        },
+        "2": Object {
+          "0": 1,
+        },
+        "5": Object {
+          "0": 5,
+        },
+      },
+    ],
+    Array [
+      "member",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "megafauna",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "mythology",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "a",
+      Object {
+        "5": Object {
+          "0": 3,
+          "1": 3,
+          "2": 5,
+        },
+      },
+    ],
+    Array [
+      "at",
+      Object {
+        "5": Object {
+          "0": 3,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "after",
+      Object {
+        "5": Object {
+          "0": 2,
+        },
+      },
+    ],
+    Array [
+      "as",
+      Object {
+        "5": Object {
+          "0": 2,
+          "1": 2,
+          "2": 4,
+        },
+      },
+    ],
+    Array [
+      "asia",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "about",
+      Object {
+        "0": Object {
+          "1": 1,
+          "2": 1,
+        },
+        "1": Object {
+          "1": 1,
+          "2": 1,
+        },
+        "2": Object {
+          "2": 1,
+        },
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "also",
+      Object {
+        "5": Object {
+          "1": 2,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "addition",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "among",
+      Object {
+        "5": Object {
+          "1": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "american",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "amur",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "and",
+      Object {
+        "5": Object {
+          "0": 4,
+          "1": 3,
+          "2": 22,
+        },
+      },
+    ],
+    Array [
+      "an",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "anatolia",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "ancient",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "animal",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "apex",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "appearing",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "are",
+      Object {
+        "5": Object {
+          "1": 1,
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "areas",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "arms",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "zoo",
+      Object {
+        "5": Object {
+          "0": 5,
+        },
+      },
+    ],
+    Array [
+      "of",
+      Object {
+        "5": Object {
+          "0": 2,
+          "1": 2,
+          "2": 14,
+        },
+      },
+    ],
+    Array [
+      "offspring",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "other",
+      Object {
+        "5": Object {
+          "0": 3,
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "old",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 2,
+        },
+      },
+    ],
+    Array [
+      "or",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "originally",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "orange",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "one",
+      Object {
+        "5": Object {
+          "0": 2,
+        },
+      },
+    ],
+    Array [
+      "only",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "on",
+      Object {
+        "5": Object {
+          "2": 5,
+        },
+      },
+    ],
+    Array [
+      "once",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "owen",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "own",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "the",
+      Object {
+        "5": Object {
+          "0": 7,
+          "1": 6,
+          "2": 26,
+        },
+      },
+    ],
+    Array [
+      "these",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "their",
+      Object {
+        "5": Object {
+          "2": 4,
+        },
+      },
+    ],
+    Array [
+      "then",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "than",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "three",
+      Object {
+        "5": Object {
+          "0": 2,
+        },
+      },
+    ],
+    Array [
+      "throughout",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "to",
+      Object {
+        "5": Object {
+          "0": 6,
+          "1": 1,
+          "2": 8,
+        },
+      },
+    ],
+    Array [
+      "two",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "typical",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "tigers",
+      Object {
+        "2": Object {
+          "2": 1,
+        },
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "tiger",
+      Object {
+        "3": Object {
+          "2": 1,
+        },
+        "5": Object {
+          "2": 9,
+        },
+      },
+    ],
+    Array [
+      "tigris",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "tests",
+      Object {
+        "2": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "territorial",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "temperate",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "teams",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "tropical",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "currently",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "cubs",
+      Object {
+        "5": Object {
+          "0": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "cup",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "cultures",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "cities",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "cats",
+      Object {
+        "2": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "cat",
+      Object {
+        "3": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+        },
+        "5": Object {
+          "1": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "called",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "classified",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "could",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "cougars",
+      Object {
+        "5": Object {
+          "0": 2,
+        },
+      },
+    ],
+    Array [
+      "cougar",
+      Object {
+        "5": Object {
+          "1": 2,
+        },
+      },
+    ],
+    Array [
+      "countries",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "conflict",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "contiguous",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "continues",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "coats",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "century",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "central",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "cheetah",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "china",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "charismatic",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "be",
+      Object {
+        "5": Object {
+          "0": 2,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "because",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "become",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "been",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "between",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "born",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "boar",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "but",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "barcelona",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "basin",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "bali",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "bangladesh",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "neymar",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "newborn",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "new",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "not",
+      Object {
+        "5": Object {
+          "0": 2,
+        },
+      },
+    ],
+    Array [
+      "named",
+      Object {
+        "5": Object {
+          "0": 3,
+        },
+      },
+    ],
+    Array [
+      "names",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "native",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "national",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "numerous",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "number",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "petting",
+      Object {
+        "5": Object {
+          "0": 2,
+        },
+      },
+    ],
+    Array [
+      "penza",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "panther",
+      Object {
+        "5": Object {
+          "1": 2,
+        },
+      },
+    ],
+    Array [
+      "panthera",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "paris",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "pardoides",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "players",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "planned",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "pliocene",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "poorly",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "potential",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "possible",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "pockets",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "poaching",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "populations",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "population",
+      Object {
+        "5": Object {
+          "2": 4,
+        },
+      },
+    ],
+    Array [
+      "popular",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "pumas",
+      Object {
+        "2": Object {
+          "0": 1,
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "puma",
+      Object {
+        "2": Object {
+          "1": 1,
+        },
+        "3": Object {
+          "0": 1,
+          "1": 1,
+        },
+        "5": Object {
+          "1": 4,
+        },
+      },
+    ],
+    Array [
+      "pumoides",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "professional",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "proposed",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "problems",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "prominently",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "primarily",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "predator",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "preys",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "prey",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "for",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 1,
+          "2": 5,
+        },
+      },
+    ],
+    Array [
+      "former",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "forests",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "fossil",
+      Object {
+        "5": Object {
+          "1": 2,
+        },
+      },
+    ],
+    Array [
+      "fossils",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "football",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "foothills",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "folklore",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "fc",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "family",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "felidae",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "few",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "featured",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "furthermore",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "fur",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "fifa",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "first",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "films",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "from",
+      Object {
+        "5": Object {
+          "2": 4,
+        },
+      },
+    ],
+    Array [
+      "free",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "fragmented",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "fragmentation",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "flags",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "was",
+      Object {
+        "5": Object {
+          "0": 7,
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "were",
+      Object {
+        "5": Object {
+          "0": 2,
+        },
+      },
+    ],
+    Array [
+      "well",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "west",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "western",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "whose",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "which",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "white",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "what",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "when",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "where",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "world",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 3,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "workers",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "wild",
+      Object {
+        "5": Object {
+          "0": 1,
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "wildlife",
+      Object {
+        "5": Object {
+          "0": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "with",
+      Object {
+        "5": Object {
+          "2": 4,
+        },
+      },
+    ],
+    Array [
+      "widely",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "saransk",
+      Object {
+        "5": Object {
+          "0": 2,
+        },
+      },
+    ],
+    Array [
+      "saint",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "sanctuary",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "several",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "s",
+      Object {
+        "5": Object {
+          "1": 2,
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "suarez",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "such",
+      Object {
+        "5": Object {
+          "1": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "support",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "sunda",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "subtropical",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "subcontinent",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "sumatra",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "so",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "sold",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "solitary",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "social",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "south",
+      Object {
+        "5": Object {
+          "2": 3,
+        },
+      },
+    ],
+    Array [
+      "southeast",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "stay",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "still",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "stripes",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "stretching",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "scientifically",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "significantly",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "siberian",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "since",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "single",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "species",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 2,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "spots",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "sporting",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "smaller",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "small",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "given",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "germain",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "genus",
+      Object {
+        "5": Object {
+          "1": 2,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "generally",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "global",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "he",
+      Object {
+        "5": Object {
+          "0": 4,
+        },
+      },
+    ],
+    Array [
+      "health",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "had",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "habitat",
+      Object {
+        "5": Object {
+          "2": 3,
+        },
+      },
+    ],
+    Array [
+      "have",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "host",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "hosts",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "home",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "him",
+      Object {
+        "5": Object {
+          "0": 2,
+        },
+      },
+    ],
+    Array [
+      "himalayas",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "historic",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "high",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "human",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "lionel",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "lion",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "like",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "live",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "living",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "listed",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "list",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "literature",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "later",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "large",
+      Object {
+        "5": Object {
+          "1": 1,
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "largest",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "lost",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "leaving",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "least",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "in",
+      Object {
+        "5": Object {
+          "0": 4,
+          "1": 2,
+          "2": 11,
+        },
+      },
+    ],
+    Array [
+      "into",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "include",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "independent",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "indochina",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "indonesian",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "individuals",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "indian",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "india",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "is",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 2,
+          "2": 7,
+        },
+      },
+    ],
+    Array [
+      "islands",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "island",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "isolated",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "it",
+      Object {
+        "5": Object {
+          "2": 5,
+        },
+      },
+    ],
+    Array [
+      "its",
+      Object {
+        "5": Object {
+          "2": 4,
+        },
+      },
+    ],
+    Array [
+      "iucn",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "russia",
+      Object {
+        "5": Object {
+          "0": 3,
+        },
+      },
+    ],
+    Array [
+      "released",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "representatives",
+      Object {
+        "5": Object {
+          "1": 2,
+        },
+      },
+    ],
+    Array [
+      "recognisable",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "requiring",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "requirements",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "region",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "remains",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "red",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "rearing",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "reasons",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "range",
+      Object {
+        "5": Object {
+          "2": 4,
+        },
+      },
+    ],
+    Array [
+      "ranged",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "river",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "roam",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "either",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "example",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "extant",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "extirpated",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "euthanize",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "eurasia",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "eastern",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "east",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "early",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "establish",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "estimated",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "endangered",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "encroachment",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "unable",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "under",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "underside",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "ungulates",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "dark",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "deemed",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "deer",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "decline",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "described",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "destruction",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "density",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "depicted",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "due",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "years",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "1758",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "20th",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "2018",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "2015",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "java",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "3",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "062",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "93",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "948",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "vertical",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "victims",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "known",
+      Object {
+        "5": Object {
+          "1": 2,
+        },
+      },
+    ],
+    Array [
+      "korea",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+  ],
+  "nextId": 3,
+  "serializationVersion": 2,
+  "storedFields": Object {
+    "0": Object {
+      "path": "tests/cats/pumas/messi.md",
+      "slug": "messi",
+      "tags": Array [
+        "cat",
+        "puma",
+      ],
+      "title": "Messi",
+    },
+    "1": Object {
+      "path": "tests/cats/pumas/puma.md",
+      "slug": "about",
+      "tags": Array [
+        "cat",
+        "puma",
+      ],
+      "title": "About",
+    },
+    "2": Object {
+      "path": "tests/cats/tigers/about.md",
+      "slug": "about",
+      "tags": Array [
+        "cat",
+        "tiger",
+      ],
+      "title": "About",
+    },
+  },
+}
+`;
