@@ -1,11 +1,11 @@
-import { MarkdownToGraphQL } from '../src';
+import { MarkdownAPI } from '../src';
 
 describe('parseFile', () => {
   it('no-slug', async () => {
-    const mg = new MarkdownToGraphQL({
+    const mdapi = new MarkdownAPI({
       directory: 'tests/basic',
     });
-    const parsedFile = await mg.parseFile('tests/basic/no-slug.md');
+    const parsedFile = await mdapi.parseFile('tests/basic/no-slug.md');
     expect(parsedFile).toMatchSnapshot();
   });
 });

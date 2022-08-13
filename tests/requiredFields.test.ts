@@ -1,8 +1,8 @@
-import { MarkdownToGraphQL } from '../src';
+import { MarkdownAPI } from '../src';
 
 it('throws errors if required fields are missing', async () => {
-  const mg = new MarkdownToGraphQL({
+  const mdapi = new MarkdownAPI({
     directory: 'tests/required-fields',
   });
-  await expect(mg.init()).rejects.toMatchSnapshot();
+  await expect(mdapi.init()).rejects.toMatchSnapshot();
 });

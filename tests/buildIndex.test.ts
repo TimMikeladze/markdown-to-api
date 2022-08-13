@@ -1,9 +1,9 @@
-import { MarkdownToGraphQL } from '../src';
+import { MarkdownAPI } from '../src';
 
 it('builds an index', async () => {
-  const mg = new MarkdownToGraphQL({
+  const mdapi = new MarkdownAPI({
     directory: 'tests/basic',
   });
-  await mg.init();
-  expect(mg.getIndex()).toMatchSnapshot();
+  await mdapi.init();
+  expect(mdapi.getIndex()).toMatchSnapshot();
 });

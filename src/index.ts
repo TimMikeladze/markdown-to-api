@@ -55,7 +55,7 @@ const defaultConfig: Config = {
   },
 };
 
-export class MarkdownToGraphQL {
+export class MarkdownAPI {
   private static readonly stripper = remark()
     .use(strip);
 
@@ -74,7 +74,7 @@ export class MarkdownToGraphQL {
     this.config = this.loadConfig();
   }
 
-  public async init(): Promise<MarkdownToGraphQL> {
+  public async init(): Promise<MarkdownAPI> {
     this.filePaths = await this.loadFilePaths();
     this.files = await this.loadFiles();
     if (existsSync(this.getIndexPath())) {
@@ -122,7 +122,7 @@ export class MarkdownToGraphQL {
       [key]: (output.data as any)[key],
     }), {});
 
-    const strippedContent = (await MarkdownToGraphQL.stripper.process(output.content)).toString();
+    const strippedContent = (await MarkdownAPI.stripper.process(output.content)).toString();
 
     return {
       data: {

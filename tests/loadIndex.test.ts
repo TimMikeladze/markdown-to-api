@@ -1,9 +1,9 @@
 import { rmSync } from 'fs';
-import { MarkdownToGraphQL } from '../src';
+import { MarkdownAPI } from '../src';
 
 describe('loadIndexJSON', () => {
   beforeAll(async () => {
-    (await new MarkdownToGraphQL({
+    (await new MarkdownAPI({
       directory: 'tests/cats',
     }).init()).writeIndexJSON();
   });
@@ -13,9 +13,9 @@ describe('loadIndexJSON', () => {
   });
 
   it('loads index', async () => {
-    const mg = new MarkdownToGraphQL({
+    const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });
-    expect(mg.loadIndexJSON()).toMatchSnapshot();
+    expect(mdapi.loadIndexJSON()).toMatchSnapshot();
   });
 });

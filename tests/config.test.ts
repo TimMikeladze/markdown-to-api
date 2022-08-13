@@ -1,27 +1,27 @@
-import { MarkdownToGraphQL } from '../src';
+import { MarkdownAPI } from '../src';
 
 describe('loadConfig', () => {
   it('uses default config', () => {
-    const mg = new MarkdownToGraphQL({
+    const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });
-    expect(mg.getConfig()).toMatchSnapshot();
+    expect(mdapi.getConfig()).toMatchSnapshot();
   });
   it('auto loads yml config if exists', async () => {
-    const mg = new MarkdownToGraphQL({
+    const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });
-    expect(mg.getConfig()).toMatchSnapshot();
+    expect(mdapi.getConfig()).toMatchSnapshot();
   });
   it('loads yml config from path', async () => {
-    const mg = new MarkdownToGraphQL({
+    const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
       configPath: 'tests/cats/config.yml',
     });
-    expect(mg.getConfig()).toMatchSnapshot();
+    expect(mdapi.getConfig()).toMatchSnapshot();
   });
   it('uses js object config', async () => {
-    const mg = new MarkdownToGraphQL({
+    const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
       config: {
         tags:
@@ -38,14 +38,14 @@ describe('loadConfig', () => {
           },
       },
     });
-    expect(mg.getConfig()).toMatchSnapshot();
+    expect(mdapi.getConfig()).toMatchSnapshot();
   });
   it('js object config and yaml config are equivalent', async () => {
-    const mg1 = new MarkdownToGraphQL({
+    const mdapi1 = new MarkdownAPI({
       directory: 'tests/cats',
       configPath: 'tests/cats/config.yml',
     });
-    const mg2 = new MarkdownToGraphQL({
+    const mdapi2 = new MarkdownAPI({
       directory: 'tests/cats',
       config: {
         tags:
@@ -62,6 +62,6 @@ describe('loadConfig', () => {
           },
       },
     });
-    expect(mg1.getConfig()).toMatchObject(mg2.getConfig());
+    expect(mdapi1.getConfig()).toMatchObject(mdapi2.getConfig());
   });
 });

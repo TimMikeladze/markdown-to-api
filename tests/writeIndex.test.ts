@@ -1,5 +1,5 @@
 import { existsSync, rmSync } from 'fs';
-import { MarkdownToGraphQL } from '../src';
+import { MarkdownAPI } from '../src';
 
 describe('writeIndexJSON', () => {
   afterAll(() => {
@@ -7,18 +7,18 @@ describe('writeIndexJSON', () => {
   });
 
   it('writes an index', async () => {
-    const mg = new MarkdownToGraphQL({
+    const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });
-    await mg.init();
-    await mg.writeIndexJSON();
+    await mdapi.init();
+    await mdapi.writeIndexJSON();
     expect(existsSync('tests/cats/index.json')).toBe(true);
   });
 
   it('throws error if index does not exist', async () => {
-    const mg = new MarkdownToGraphQL({
+    const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });
-    expect(mg.loadIndexJSON).toThrowError();
+    expect(mdapi.loadIndexJSON).toThrowError();
   });
 });

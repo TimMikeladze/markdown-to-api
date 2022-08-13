@@ -1,21 +1,21 @@
-import { MarkdownToGraphQL } from '../src';
+import { MarkdownAPI } from '../src';
 
 describe('search the index', () => {
-  let mg: MarkdownToGraphQL;
+  let mdapi: MarkdownAPI;
   beforeAll(async () => {
-    mg = new MarkdownToGraphQL({
+    mdapi = new MarkdownAPI({
       directory: 'tests/basic',
     });
-    await mg.init();
+    await mdapi.init();
   });
 
   it('basic search', async () => {
-    const res = mg.getIndex().search('hello');
+    const res = mdapi.getIndex().search('hello');
     expect(res).toMatchSnapshot();
     expect(res).toHaveLength(1);
   });
 
   it('tag search', async () => {
-    expect(mg.getIndex().search('tag1')).toMatchSnapshot();
+    expect(mdapi.getIndex().search('tag1')).toMatchSnapshot();
   });
 });

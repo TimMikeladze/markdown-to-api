@@ -1,27 +1,27 @@
-import { MarkdownToGraphQL } from '../src';
+import { MarkdownAPI } from '../src';
 
 describe('getFile', () => {
-  let mg: MarkdownToGraphQL;
+  let mdapi: MarkdownAPI;
   beforeAll(async () => {
-    mg = new MarkdownToGraphQL({
+    mdapi = new MarkdownAPI({
       directory: 'tests/basic',
     });
-    await mg.init();
+    await mdapi.init();
   });
 
   it('returns all files', async () => {
-    const res = mg.getFiles();
+    const res = mdapi.getFiles();
     expect(res).toMatchSnapshot();
   });
 
   it('returns a file', async () => {
-    const res = mg.getFile('tests/basic/hello-world');
+    const res = mdapi.getFile('tests/basic/hello-world');
     expect(res).toBeDefined();
     expect(res).toMatchSnapshot();
   });
 
   it('does not return a file', async () => {
-    const res = mg.getFile('tests/basic/dne');
+    const res = mdapi.getFile('tests/basic/dne');
     expect(res).toBeUndefined();
   });
 });
