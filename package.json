@@ -2,8 +2,8 @@
   "name": "",
   "description": "",
   "version": "0.0.1",
-  "author": "",
-  "license": "",
+  "author": "Tim Mikeladze <tim.mikeladze@gmail.com>",
+  "license": "MIT",
   "keywords": [],
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
     "type-check": "tsc --noEmit",
     "lint": "eslint --ignore-path .gitignore \"{src,tests}/**/*.+(ts|js|tsx)\"",
     "lint:fix": "yarn lint --fix",
-    "test": "jest --coverage",
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest)  --runInBand --forceExit",
     "test:ci": "yarn test --ci",
     "test:watch": "jest --watch",
     "prepare": "husky install",
@@ -24,7 +24,7 @@
   },
   "tsup": {
     "entry": [
-      "src/index.tsx"
+      "src/index.ts"
     ],
     "treeshake": true,
     "sourcemap": true,
@@ -34,9 +34,6 @@
     "format": [
       "cjs",
       "esm"
-    ],
-    "external": [
-      "react"
     ]
   },
   "types": "./dist/index.d.ts",
@@ -109,5 +106,13 @@
     "terser": ">=5.14.2",
     "trim": ">=0.0.3",
     "trim-newlines": ">=3.0.1"
+  },
+  "dependencies": {
+    "globby": "13.1.2",
+    "gray-matter": "4.0.3",
+    "minisearch": "5.0.0",
+    "remark": "14.0.2",
+    "slugify": "1.6.5",
+    "strip-markdown": "5.0.0"
   }
 }

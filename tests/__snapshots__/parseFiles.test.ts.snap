@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseFiles parses yaml content from file paths 1`] = `
+Array [
+  Object {
+    "content": "
+# Hello world!
+",
+    "data": Object {
+      "id": "tests/basic/hello-world",
+      "path": "tests/basic/hello.md",
+      "slug": "hello-world",
+      "tags": undefined,
+      "title": "Hello",
+    },
+    "rawContent": "Hello world!
+",
+  },
+  Object {
+    "content": "
+# No slug or title
+",
+    "data": Object {
+      "id": "tests/basic/no-slug-or-title",
+      "path": "tests/basic/no-slug-or-title.md",
+      "slug": "no-slug-or-title",
+      "tags": undefined,
+      "title": "no-slug-or-title",
+    },
+    "rawContent": "No slug or title
+",
+  },
+  Object {
+    "content": "
+# No slug
+",
+    "data": Object {
+      "id": "tests/basic/no-slug",
+      "path": "tests/basic/no-slug.md",
+      "slug": "no-slug",
+      "tags": undefined,
+      "title": "No Slug",
+    },
+    "rawContent": "No slug
+",
+  },
+  Object {
+    "content": "
+# No title
+",
+    "data": Object {
+      "id": "tests/basic/no-title",
+      "path": "tests/basic/no-title.md",
+      "slug": "no-title",
+      "tags": undefined,
+      "title": "no-title",
+    },
+    "rawContent": "No title
+",
+  },
+  Object {
+    "content": "
+# Tags!
+",
+    "data": Object {
+      "id": "tests/basic/with-tags",
+      "path": "tests/basic/with-tags.md",
+      "slug": "with-tags",
+      "tags": Array [
+        "tag1",
+        "tag2",
+      ],
+      "title": "With tags",
+    },
+    "rawContent": "Tags!
+",
+  },
+  Object {
+    "content": "
+# Nested File
+",
+    "data": Object {
+      "id": "tests/basic/nested/nested-filed",
+      "path": "tests/basic/nested/nested-file.md",
+      "slug": "nested-filed",
+      "tags": undefined,
+      "title": "Nested File",
+    },
+    "rawContent": "Nested File
+",
+  },
+]
+`;

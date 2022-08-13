@@ -30,5 +30,6 @@ module.exports = {
     'no-nested-ternary': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
     'unused-imports/no-unused-imports': 'error',
+    'max-len': [1, { code: 120 }],
   },
 };

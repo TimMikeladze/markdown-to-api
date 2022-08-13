@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search the index basic search 1`] = `
+Array [
+  Object {
+    "id": "tests/basic/hello-world",
+    "match": Object {
+      "hello": Array [
+        "title",
+        "slug",
+        "path",
+        "content",
+      ],
+    },
+    "path": "tests/basic/hello.md",
+    "score": 9.907148408104309,
+    "slug": "hello-world",
+    "terms": Array [
+      "hello",
+    ],
+    "title": "Hello",
+  },
+]
+`;
+
+exports[`search the index tag search 1`] = `
+Array [
+  Object {
+    "id": "tests/basic/with-tags",
+    "match": Object {
+      "tag1": Array [
+        "tags",
+      ],
+    },
+    "path": "tests/basic/with-tags.md",
+    "score": 1.3797511337979858,
+    "slug": "with-tags",
+    "tags": Array [
+      "tag1",
+      "tag2",
+    ],
+    "terms": Array [
+      "tag1",
+    ],
+    "title": "With tags",
+  },
+]
+`;

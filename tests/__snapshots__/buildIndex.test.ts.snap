@@ -1,0 +1,350 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildIndex builds an index 1`] = `
+Object {
+  "averageFieldLength": Array [
+    2.1666666666666665,
+    2.3333333333333335,
+    5.166666666666667,
+    0.4,
+    3.1666666666666665,
+  ],
+  "documentCount": 6,
+  "documentIds": Object {
+    "0": "tests/basic/hello-world",
+    "1": "tests/basic/no-slug-or-title",
+    "2": "tests/basic/no-slug",
+    "3": "tests/basic/no-title",
+    "4": "tests/basic/with-tags",
+    "5": "tests/basic/nested/nested-filed",
+  },
+  "fieldIds": Object {
+    "content": 4,
+    "path": 2,
+    "slug": 1,
+    "tags": 3,
+    "title": 0,
+  },
+  "fieldLength": Object {
+    "0": Array [
+      1,
+      2,
+      4,
+      ,
+      3,
+    ],
+    "1": Array [
+      4,
+      4,
+      7,
+      ,
+      5,
+    ],
+    "2": Array [
+      2,
+      2,
+      5,
+      ,
+      3,
+    ],
+    "3": Array [
+      2,
+      2,
+      5,
+      ,
+      3,
+    ],
+    "4": Array [
+      2,
+      2,
+      5,
+      2,
+      2,
+    ],
+    "5": Array [
+      2,
+      2,
+      5,
+      ,
+      3,
+    ],
+  },
+  "index": Array [
+    Array [
+      "filed",
+      Object {
+        "1": Object {
+          "5": 1,
+        },
+      },
+    ],
+    Array [
+      "file",
+      Object {
+        "0": Object {
+          "5": 1,
+        },
+        "2": Object {
+          "5": 1,
+        },
+        "4": Object {
+          "5": 1,
+        },
+      },
+    ],
+    Array [
+      "nested",
+      Object {
+        "0": Object {
+          "5": 1,
+        },
+        "1": Object {
+          "5": 1,
+        },
+        "2": Object {
+          "5": 2,
+        },
+        "4": Object {
+          "5": 1,
+        },
+      },
+    ],
+    Array [
+      "no",
+      Object {
+        "0": Object {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+        },
+        "1": Object {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+        },
+        "2": Object {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+        },
+        "4": Object {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+        },
+      },
+    ],
+    Array [
+      "with",
+      Object {
+        "0": Object {
+          "4": 1,
+        },
+        "1": Object {
+          "4": 1,
+        },
+        "2": Object {
+          "4": 1,
+        },
+      },
+    ],
+    Array [
+      "world",
+      Object {
+        "1": Object {
+          "0": 1,
+        },
+        "4": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "tag2",
+      Object {
+        "3": Object {
+          "4": 1,
+        },
+      },
+    ],
+    Array [
+      "tag1",
+      Object {
+        "3": Object {
+          "4": 1,
+        },
+      },
+    ],
+    Array [
+      "tags",
+      Object {
+        "0": Object {
+          "4": 1,
+        },
+        "1": Object {
+          "4": 1,
+        },
+        "2": Object {
+          "4": 1,
+        },
+        "4": Object {
+          "4": 1,
+        },
+      },
+    ],
+    Array [
+      "title",
+      Object {
+        "0": Object {
+          "1": 1,
+          "3": 1,
+        },
+        "1": Object {
+          "1": 1,
+          "3": 1,
+        },
+        "2": Object {
+          "1": 1,
+          "3": 1,
+        },
+        "4": Object {
+          "1": 1,
+          "3": 1,
+        },
+      },
+    ],
+    Array [
+      "tests",
+      Object {
+        "2": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+        },
+      },
+    ],
+    Array [
+      "or",
+      Object {
+        "0": Object {
+          "1": 1,
+        },
+        "1": Object {
+          "1": 1,
+        },
+        "2": Object {
+          "1": 1,
+        },
+        "4": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "slug",
+      Object {
+        "0": Object {
+          "1": 1,
+          "2": 1,
+        },
+        "1": Object {
+          "1": 1,
+          "2": 1,
+        },
+        "2": Object {
+          "1": 1,
+          "2": 1,
+        },
+        "4": Object {
+          "1": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "md",
+      Object {
+        "2": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+        },
+      },
+    ],
+    Array [
+      "basic",
+      Object {
+        "2": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+        },
+      },
+    ],
+    Array [
+      "hello",
+      Object {
+        "0": Object {
+          "0": 1,
+        },
+        "1": Object {
+          "0": 1,
+        },
+        "2": Object {
+          "0": 1,
+        },
+        "4": Object {
+          "0": 1,
+        },
+      },
+    ],
+  ],
+  "nextId": 6,
+  "serializationVersion": 2,
+  "storedFields": Object {
+    "0": Object {
+      "path": "tests/basic/hello.md",
+      "slug": "hello-world",
+      "title": "Hello",
+    },
+    "1": Object {
+      "path": "tests/basic/no-slug-or-title.md",
+      "slug": "no-slug-or-title",
+      "title": "no-slug-or-title",
+    },
+    "2": Object {
+      "path": "tests/basic/no-slug.md",
+      "slug": "no-slug",
+      "title": "No Slug",
+    },
+    "3": Object {
+      "path": "tests/basic/no-title.md",
+      "slug": "no-title",
+      "title": "no-title",
+    },
+    "4": Object {
+      "path": "tests/basic/with-tags.md",
+      "slug": "with-tags",
+      "tags": Array [
+        "tag1",
+        "tag2",
+      ],
+      "title": "With tags",
+    },
+    "5": Object {
+      "path": "tests/basic/nested/nested-file.md",
+      "slug": "nested-filed",
+      "title": "Nested File",
+    },
+  },
+}
+`;

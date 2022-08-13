@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loadFilePaths loads all documents in the given path 1`] = `
+Array [
+  "tests/basic/hello.md",
+  "tests/basic/no-slug-or-title.md",
+  "tests/basic/no-slug.md",
+  "tests/basic/no-title.md",
+  "tests/basic/with-tags.md",
+  "tests/basic/nested/nested-file.md",
+]
+`;

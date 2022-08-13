@@ -1,0 +1,4 @@
+---
+---
+
+# No slug or title
