@@ -5,7 +5,7 @@ Object {
   "content": "
 # Hello world!
 ",
-  "data": Object {
+  "metadata": Object {
     "description": undefined,
     "id": "tests/basic/hello-world",
     "path": "tests/basic/hello.md",
@@ -24,7 +24,7 @@ Map {
     "content": "
 # Hello world!
 ",
-    "data": Object {
+    "metadata": Object {
       "description": undefined,
       "id": "tests/basic/hello-world",
       "path": "tests/basic/hello.md",
@@ -39,7 +39,7 @@ Map {
     "content": "
 # No slug or title
 ",
-    "data": Object {
+    "metadata": Object {
       "description": undefined,
       "id": "tests/basic/no-slug-or-title",
       "path": "tests/basic/no-slug-or-title.md",
@@ -54,7 +54,7 @@ Map {
     "content": "
 # No slug
 ",
-    "data": Object {
+    "metadata": Object {
       "description": undefined,
       "id": "tests/basic/no-slug",
       "path": "tests/basic/no-slug.md",
@@ -69,7 +69,7 @@ Map {
     "content": "
 # No title
 ",
-    "data": Object {
+    "metadata": Object {
       "description": undefined,
       "id": "tests/basic/no-title",
       "path": "tests/basic/no-title.md",
@@ -84,7 +84,7 @@ Map {
     "content": "
 # With description
 ",
-    "data": Object {
+    "metadata": Object {
       "description": "This is a description.",
       "id": "tests/basic/with-description",
       "path": "tests/basic/with-description.md",
@@ -99,7 +99,7 @@ Map {
     "content": "
 # Tags!
 ",
-    "data": Object {
+    "metadata": Object {
       "description": undefined,
       "id": "tests/basic/with-tags",
       "path": "tests/basic/with-tags.md",
@@ -117,7 +117,7 @@ Map {
     "content": "
 # Nested File
 ",
-    "data": Object {
+    "metadata": Object {
       "description": undefined,
       "id": "tests/basic/nested/nested-filed",
       "path": "tests/basic/nested/nested-file.md",

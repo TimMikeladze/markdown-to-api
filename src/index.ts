@@ -9,7 +9,7 @@ import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { parse } from 'yaml';
 import deepmerge from 'deepmerge';
 
-export interface FileData {
+export interface FileMetadata {
   description?: string;
   id: string,
   path: string,
@@ -20,7 +20,7 @@ export interface FileData {
 
 export interface ParsedFile {
   content: string;
-  data: FileData;
+  metadata: FileMetadata;
   strippedContent: string;
 }
 
@@ -94,7 +94,7 @@ export class MarkdownAPI {
         id, title, slug, tags, description,
       },
     }: {
-      data: Partial<FileData>;
+      data: Partial<FileMetadata>;
     } = output;
 
     if (!title || !title.trim().length) {
@@ -127,7 +127,7 @@ export class MarkdownAPI {
     const strippedContent = (await MarkdownAPI.stripper.process(output.content)).toString();
 
     return {
-      data: {
+      metadata: {
         id,
         title,
         slug,
@@ -182,14 +182,14 @@ export class MarkdownAPI {
       errors = [
         ...errors,
         ...requiredFields.reduce<string[]>((res, requiredField) => {
-          if (requiredField && !((file.data as any)[requiredField])) {
-            return [...res, `Missing required field '${requiredField}' in ${file.data.path}`];
+          if (requiredField && !((file.metadata as any)[requiredField])) {
+            return [...res, `Missing required field '${requiredField}' in ${file.metadata.path}`];
           }
           return res;
         }, []),
       ];
 
-      map.set(file.data.id, file);
+      map.set(file.metadata.id, file);
 
       return map;
     }, new Map<string, ParsedFile>());
@@ -215,7 +215,7 @@ export class MarkdownAPI {
       ...this.getIndexFields(),
     });
 
-    await miniSearch.addAllAsync(Array.from(this.files.values()).map((x) => ({ ...x.data, ...x })));
+    await miniSearch.addAllAsync(Array.from(this.files.values()).map((x) => ({ ...x.metadata, ...x })));
 
     return miniSearch;
   }
