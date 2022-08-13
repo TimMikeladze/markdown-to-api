@@ -1,11 +1,11 @@
 import { MarkdownAPI } from '../src';
 
 describe('loadFilePaths', () => {
-  it('loads all documents in the given path', async () => {
+  it('loads all documents in the given path', () => {
     const mdapi = new MarkdownAPI({
       directory: 'tests/basic',
     });
-    const paths = await mdapi.loadFilePaths();
+    const paths = mdapi.loadFilePaths();
     expect(paths).toMatchSnapshot();
   });
 });

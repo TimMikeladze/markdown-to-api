@@ -2,8 +2,8 @@ import { rmSync } from 'fs';
 import { MarkdownAPI } from '../src';
 
 describe('loadIndexJSON', () => {
-  beforeAll(async () => {
-    (await new MarkdownAPI({
+  beforeAll(() => {
+    (new MarkdownAPI({
       directory: 'tests/cats',
     }).init()).writeIndexJSON();
   });
@@ -12,7 +12,7 @@ describe('loadIndexJSON', () => {
     rmSync('tests/cats/index.json');
   });
 
-  it('loads index', async () => {
+  it('loads index', () => {
     const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });

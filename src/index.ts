@@ -1,5 +1,4 @@
-import { globby } from 'globby';
-import { readFile } from 'fs/promises';
+import { globbySync } from 'globby';
 import matter from 'gray-matter';
 import slugify from 'slugify';
 import MiniSearch from 'minisearch';
@@ -74,19 +73,19 @@ export class MarkdownAPI {
     this.config = this.loadConfig();
   }
 
-  public async init(): Promise<MarkdownAPI> {
-    this.filePaths = await this.loadFilePaths();
-    this.files = await this.loadFiles();
+  public init() {
+    this.filePaths = this.loadFilePaths();
+    this.files = this.loadFiles();
     if (existsSync(this.getIndexPath())) {
-      this.miniSearch = await this.loadIndexJSON();
+      this.miniSearch = this.loadIndexJSON();
     } else {
-      this.miniSearch = await this.buildIndex();
+      this.miniSearch = this.buildIndex();
     }
     return this;
   }
 
-  public async parseFile(path: string): Promise<ParsedFile> {
-    const output = matter(await readFile(path, 'utf8'));
+  public parseFile(path: string): ParsedFile {
+    const output = matter(readFileSync(path, 'utf8'));
 
     let {
       data: {
@@ -124,7 +123,7 @@ export class MarkdownAPI {
       [key]: (output.data as any)[key],
     }), {});
 
-    const strippedContent = (await MarkdownAPI.stripper.process(output.content)).toString();
+    const strippedContent = (MarkdownAPI.stripper.processSync(output.content)).toString();
 
     return {
       metadata: {
@@ -160,8 +159,8 @@ export class MarkdownAPI {
     return this.config;
   }
 
-  public async loadFilePaths() {
-    const paths = await globby(this.options.directory, {
+  public loadFilePaths() {
+    const paths = globbySync(this.options.directory, {
       expandDirectories: {
         files: ['*.md'],
       },
@@ -169,8 +168,8 @@ export class MarkdownAPI {
     return paths;
   }
 
-  public async loadFiles(): Promise<Map<string, ParsedFile>> {
-    const parsedFiles = await Promise.all(this.filePaths.map((x) => this.parseFile(x)));
+  public loadFiles(): Map<string, ParsedFile> {
+    const parsedFiles = this.filePaths.map((x) => this.parseFile(x));
 
     const requiredFields = Object.keys(this.config.fields || {})
       .map((x) => (this.config.fields?.[x]?.required ? x : null))
@@ -210,12 +209,12 @@ export class MarkdownAPI {
     };
   }
 
-  public async buildIndex(): Promise<MiniSearch> {
+  public buildIndex(): MiniSearch {
     const miniSearch = new MiniSearch({
       ...this.getIndexFields(),
     });
 
-    await miniSearch.addAllAsync(Array.from(this.files.values()).map((x) => ({ ...x.metadata, ...x })));
+    miniSearch.addAll(Array.from(this.files.values()).map((x) => ({ ...x.metadata, ...x })));
 
     return miniSearch;
   }

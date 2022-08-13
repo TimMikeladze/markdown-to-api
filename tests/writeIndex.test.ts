@@ -6,16 +6,16 @@ describe('writeIndexJSON', () => {
     rmSync('tests/cats/index.json');
   });
 
-  it('writes an index', async () => {
+  it('writes an index', () => {
     const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });
-    await mdapi.init();
-    await mdapi.writeIndexJSON();
+    mdapi.init();
+    mdapi.writeIndexJSON();
     expect(existsSync('tests/cats/index.json')).toBe(true);
   });
 
-  it('throws error if index does not exist', async () => {
+  it('throws error if index does not exist', () => {
     const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });

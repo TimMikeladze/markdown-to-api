@@ -7,20 +7,20 @@ describe('loadConfig', () => {
     });
     expect(mdapi.getConfig()).toMatchSnapshot();
   });
-  it('auto loads yml config if exists', async () => {
+  it('auto loads yml config if exists', () => {
     const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });
     expect(mdapi.getConfig()).toMatchSnapshot();
   });
-  it('loads yml config from path', async () => {
+  it('loads yml config from path', () => {
     const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
       configPath: 'tests/cats/config.yml',
     });
     expect(mdapi.getConfig()).toMatchSnapshot();
   });
-  it('uses js object config', async () => {
+  it('uses js object config', () => {
     const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
       config: {
@@ -40,7 +40,7 @@ describe('loadConfig', () => {
     });
     expect(mdapi.getConfig()).toMatchSnapshot();
   });
-  it('js object config and yaml config are equivalent', async () => {
+  it('js object config and yaml config are equivalent', () => {
     const mdapi1 = new MarkdownAPI({
       directory: 'tests/cats',
       configPath: 'tests/cats/config.yml',
