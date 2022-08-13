@@ -1,68 +1,106 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`parseFiles parses yaml content from file paths 1`] = `
-Array [
-  Object {
+exports[`getFile returns a file 1`] = `
+Object {
+  "content": "
+# Hello world!
+",
+  "data": Object {
+    "description": undefined,
+    "id": "tests/basic/hello-world",
+    "path": "tests/basic/hello.md",
+    "slug": "hello-world",
+    "tags": undefined,
+    "title": "Hello",
+  },
+  "strippedContent": "Hello world!
+",
+}
+`;
+
+exports[`getFile returns all files 1`] = `
+Map {
+  "tests/basic/hello-world" => Object {
     "content": "
 # Hello world!
 ",
     "data": Object {
+      "description": undefined,
       "id": "tests/basic/hello-world",
       "path": "tests/basic/hello.md",
       "slug": "hello-world",
       "tags": undefined,
       "title": "Hello",
     },
-    "rawContent": "Hello world!
+    "strippedContent": "Hello world!
 ",
   },
-  Object {
+  "tests/basic/no-slug-or-title" => Object {
     "content": "
 # No slug or title
 ",
     "data": Object {
+      "description": undefined,
       "id": "tests/basic/no-slug-or-title",
       "path": "tests/basic/no-slug-or-title.md",
       "slug": "no-slug-or-title",
       "tags": undefined,
       "title": "no-slug-or-title",
     },
-    "rawContent": "No slug or title
+    "strippedContent": "No slug or title
 ",
   },
-  Object {
+  "tests/basic/no-slug" => Object {
     "content": "
 # No slug
 ",
     "data": Object {
+      "description": undefined,
       "id": "tests/basic/no-slug",
       "path": "tests/basic/no-slug.md",
       "slug": "no-slug",
       "tags": undefined,
       "title": "No Slug",
     },
-    "rawContent": "No slug
+    "strippedContent": "No slug
 ",
   },
-  Object {
+  "tests/basic/no-title" => Object {
     "content": "
 # No title
 ",
     "data": Object {
+      "description": undefined,
       "id": "tests/basic/no-title",
       "path": "tests/basic/no-title.md",
       "slug": "no-title",
       "tags": undefined,
       "title": "no-title",
     },
-    "rawContent": "No title
+    "strippedContent": "No title
 ",
   },
-  Object {
+  "tests/basic/with-description" => Object {
+    "content": "
+# With description
+",
+    "data": Object {
+      "description": "This is a description.",
+      "id": "tests/basic/with-description",
+      "path": "tests/basic/with-description.md",
+      "slug": "with-description",
+      "tags": undefined,
+      "title": "With description",
+    },
+    "strippedContent": "With description
+",
+  },
+  "tests/basic/with-tags" => Object {
     "content": "
 # Tags!
 ",
     "data": Object {
+      "description": undefined,
       "id": "tests/basic/with-tags",
       "path": "tests/basic/with-tags.md",
       "slug": "with-tags",
@@ -72,22 +110,23 @@ Array [
       ],
       "title": "With tags",
     },
-    "rawContent": "Tags!
+    "strippedContent": "Tags!
 ",
   },
-  Object {
+  "tests/basic/nested/nested-filed" => Object {
     "content": "
 # Nested File
 ",
     "data": Object {
+      "description": undefined,
       "id": "tests/basic/nested/nested-filed",
       "path": "tests/basic/nested/nested-file.md",
       "slug": "nested-filed",
       "tags": undefined,
       "title": "Nested File",
     },
-    "rawContent": "Nested File
+    "strippedContent": "Nested File
 ",
   },
-]
+}
 `;

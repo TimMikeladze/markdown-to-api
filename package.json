@@ -108,11 +108,13 @@
     "trim-newlines": ">=3.0.1"
   },
   "dependencies": {
+    "deepmerge": "4.2.2",
     "globby": "13.1.2",
     "gray-matter": "4.0.3",
     "minisearch": "5.0.0",
     "remark": "14.0.2",
     "slugify": "1.6.5",
-    "strip-markdown": "5.0.0"
+    "strip-markdown": "5.0.0",
+    "yaml": "2.1.1"
   }
 }

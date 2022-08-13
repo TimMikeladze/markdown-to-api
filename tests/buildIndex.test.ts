@@ -1,17 +1,11 @@
-import {
-  buildIndex,
-  loadFilePaths, ParsedFile, parseFiles,
-} from '../src';
+import { MarkdownToGraphQL } from '../src';
 
 describe('buildIndex', () => {
-  let files: ParsedFile[];
-  beforeAll(async () => {
-    const paths = await loadFilePaths('tests/basic');
-    files = await parseFiles(paths);
-  });
-
   it('builds an index', async () => {
-    const index = await buildIndex(files);
-    expect(index).toMatchSnapshot();
+    const mg = new MarkdownToGraphQL({
+      directory: 'tests/basic',
+    });
+    await mg.init();
+    expect(mg.getIndex()).toMatchSnapshot();
   });
 });

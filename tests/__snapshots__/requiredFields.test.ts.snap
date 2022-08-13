@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`throws errors if required fields are missing 1`] = `
+[Error: Missing required field 'genus' in tests/required-fields/missing-field.md
+Missing required field 'tags' in tests/required-fields/missing-tags.md
+Missing required field 'genus' in tests/required-fields/missing-tags.md]
+`;

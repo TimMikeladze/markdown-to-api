@@ -6,6 +6,7 @@ Array [
   "tests/basic/no-slug-or-title.md",
   "tests/basic/no-slug.md",
   "tests/basic/no-title.md",
+  "tests/basic/with-description.md",
   "tests/basic/with-tags.md",
   "tests/basic/nested/nested-file.md",
 ]

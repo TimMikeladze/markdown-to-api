@@ -9,11 +9,10 @@ Array [
         "title",
         "slug",
         "path",
-        "content",
       ],
     },
     "path": "tests/basic/hello.md",
-    "score": 9.907148408104309,
+    "score": 8.200044412723667,
     "slug": "hello-world",
     "terms": Array [
       "hello",
@@ -33,7 +32,7 @@ Array [
       ],
     },
     "path": "tests/basic/with-tags.md",
-    "score": 1.3797511337979858,
+    "score": 1.412417615826098,
     "slug": "with-tags",
     "tags": Array [
       "tag1",

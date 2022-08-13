@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loadConfig auto loads yml config if exists 1`] = `
+Object {
+  "fields": Object {
+    "description": Object {
+      "required": false,
+    },
+    "genus": Object {
+      "required": true,
+    },
+    "tags": Object {
+      "required": true,
+    },
+    "title": Object {
+      "required": false,
+    },
+    "url": null,
+  },
+  "tags": Object {
+    "cat": null,
+    "puma": Object {
+      "description": "Puma is a large cat, also known as a mountain lion.",
+    },
+    "tiger": Object {
+      "description": "Tiger is a very large cat.",
+    },
+  },
+}
+`;
+
+exports[`loadConfig loads yml config from path 1`] = `
+Object {
+  "fields": Object {
+    "description": Object {
+      "required": false,
+    },
+    "genus": Object {
+      "required": true,
+    },
+    "tags": Object {
+      "required": true,
+    },
+    "title": Object {
+      "required": false,
+    },
+    "url": null,
+  },
+  "tags": Object {
+    "cat": null,
+    "puma": Object {
+      "description": "Puma is a large cat, also known as a mountain lion.",
+    },
+    "tiger": Object {
+      "description": "Tiger is a very large cat.",
+    },
+  },
+}
+`;
+
+exports[`loadConfig uses default config 1`] = `
+Object {
+  "fields": Object {
+    "description": Object {
+      "required": false,
+    },
+    "genus": Object {
+      "required": true,
+    },
+    "tags": Object {
+      "required": true,
+    },
+    "title": Object {
+      "required": false,
+    },
+    "url": null,
+  },
+  "tags": Object {
+    "cat": null,
+    "puma": Object {
+      "description": "Puma is a large cat, also known as a mountain lion.",
+    },
+    "tiger": Object {
+      "description": "Tiger is a very large cat.",
+    },
+  },
+}
+`;
+
+exports[`loadConfig uses js object config 1`] = `
+Object {
+  "fields": Object {
+    "description": Object {
+      "required": false,
+    },
+    "genus": Object {
+      "required": true,
+    },
+    "tags": Object {
+      "required": true,
+    },
+    "title": Object {
+      "required": false,
+    },
+    "url": null,
+  },
+  "tags": Object {
+    "cat": null,
+    "puma": Object {
+      "description": "Puma is a large cat, also known as a mountain lion.",
+    },
+    "tiger": Object {
+      "description": "Tiger is a very large cat.",
+    },
+  },
+}
+`;

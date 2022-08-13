@@ -1,21 +1,21 @@
-import MiniSearch from 'minisearch';
-import { buildIndex, loadFilePaths, parseFiles } from '../src';
+import { MarkdownToGraphQL } from '../src';
 
 describe('search the index', () => {
-  let index: MiniSearch;
+  let mg: MarkdownToGraphQL;
   beforeAll(async () => {
-    const paths = await loadFilePaths('tests/basic');
-    const files = await parseFiles(paths);
-    index = await buildIndex(files);
+    mg = new MarkdownToGraphQL({
+      directory: 'tests/basic',
+    });
+    await mg.init();
   });
 
   it('basic search', async () => {
-    const res = index.search('hello');
+    const res = mg.getIndex().search('hello');
     expect(res).toMatchSnapshot();
     expect(res).toHaveLength(1);
   });
 
   it('tag search', async () => {
-    expect(index.search('tag1')).toMatchSnapshot();
+    expect(mg.getIndex().search('tag1')).toMatchSnapshot();
   });
 });

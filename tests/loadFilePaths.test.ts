@@ -1,8 +1,11 @@
-import { loadFilePaths } from '../src';
+import { MarkdownToGraphQL } from '../src';
 
 describe('loadFilePaths', () => {
   it('loads all documents in the given path', async () => {
-    const paths = await loadFilePaths('tests/basic');
+    const mg = new MarkdownToGraphQL({
+      directory: 'tests/basic',
+    });
+    const paths = await mg.loadFilePaths();
     expect(paths).toMatchSnapshot();
   });
 });

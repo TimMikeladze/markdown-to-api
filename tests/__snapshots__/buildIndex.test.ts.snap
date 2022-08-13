@@ -3,25 +3,27 @@
 exports[`buildIndex builds an index 1`] = `
 Object {
   "averageFieldLength": Array [
-    2.1666666666666665,
-    2.3333333333333335,
-    5.166666666666667,
-    0.4,
-    3.1666666666666665,
+    2.142857142857143,
+    2.2857142857142856,
+    5.142857142857143,
+    0.3333333333333333,
+    1,
   ],
-  "documentCount": 6,
+  "documentCount": 7,
   "documentIds": Object {
     "0": "tests/basic/hello-world",
     "1": "tests/basic/no-slug-or-title",
     "2": "tests/basic/no-slug",
     "3": "tests/basic/no-title",
-    "4": "tests/basic/with-tags",
-    "5": "tests/basic/nested/nested-filed",
+    "4": "tests/basic/with-description",
+    "5": "tests/basic/with-tags",
+    "6": "tests/basic/nested/nested-filed",
   },
   "fieldIds": Object {
-    "content": 4,
+    "description": 4,
     "path": 2,
     "slug": 1,
+    "strippedContent": 5,
     "tags": 3,
     "title": 0,
   },
@@ -30,43 +32,39 @@ Object {
       1,
       2,
       4,
-      ,
-      3,
     ],
     "1": Array [
       4,
       4,
       7,
-      ,
-      5,
     ],
     "2": Array [
       2,
       2,
       5,
-      ,
-      3,
     ],
     "3": Array [
       2,
       2,
       5,
-      ,
-      3,
     ],
     "4": Array [
       2,
       2,
       5,
-      2,
-      2,
+      ,
+      5,
     ],
     "5": Array [
       2,
       2,
       5,
-      ,
-      3,
+      2,
+    ],
+    "6": Array [
+      2,
+      2,
+      5,
     ],
   },
   "index": Array [
@@ -74,7 +72,7 @@ Object {
       "filed",
       Object {
         "1": Object {
-          "5": 1,
+          "6": 1,
         },
       },
     ],
@@ -82,13 +80,10 @@ Object {
       "file",
       Object {
         "0": Object {
-          "5": 1,
+          "6": 1,
         },
         "2": Object {
-          "5": 1,
-        },
-        "4": Object {
-          "5": 1,
+          "6": 1,
         },
       },
     ],
@@ -96,16 +91,13 @@ Object {
       "nested",
       Object {
         "0": Object {
-          "5": 1,
+          "6": 1,
         },
         "1": Object {
-          "5": 1,
+          "6": 1,
         },
         "2": Object {
-          "5": 2,
-        },
-        "4": Object {
-          "5": 1,
+          "6": 2,
         },
       },
     ],
@@ -127,15 +119,26 @@ Object {
           "2": 1,
           "3": 1,
         },
+      },
+    ],
+    Array [
+      "a",
+      Object {
         "4": Object {
-          "1": 1,
-          "2": 1,
-          "3": 1,
+          "4": 1,
         },
       },
     ],
     Array [
-      "with",
+      "is",
+      Object {
+        "4": Object {
+          "4": 1,
+        },
+      },
+    ],
+    Array [
+      "description",
       Object {
         "0": Object {
           "4": 1,
@@ -145,6 +148,26 @@ Object {
         },
         "2": Object {
           "4": 1,
+        },
+        "4": Object {
+          "4": 1,
+        },
+      },
+    ],
+    Array [
+      "with",
+      Object {
+        "0": Object {
+          "4": 1,
+          "5": 1,
+        },
+        "1": Object {
+          "4": 1,
+          "5": 1,
+        },
+        "2": Object {
+          "4": 1,
+          "5": 1,
         },
       },
     ],
@@ -154,16 +177,13 @@ Object {
         "1": Object {
           "0": 1,
         },
-        "4": Object {
-          "0": 1,
-        },
       },
     ],
     Array [
       "tag2",
       Object {
         "3": Object {
-          "4": 1,
+          "5": 1,
         },
       },
     ],
@@ -171,7 +191,7 @@ Object {
       "tag1",
       Object {
         "3": Object {
-          "4": 1,
+          "5": 1,
         },
       },
     ],
@@ -179,14 +199,19 @@ Object {
       "tags",
       Object {
         "0": Object {
-          "4": 1,
+          "5": 1,
         },
         "1": Object {
-          "4": 1,
+          "5": 1,
         },
         "2": Object {
-          "4": 1,
+          "5": 1,
         },
+      },
+    ],
+    Array [
+      "this",
+      Object {
         "4": Object {
           "4": 1,
         },
@@ -207,10 +232,6 @@ Object {
           "1": 1,
           "3": 1,
         },
-        "4": Object {
-          "1": 1,
-          "3": 1,
-        },
       },
     ],
     Array [
@@ -223,6 +244,7 @@ Object {
           "3": 1,
           "4": 1,
           "5": 1,
+          "6": 1,
         },
       },
     ],
@@ -236,9 +258,6 @@ Object {
           "1": 1,
         },
         "2": Object {
-          "1": 1,
-        },
-        "4": Object {
           "1": 1,
         },
       },
@@ -258,10 +277,6 @@ Object {
           "1": 1,
           "2": 1,
         },
-        "4": Object {
-          "1": 1,
-          "2": 1,
-        },
       },
     ],
     Array [
@@ -274,6 +289,7 @@ Object {
           "3": 1,
           "4": 1,
           "5": 1,
+          "6": 1,
         },
       },
     ],
@@ -287,6 +303,7 @@ Object {
           "3": 1,
           "4": 1,
           "5": 1,
+          "6": 1,
         },
       },
     ],
@@ -302,13 +319,10 @@ Object {
         "2": Object {
           "0": 1,
         },
-        "4": Object {
-          "0": 1,
-        },
       },
     ],
   ],
-  "nextId": 6,
+  "nextId": 7,
   "serializationVersion": 2,
   "storedFields": Object {
     "0": Object {
@@ -332,6 +346,12 @@ Object {
       "title": "no-title",
     },
     "4": Object {
+      "description": "This is a description.",
+      "path": "tests/basic/with-description.md",
+      "slug": "with-description",
+      "title": "With description",
+    },
+    "5": Object {
       "path": "tests/basic/with-tags.md",
       "slug": "with-tags",
       "tags": Array [
@@ -340,7 +360,7 @@ Object {
       ],
       "title": "With tags",
     },
-    "5": Object {
+    "6": Object {
       "path": "tests/basic/nested/nested-file.md",
       "slug": "nested-filed",
       "title": "Nested File",
