@@ -115,7 +115,9 @@ export class MarkdownAPI {
 
     const defaultFieldKeys = Object.keys(defaultConfig.fields || {});
 
-    const extraFieldKeys = Object.keys(this.config.fields || {}).map((x) => (this.config.fields?.[x] && !defaultFieldKeys.includes(x) ? x : null)).filter(Boolean) as string[];
+    const extraFieldKeys = Object.keys(this.config.fields || {})
+      .map((x) => (this.config.fields?.[x] && !defaultFieldKeys.includes(x) ? x : null))
+      .filter(Boolean) as string[];
 
     const extraFields = extraFieldKeys.reduce<Record<string, string>>((res, key) => ({
       ...res,
@@ -170,7 +172,9 @@ export class MarkdownAPI {
   public async loadFiles(): Promise<Map<string, ParsedFile>> {
     const parsedFiles = await Promise.all(this.filePaths.map((x) => this.parseFile(x)));
 
-    const requiredFields = Object.keys(this.config.fields || {}).map((x) => (this.config.fields?.[x]?.required ? x : null)).filter(Boolean);
+    const requiredFields = Object.keys(this.config.fields || {})
+      .map((x) => (this.config.fields?.[x]?.required ? x : null))
+      .filter(Boolean);
 
     let errors: string[] = [];
 
