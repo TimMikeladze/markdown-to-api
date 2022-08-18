@@ -1,3 +1,4 @@
+import { print } from 'graphql';
 import { createMarkdownAPIModule, MarkdownAPI, getResolvers } from '../src';
 
 describe('createMarkdownAPIModule', () => {
@@ -6,7 +7,7 @@ describe('createMarkdownAPIModule', () => {
       directory: 'tests/cats',
     });
 
-    expect(module.typeDefs).toMatchSnapshot();
+    expect(print(module.typeDefs as any)).toMatchSnapshot();
   });
 
   it('can query for a file', async () => {
