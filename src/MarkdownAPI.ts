@@ -66,10 +66,14 @@ export class MarkdownAPI {
 
   private readonly options: Options;
 
-  private readonly config: Config;
+  private config!: Config;
 
   constructor(options: Options) {
     this.options = options;
+    this.init();
+  }
+
+  public init() {
     this.config = this.loadConfig();
     this.filePaths = this.loadFilePaths();
     this.files = this.loadFiles();

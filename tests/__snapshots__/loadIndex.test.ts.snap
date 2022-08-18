@@ -7,7 +7,7 @@ Object {
     1,
     5,
     2,
-    null,
+    3,
     124.66666666666667,
   ],
   "documentCount": 3,
@@ -30,7 +30,7 @@ Object {
       1,
       5,
       2,
-      null,
+      3,
       94,
     ],
     "1": Array [
@@ -209,6 +209,9 @@ Object {
     Array [
       "a",
       Object {
+        "4": Object {
+          "0": 1,
+        },
         "5": Object {
           "0": 3,
           "1": 3,
@@ -400,6 +403,118 @@ Object {
       Object {
         "5": Object {
           "0": 5,
+        },
+      },
+    ],
+    Array [
+      "he",
+      Object {
+        "5": Object {
+          "0": 4,
+        },
+      },
+    ],
+    Array [
+      "health",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "happy",
+      Object {
+        "4": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "had",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "habitat",
+      Object {
+        "5": Object {
+          "2": 3,
+        },
+      },
+    ],
+    Array [
+      "have",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "host",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "hosts",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "home",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "him",
+      Object {
+        "5": Object {
+          "0": 2,
+        },
+      },
+    ],
+    Array [
+      "himalayas",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "historic",
+      Object {
+        "5": Object {
+          "2": 2,
+        },
+      },
+    ],
+    Array [
+      "high",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "human",
+      Object {
+        "5": Object {
+          "2": 2,
         },
       },
     ],
@@ -731,6 +846,9 @@ Object {
           "0": 1,
           "1": 1,
           "2": 1,
+        },
+        "4": Object {
+          "0": 1,
         },
         "5": Object {
           "1": 1,
@@ -1898,110 +2016,6 @@ Object {
       },
     ],
     Array [
-      "he",
-      Object {
-        "5": Object {
-          "0": 4,
-        },
-      },
-    ],
-    Array [
-      "health",
-      Object {
-        "5": Object {
-          "0": 1,
-        },
-      },
-    ],
-    Array [
-      "had",
-      Object {
-        "5": Object {
-          "0": 1,
-        },
-      },
-    ],
-    Array [
-      "habitat",
-      Object {
-        "5": Object {
-          "2": 3,
-        },
-      },
-    ],
-    Array [
-      "have",
-      Object {
-        "5": Object {
-          "2": 2,
-        },
-      },
-    ],
-    Array [
-      "host",
-      Object {
-        "5": Object {
-          "0": 1,
-        },
-      },
-    ],
-    Array [
-      "hosts",
-      Object {
-        "5": Object {
-          "2": 1,
-        },
-      },
-    ],
-    Array [
-      "home",
-      Object {
-        "5": Object {
-          "2": 1,
-        },
-      },
-    ],
-    Array [
-      "him",
-      Object {
-        "5": Object {
-          "0": 2,
-        },
-      },
-    ],
-    Array [
-      "himalayas",
-      Object {
-        "5": Object {
-          "2": 1,
-        },
-      },
-    ],
-    Array [
-      "historic",
-      Object {
-        "5": Object {
-          "2": 2,
-        },
-      },
-    ],
-    Array [
-      "high",
-      Object {
-        "5": Object {
-          "2": 1,
-        },
-      },
-    ],
-    Array [
-      "human",
-      Object {
-        "5": Object {
-          "2": 2,
-        },
-      },
-    ],
-    Array [
       "lionel",
       Object {
         "5": Object {
@@ -2691,6 +2705,7 @@ Object {
   "serializationVersion": 2,
   "storedFields": Object {
     "0": Object {
+      "description": "A happy cat",
       "path": "tests/cats/pumas/messi.md",
       "slug": "messi",
       "tags": Array [

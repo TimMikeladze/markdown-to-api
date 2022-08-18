@@ -1,6 +1,6 @@
 import { createMarkdownAPIModule, MarkdownAPI, getResolvers } from '../src';
 
-describe('GraphQLModule', () => {
+describe('createMarkdownAPIModule', () => {
   it('creates a GraphQLModule', () => {
     const module = createMarkdownAPIModule({
       directory: 'tests/cats',
@@ -22,5 +22,13 @@ describe('GraphQLModule', () => {
       directory: 'tests/cats',
     });
     expect(() => getResolvers(mdapi).Query.markdownFile({}, { id: 'dne' })).toThrowError();
+  });
+
+  it('can search for files', async () => {
+    const mdapi = new MarkdownAPI({
+      directory: 'tests/cats',
+    });
+    const res = getResolvers(mdapi).Query.searchMarkdownFiles({}, { text: 'cat' });
+    expect(res).toMatchSnapshot();
   });
 });

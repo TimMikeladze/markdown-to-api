@@ -2,6 +2,7 @@
   "extends": [
     "config:base"
   ],
+  "stabilityDays": 3,
   "timezone": "America/Los_Angeles",
   "schedule": [
     "on the first day of the month"

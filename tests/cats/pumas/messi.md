@@ -1,5 +1,6 @@
 ---
 title: Messi
+description: A happy cat
 tags:
 - cat
 - puma
