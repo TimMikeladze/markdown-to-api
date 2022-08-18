@@ -8,6 +8,8 @@ import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { parse } from 'yaml';
 import deepmerge from 'deepmerge';
 
+const toSlug = (string: string): string => slugify(string, { lower: true, strict: true });
+
 export interface FileMetadata {
   description?: string;
   id: string,
@@ -28,7 +30,9 @@ export interface Options {
   configPath?: string;
   directory: string;
   indexPath?: string;
-  miniSearchOptions: MiniSearchOptions<any>;
+  miniSearchOptions?: MiniSearchOptions<any>;
+  useIndex?: boolean;
+  writeIndex?: boolean;
 }
 
 export interface Config {
@@ -82,10 +86,13 @@ export class MarkdownAPI {
     this.config = this.loadConfig();
     this.filePaths = this.loadFilePaths();
     this.files = this.loadFiles();
-    if (existsSync(this.getIndexPath())) {
+    if (this.options.useIndex && existsSync(this.getIndexPath())) {
       this.miniSearch = this.loadIndexJSON();
     } else {
       this.miniSearch = this.buildIndex();
+    }
+    if (this.options.writeIndex) {
+      this.writeIndexJSON();
     }
   }
 
@@ -106,15 +113,18 @@ export class MarkdownAPI {
     }
 
     if (!slug || !slug.trim().length) {
-      slug = slugify(title as string, {
-        lower: true,
-        strict: true,
-      });
+      slug = toSlug(title as string);
     }
 
     if (!id) {
       const parts = path.split('/');
-      id = `${parts.slice(1, parts.length - 1).join('/')}/${slug}`;
+      id = `${parts.slice(1, parts.length - 1).join('-')}-${slug}`;
+    }
+
+    id = toSlug(id);
+
+    if (!description) {
+      description = '';
     }
 
     const defaultFieldKeys = Object.keys(defaultConfig.fields || {});
@@ -162,6 +172,16 @@ export class MarkdownAPI {
 
   public getConfig(): Config {
     return this.config;
+  }
+
+  public getTags(): {
+    description?: string;
+    name: string;
+  }[] {
+    return Object.keys(this.config.tags || {}).map((x) => ({
+      name: x,
+      description: this.config.tags?.[x]?.description || '',
+    }));
   }
 
   public loadFilePaths() {

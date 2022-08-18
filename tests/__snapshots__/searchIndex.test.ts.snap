@@ -3,7 +3,8 @@
 exports[`search the index basic search 1`] = `
 Array [
   Object {
-    "id": "basic/hello-world",
+    "description": "",
+    "id": "basic-hello-world",
     "match": Object {
       "hello": Array [
         "title",
@@ -26,7 +27,8 @@ Array [
 exports[`search the index tag search 1`] = `
 Array [
   Object {
-    "id": "basic/with-tags",
+    "description": "",
+    "id": "basic-with-tags",
     "match": Object {
       "tag1": Array [
         "tags",

@@ -6,6 +6,7 @@ export const typeDefs = gql`
   type Query {
     markdownFile(id: ID!): MarkdownFile!
     searchMarkdownFiles(text: String! options: MarkdownFileSearchOptions): MarkdownFileSearchResults!
+    markdownFileTags: [MarkdownFileTag!]!
   }
 
   type MarkdownFile {
@@ -36,6 +37,11 @@ export const typeDefs = gql`
     markdownFile: MarkdownFile!
   }
 
+  type MarkdownFileTag {
+    name: String!
+    description: String
+  }
+
   input MarkdownFileSearchOptions {
     fields: [String!]
     weights: MarkdownFileSearchOptionsWeights
@@ -58,6 +64,9 @@ export const typeDefs = gql`
 
 export const getResolvers = (mdapi: MarkdownAPI) => ({
   Query: {
+    markdownFileTags() {
+      return mdapi.getTags();
+    },
     markdownFile(_: any, { id }: { id: string }) {
       const file = mdapi.getFile(id);
       if (!file) {
@@ -68,7 +77,7 @@ export const getResolvers = (mdapi: MarkdownAPI) => ({
         ...file.metadata,
       };
     },
-    searchMarkdownFiles(_: any, { text, options }: { options: SearchOptions, text: string }) {
+    searchMarkdownFiles(_: any, { text, options }: { options?: SearchOptions, text: string }) {
       const results = mdapi.getIndex().search(text, {
         ...mdapi.getOptions(),
         ...options,

@@ -13,7 +13,7 @@ describe('createMarkdownAPIModule', () => {
     const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });
-    const file = getResolvers(mdapi).Query.markdownFile({}, { id: 'cats/pumas/messi' });
+    const file = getResolvers(mdapi).Query.markdownFile({}, { id: 'cats-pumas-messi' });
     expect(file).toMatchSnapshot();
   });
 

@@ -7,11 +7,12 @@ describe('writeIndexJSON', () => {
   });
 
   it('writes an index', () => {
-    const mdapi = new MarkdownAPI({
+    // eslint-disable-next-line no-new
+    new MarkdownAPI({
       directory: 'tests/cats',
+      writeIndex: true,
     });
 
-    mdapi.writeIndexJSON();
     expect(existsSync('tests/cats/index.json')).toBe(true);
   });
 

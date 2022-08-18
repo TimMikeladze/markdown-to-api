@@ -7,14 +7,14 @@ Object {
     1,
     5,
     2,
-    3,
+    1.6666666666666667,
     124.66666666666667,
   ],
   "documentCount": 3,
   "documentIds": Object {
-    "0": "cats/pumas/messi",
-    "1": "cats/pumas/about",
-    "2": "cats/tigers/about",
+    "0": "cats-pumas-messi",
+    "1": "cats-pumas-about",
+    "2": "cats-tigers-about",
   },
   "fieldIds": Object {
     "description": 4,
@@ -38,7 +38,7 @@ Object {
       1,
       5,
       2,
-      null,
+      1,
       66,
     ],
     "2": Array [
@@ -46,7 +46,7 @@ Object {
       1,
       5,
       2,
-      null,
+      1,
       214,
     ],
   },
@@ -2715,6 +2715,7 @@ Object {
       "title": "Messi",
     },
     "1": Object {
+      "description": "",
       "path": "tests/cats/pumas/puma.md",
       "slug": "about",
       "tags": Array [
@@ -2724,6 +2725,7 @@ Object {
       "title": "About",
     },
     "2": Object {
+      "description": "",
       "path": "tests/cats/tigers/about.md",
       "slug": "about",
       "tags": Array [

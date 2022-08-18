@@ -6,8 +6,8 @@ Object {
 # No slug
 ",
   "metadata": Object {
-    "description": undefined,
-    "id": "basic/no-slug",
+    "description": "",
+    "id": "basic-no-slug",
     "path": "tests/basic/no-slug.md",
     "slug": "no-slug",
     "tags": undefined,

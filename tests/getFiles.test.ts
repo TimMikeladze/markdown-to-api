@@ -14,13 +14,13 @@ describe('getFile', () => {
   });
 
   it('returns a file', () => {
-    const res = mdapi.getFile('basic/hello-world');
+    const res = mdapi.getFile('basic-hello-world');
     expect(res).toBeDefined();
     expect(res).toMatchSnapshot();
   });
 
   it('does not return a file', () => {
-    const res = mdapi.getFile('basic/dne');
+    const res = mdapi.getFile('basic-dne');
     expect(res).toBeUndefined();
   });
 });

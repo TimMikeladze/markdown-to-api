@@ -6,8 +6,8 @@ Object {
 # Hello world!
 ",
   "metadata": Object {
-    "description": undefined,
-    "id": "basic/hello-world",
+    "description": "",
+    "id": "basic-hello-world",
     "path": "tests/basic/hello.md",
     "slug": "hello-world",
     "tags": undefined,
@@ -20,13 +20,13 @@ Object {
 
 exports[`getFile returns all files 1`] = `
 Map {
-  "basic/hello-world" => Object {
+  "basic-hello-world" => Object {
     "content": "
 # Hello world!
 ",
     "metadata": Object {
-      "description": undefined,
-      "id": "basic/hello-world",
+      "description": "",
+      "id": "basic-hello-world",
       "path": "tests/basic/hello.md",
       "slug": "hello-world",
       "tags": undefined,
@@ -35,13 +35,13 @@ Map {
     "strippedContent": "Hello world!
 ",
   },
-  "basic/no-slug-or-title" => Object {
+  "basic-no-slug-or-title" => Object {
     "content": "
 # No slug or title
 ",
     "metadata": Object {
-      "description": undefined,
-      "id": "basic/no-slug-or-title",
+      "description": "",
+      "id": "basic-no-slug-or-title",
       "path": "tests/basic/no-slug-or-title.md",
       "slug": "no-slug-or-title",
       "tags": undefined,
@@ -50,13 +50,13 @@ Map {
     "strippedContent": "No slug or title
 ",
   },
-  "basic/no-slug" => Object {
+  "basic-no-slug" => Object {
     "content": "
 # No slug
 ",
     "metadata": Object {
-      "description": undefined,
-      "id": "basic/no-slug",
+      "description": "",
+      "id": "basic-no-slug",
       "path": "tests/basic/no-slug.md",
       "slug": "no-slug",
       "tags": undefined,
@@ -65,13 +65,13 @@ Map {
     "strippedContent": "No slug
 ",
   },
-  "basic/no-title" => Object {
+  "basic-no-title" => Object {
     "content": "
 # No title
 ",
     "metadata": Object {
-      "description": undefined,
-      "id": "basic/no-title",
+      "description": "",
+      "id": "basic-no-title",
       "path": "tests/basic/no-title.md",
       "slug": "no-title",
       "tags": undefined,
@@ -80,13 +80,13 @@ Map {
     "strippedContent": "No title
 ",
   },
-  "basic/with-description" => Object {
+  "basic-with-description" => Object {
     "content": "
 # With description
 ",
     "metadata": Object {
       "description": "This is a description.",
-      "id": "basic/with-description",
+      "id": "basic-with-description",
       "path": "tests/basic/with-description.md",
       "slug": "with-description",
       "tags": undefined,
@@ -95,13 +95,13 @@ Map {
     "strippedContent": "With description
 ",
   },
-  "basic/with-tags" => Object {
+  "basic-with-tags" => Object {
     "content": "
 # Tags!
 ",
     "metadata": Object {
-      "description": undefined,
-      "id": "basic/with-tags",
+      "description": "",
+      "id": "basic-with-tags",
       "path": "tests/basic/with-tags.md",
       "slug": "with-tags",
       "tags": Array [
@@ -113,13 +113,13 @@ Map {
     "strippedContent": "Tags!
 ",
   },
-  "basic/nested/nested-filed" => Object {
+  "basic-nested-nested-filed" => Object {
     "content": "
 # Nested File
 ",
     "metadata": Object {
-      "description": undefined,
-      "id": "basic/nested/nested-filed",
+      "description": "",
+      "id": "basic-nested-nested-filed",
       "path": "tests/basic/nested/nested-file.md",
       "slug": "nested-filed",
       "tags": undefined,

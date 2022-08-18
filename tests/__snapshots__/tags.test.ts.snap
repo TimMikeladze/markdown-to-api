@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loads tag from config 1`] = `
+Array [
+  Object {
+    "description": "",
+    "name": "cat",
+  },
+  Object {
+    "description": "Puma is a large cat, also known as a mountain lion.",
+    "name": "puma",
+  },
+  Object {
+    "description": "Tiger is a very large cat.",
+    "name": "tiger",
+  },
+]
+`;
+
+exports[`returns empty array if no tags defined in config 1`] = `Array []`;

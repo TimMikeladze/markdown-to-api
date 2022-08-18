@@ -7,18 +7,18 @@ Object {
     2.2857142857142856,
     5.142857142857143,
     0.3333333333333333,
-    1,
+    1.5714285714285714,
     3.142857142857143,
   ],
   "documentCount": 7,
   "documentIds": Object {
-    "0": "basic/hello-world",
-    "1": "basic/no-slug-or-title",
-    "2": "basic/no-slug",
-    "3": "basic/no-title",
-    "4": "basic/with-description",
-    "5": "basic/with-tags",
-    "6": "basic/nested/nested-filed",
+    "0": "basic-hello-world",
+    "1": "basic-no-slug-or-title",
+    "2": "basic-no-slug",
+    "3": "basic-no-title",
+    "4": "basic-with-description",
+    "5": "basic-with-tags",
+    "6": "basic-nested-nested-filed",
   },
   "fieldIds": Object {
     "description": 4,
@@ -34,7 +34,7 @@ Object {
       2,
       4,
       ,
-      ,
+      1,
       3,
     ],
     "1": Array [
@@ -42,7 +42,7 @@ Object {
       4,
       7,
       ,
-      ,
+      1,
       5,
     ],
     "2": Array [
@@ -50,7 +50,7 @@ Object {
       2,
       5,
       ,
-      ,
+      1,
       3,
     ],
     "3": Array [
@@ -58,7 +58,7 @@ Object {
       2,
       5,
       ,
-      ,
+      1,
       3,
     ],
     "4": Array [
@@ -74,7 +74,7 @@ Object {
       2,
       5,
       2,
-      ,
+      1,
       2,
     ],
     "6": Array [
@@ -82,7 +82,7 @@ Object {
       2,
       5,
       ,
-      ,
+      1,
       3,
     ],
   },
@@ -382,21 +382,25 @@ Object {
   "serializationVersion": 2,
   "storedFields": Object {
     "0": Object {
+      "description": "",
       "path": "tests/basic/hello.md",
       "slug": "hello-world",
       "title": "Hello",
     },
     "1": Object {
+      "description": "",
       "path": "tests/basic/no-slug-or-title.md",
       "slug": "no-slug-or-title",
       "title": "no-slug-or-title",
     },
     "2": Object {
+      "description": "",
       "path": "tests/basic/no-slug.md",
       "slug": "no-slug",
       "title": "No Slug",
     },
     "3": Object {
+      "description": "",
       "path": "tests/basic/no-title.md",
       "slug": "no-title",
       "title": "no-title",
@@ -408,6 +412,7 @@ Object {
       "title": "With description",
     },
     "5": Object {
+      "description": "",
       "path": "tests/basic/with-tags.md",
       "slug": "with-tags",
       "tags": Array [
@@ -417,6 +422,7 @@ Object {
       "title": "With tags",
     },
     "6": Object {
+      "description": "",
       "path": "tests/basic/nested/nested-file.md",
       "slug": "nested-filed",
       "title": "Nested File",
