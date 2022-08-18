@@ -12,6 +12,12 @@ import deepmerge from 'deepmerge';
 
 const toSlug = (string: string): string => slugify(string, { lower: true, strict: true });
 
+export interface Tag {
+  description?: string;
+  id: string;
+  name: string;
+}
+
 export interface ParsedFile {
   content: string;
   createdAt: string;
@@ -20,7 +26,7 @@ export interface ParsedFile {
   path: string,
   slug: string;
   strippedContent: string;
-  tags: string[];
+  tags: Tag[];
   title: string;
 }
 
@@ -40,6 +46,7 @@ export interface Config {
   } | null>,
   tags?: Record<string, {
     description?: string;
+    name?: string;
   } | null>
 }
 
@@ -126,6 +133,13 @@ export class MarkdownAPI {
 
     if (!tags) {
       tags = [];
+    } else if (this.getTags().length && tags.length) {
+      tags = tags.map((x: string) => this.getTags().find((y) => y.id === toSlug(x)));
+    } else {
+      tags = tags.map((x: string) => ({
+        id: toSlug(x),
+        name: toSlug(x),
+      }));
     }
 
     const defaultFieldKeys = Object.keys(defaultConfig.fields || {});
@@ -174,14 +188,12 @@ export class MarkdownAPI {
     return this.config;
   }
 
-  public getTags(): {
-    description?: string;
-    name: string;
-  }[] {
+  public getTags(): Tag[] {
     return Object.keys(this.config.tags || {}).map((x) => ({
-      name: x,
+      id: toSlug(x),
+      name: this.config.tags?.[x]?.name || toSlug(x),
       description: this.config.tags?.[x]?.description || '',
-    }));
+    })).sort((a, b) => a.name.localeCompare(b.name));
   }
 
   public loadFilePaths() {
@@ -240,7 +252,7 @@ export class MarkdownAPI {
       ...this.options.miniSearchOptions,
     });
 
-    miniSearch.addAll(Array.from(this.fileMap.values()).map((x) => ({ ...x })));
+    miniSearch.addAll(Array.from(this.fileMap.values()).map((x) => ({ ...x, tags: x.tags.map((y) => y.id) })));
 
     return miniSearch;
   }

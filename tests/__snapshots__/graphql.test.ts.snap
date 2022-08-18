@@ -43,8 +43,16 @@ The cougar is the second-largest cat in the New World, after the jaguar (Panther
 The cougar is an ambush predator that pursues a wide variety of prey. Primary food sources are ungulates, particularly deer, but it also hunts smaller prey such as rodents. It prefers habitats with dense underbrush and rocky areas for stalking, but also lives in open areas. The cougar is territorial and lives at low population densities. Individual home ranges depend on terrain, vegetation and abundance of prey. While large, it is not always the apex predator in its range, yielding prey it has killed to American black bears, grizzly bears and packs of wolves. It is reclusive and mostly avoids people. Fatal attacks on humans are rare, but increased in North America as more people entered cougar habitat and built farms.
 ",
   "tags": Array [
-    "cat",
-    "puma",
+    Object {
+      "description": "Fits into any box.",
+      "id": "cat",
+      "name": "cat",
+    },
+    Object {
+      "description": "Puma is a large cat, also known as a mountain lion.",
+      "id": "puma",
+      "name": "cougar / puma",
+    },
   ],
   "title": "Cougar",
 }
@@ -187,7 +195,7 @@ type MarkdownFile {
   id: ID!
   path: String!
   slug: String!
-  tags: [String!]
+  tags: [MarkdownFileTag!]!
   title: String!
   description: String
   createdAt: String!
@@ -206,12 +214,13 @@ type MarkdownFileSearchResult {
   title: String!
   slug: String!
   path: String!
-  tags: [String!]
+  tags: [MarkdownFileTag!]!
   createdAt: String!
   markdownFile: MarkdownFile!
 }
 
 type MarkdownFileTag {
+  id: ID!
   name: String!
   description: String
 }

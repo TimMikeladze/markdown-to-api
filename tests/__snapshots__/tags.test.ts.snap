@@ -4,19 +4,23 @@ exports[`loads tag from config 1`] = `
 Array [
   Object {
     "description": "Fits into any box.",
+    "id": "cat",
     "name": "cat",
   },
   Object {
     "description": "Puma is a large cat, also known as a mountain lion.",
-    "name": "puma",
-  },
-  Object {
-    "description": "Tiger is a very large cat.",
-    "name": "tiger",
+    "id": "puma",
+    "name": "cougar / puma",
   },
   Object {
     "description": "Lions have manes.",
+    "id": "lion",
     "name": "lion",
+  },
+  Object {
+    "description": "Tiger is a very large cat.",
+    "id": "tiger",
+    "name": "tiger",
   },
 ]
 `;

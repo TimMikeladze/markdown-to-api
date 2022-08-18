@@ -75,8 +75,14 @@ Array [
     "strippedContent": "Tags!
 ",
     "tags": Array [
-      "tag1",
-      "tag2",
+      Object {
+        "id": "tag1",
+        "name": "tag1",
+      },
+      Object {
+        "id": "tag2",
+        "name": "tag2",
+      },
     ],
     "title": "With tags",
   },
@@ -181,8 +187,14 @@ Array [
     "strippedContent": "Tags!
 ",
     "tags": Array [
-      "tag1",
-      "tag2",
+      Object {
+        "id": "tag1",
+        "name": "tag1",
+      },
+      Object {
+        "id": "tag2",
+        "name": "tag2",
+      },
     ],
     "title": "With tags",
   },
@@ -329,8 +341,14 @@ Array [
     "strippedContent": "Tags!
 ",
     "tags": Array [
-      "tag1",
-      "tag2",
+      Object {
+        "id": "tag1",
+        "name": "tag1",
+      },
+      Object {
+        "id": "tag2",
+        "name": "tag2",
+      },
     ],
     "title": "With tags",
   },
@@ -351,8 +369,14 @@ Array [
     "strippedContent": "Tags!
 ",
     "tags": Array [
-      "tag1",
-      "tag2",
+      Object {
+        "id": "tag1",
+        "name": "tag1",
+      },
+      Object {
+        "id": "tag2",
+        "name": "tag2",
+      },
     ],
     "title": "With tags",
   },
@@ -527,8 +551,14 @@ Map {
     "strippedContent": "Tags!
 ",
     "tags": Array [
-      "tag1",
-      "tag2",
+      Object {
+        "id": "tag1",
+        "name": "tag1",
+      },
+      Object {
+        "id": "tag2",
+        "name": "tag2",
+      },
     ],
     "title": "With tags",
   },
