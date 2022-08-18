@@ -7,7 +7,7 @@ Object {
   "content": "
 # Hello world!
 ",
-  "createdAt": "2022-08-18T21:49:39.347Z",
+  "createdAt": "",
   "description": "",
   "id": "hello-world",
   "path": "tests/basic/hello.md",
@@ -25,7 +25,7 @@ Array [
     "content": "
 # Hello world!
 ",
-    "createdAt": "2022-08-18T21:49:39.347Z",
+    "createdAt": "",
     "description": "",
     "id": "hello-world",
     "path": "tests/basic/hello.md",
@@ -39,7 +39,7 @@ Array [
     "content": "
 # No slug or title
 ",
-    "createdAt": "2022-08-18T21:49:39.348Z",
+    "createdAt": "",
     "description": "",
     "id": "no-slug-or-title",
     "path": "tests/basic/no-slug-or-title.md",
@@ -51,23 +51,9 @@ Array [
   },
   Object {
     "content": "
-# Nested File
-",
-    "createdAt": "2022-08-18T21:49:39.348Z",
-    "description": "",
-    "id": "nested-nested-file",
-    "path": "tests/basic/nested/nested-file.md",
-    "slug": "nested-file",
-    "strippedContent": "Nested File
-",
-    "tags": Array [],
-    "title": "Nested File",
-  },
-  Object {
-    "content": "
 # No slug
 ",
-    "createdAt": "2022-08-18T21:49:39.349Z",
+    "createdAt": "",
     "description": "",
     "id": "no-slug",
     "path": "tests/basic/no-slug.md",
@@ -81,7 +67,7 @@ Array [
     "content": "
 # No title
 ",
-    "createdAt": "2022-08-18T21:49:39.350Z",
+    "createdAt": "",
     "description": "",
     "id": "no-title",
     "path": "tests/basic/no-title.md",
@@ -95,7 +81,7 @@ Array [
     "content": "
 # With description
 ",
-    "createdAt": "2022-08-18T21:49:39.351Z",
+    "createdAt": "",
     "description": "This is a description.",
     "id": "with-description",
     "path": "tests/basic/with-description.md",
@@ -109,7 +95,7 @@ Array [
     "content": "
 # Tags!
 ",
-    "createdAt": "2022-08-18T21:49:39.352Z",
+    "createdAt": "",
     "description": "",
     "id": "with-tags",
     "path": "tests/basic/with-tags.md",
@@ -127,6 +113,20 @@ Array [
       },
     ],
     "title": "With tags",
+  },
+  Object {
+    "content": "
+# Nested File
+",
+    "createdAt": "",
+    "description": "",
+    "id": "nested-nested-file",
+    "path": "tests/basic/nested/nested-file.md",
+    "slug": "nested-file",
+    "strippedContent": "Nested File
+",
+    "tags": Array [],
+    "title": "Nested File",
   },
 ]
 `;
@@ -135,9 +135,79 @@ exports[`files get all files createdAt descending 1`] = `
 Array [
   Object {
     "content": "
+# Hello world!
+",
+    "createdAt": "",
+    "description": "",
+    "id": "hello-world",
+    "path": "tests/basic/hello.md",
+    "slug": "hello-world",
+    "strippedContent": "Hello world!
+",
+    "tags": Array [],
+    "title": "Hello",
+  },
+  Object {
+    "content": "
+# No slug or title
+",
+    "createdAt": "",
+    "description": "",
+    "id": "no-slug-or-title",
+    "path": "tests/basic/no-slug-or-title.md",
+    "slug": "no-slug-or-title",
+    "strippedContent": "No slug or title
+",
+    "tags": Array [],
+    "title": "no-slug-or-title",
+  },
+  Object {
+    "content": "
+# No slug
+",
+    "createdAt": "",
+    "description": "",
+    "id": "no-slug",
+    "path": "tests/basic/no-slug.md",
+    "slug": "no-slug",
+    "strippedContent": "No slug
+",
+    "tags": Array [],
+    "title": "No Slug",
+  },
+  Object {
+    "content": "
+# No title
+",
+    "createdAt": "",
+    "description": "",
+    "id": "no-title",
+    "path": "tests/basic/no-title.md",
+    "slug": "no-title",
+    "strippedContent": "No title
+",
+    "tags": Array [],
+    "title": "no-title",
+  },
+  Object {
+    "content": "
+# With description
+",
+    "createdAt": "",
+    "description": "This is a description.",
+    "id": "with-description",
+    "path": "tests/basic/with-description.md",
+    "slug": "with-description",
+    "strippedContent": "With description
+",
+    "tags": Array [],
+    "title": "With description",
+  },
+  Object {
+    "content": "
 # Tags!
 ",
-    "createdAt": "2022-08-18T21:49:39.352Z",
+    "createdAt": "",
     "description": "",
     "id": "with-tags",
     "path": "tests/basic/with-tags.md",
@@ -158,65 +228,9 @@ Array [
   },
   Object {
     "content": "
-# With description
-",
-    "createdAt": "2022-08-18T21:49:39.351Z",
-    "description": "This is a description.",
-    "id": "with-description",
-    "path": "tests/basic/with-description.md",
-    "slug": "with-description",
-    "strippedContent": "With description
-",
-    "tags": Array [],
-    "title": "With description",
-  },
-  Object {
-    "content": "
-# No title
-",
-    "createdAt": "2022-08-18T21:49:39.350Z",
-    "description": "",
-    "id": "no-title",
-    "path": "tests/basic/no-title.md",
-    "slug": "no-title",
-    "strippedContent": "No title
-",
-    "tags": Array [],
-    "title": "no-title",
-  },
-  Object {
-    "content": "
-# No slug
-",
-    "createdAt": "2022-08-18T21:49:39.349Z",
-    "description": "",
-    "id": "no-slug",
-    "path": "tests/basic/no-slug.md",
-    "slug": "no-slug",
-    "strippedContent": "No slug
-",
-    "tags": Array [],
-    "title": "No Slug",
-  },
-  Object {
-    "content": "
-# No slug or title
-",
-    "createdAt": "2022-08-18T21:49:39.348Z",
-    "description": "",
-    "id": "no-slug-or-title",
-    "path": "tests/basic/no-slug-or-title.md",
-    "slug": "no-slug-or-title",
-    "strippedContent": "No slug or title
-",
-    "tags": Array [],
-    "title": "no-slug-or-title",
-  },
-  Object {
-    "content": "
 # Nested File
 ",
-    "createdAt": "2022-08-18T21:49:39.348Z",
+    "createdAt": "",
     "description": "",
     "id": "nested-nested-file",
     "path": "tests/basic/nested/nested-file.md",
@@ -225,20 +239,6 @@ Array [
 ",
     "tags": Array [],
     "title": "Nested File",
-  },
-  Object {
-    "content": "
-# Hello world!
-",
-    "createdAt": "2022-08-18T21:49:39.347Z",
-    "description": "",
-    "id": "hello-world",
-    "path": "tests/basic/hello.md",
-    "slug": "hello-world",
-    "strippedContent": "Hello world!
-",
-    "tags": Array [],
-    "title": "Hello",
   },
 ]
 `;
@@ -249,7 +249,7 @@ Array [
     "content": "
 # Hello world!
 ",
-    "createdAt": "2022-08-18T21:49:39.347Z",
+    "createdAt": "",
     "description": "",
     "id": "hello-world",
     "path": "tests/basic/hello.md",
@@ -263,7 +263,7 @@ Array [
     "content": "
 # Nested File
 ",
-    "createdAt": "2022-08-18T21:49:39.348Z",
+    "createdAt": "",
     "description": "",
     "id": "nested-nested-file",
     "path": "tests/basic/nested/nested-file.md",
@@ -277,7 +277,7 @@ Array [
     "content": "
 # No slug
 ",
-    "createdAt": "2022-08-18T21:49:39.349Z",
+    "createdAt": "",
     "description": "",
     "id": "no-slug",
     "path": "tests/basic/no-slug.md",
@@ -291,7 +291,7 @@ Array [
     "content": "
 # No slug or title
 ",
-    "createdAt": "2022-08-18T21:49:39.348Z",
+    "createdAt": "",
     "description": "",
     "id": "no-slug-or-title",
     "path": "tests/basic/no-slug-or-title.md",
@@ -305,7 +305,7 @@ Array [
     "content": "
 # No title
 ",
-    "createdAt": "2022-08-18T21:49:39.350Z",
+    "createdAt": "",
     "description": "",
     "id": "no-title",
     "path": "tests/basic/no-title.md",
@@ -319,7 +319,7 @@ Array [
     "content": "
 # With description
 ",
-    "createdAt": "2022-08-18T21:49:39.351Z",
+    "createdAt": "",
     "description": "This is a description.",
     "id": "with-description",
     "path": "tests/basic/with-description.md",
@@ -333,7 +333,7 @@ Array [
     "content": "
 # Tags!
 ",
-    "createdAt": "2022-08-18T21:49:39.352Z",
+    "createdAt": "",
     "description": "",
     "id": "with-tags",
     "path": "tests/basic/with-tags.md",
@@ -361,7 +361,7 @@ Array [
     "content": "
 # Tags!
 ",
-    "createdAt": "2022-08-18T21:49:39.352Z",
+    "createdAt": "",
     "description": "",
     "id": "with-tags",
     "path": "tests/basic/with-tags.md",
@@ -384,7 +384,7 @@ Array [
     "content": "
 # With description
 ",
-    "createdAt": "2022-08-18T21:49:39.351Z",
+    "createdAt": "",
     "description": "This is a description.",
     "id": "with-description",
     "path": "tests/basic/with-description.md",
@@ -398,7 +398,7 @@ Array [
     "content": "
 # No title
 ",
-    "createdAt": "2022-08-18T21:49:39.350Z",
+    "createdAt": "",
     "description": "",
     "id": "no-title",
     "path": "tests/basic/no-title.md",
@@ -412,7 +412,7 @@ Array [
     "content": "
 # No slug or title
 ",
-    "createdAt": "2022-08-18T21:49:39.348Z",
+    "createdAt": "",
     "description": "",
     "id": "no-slug-or-title",
     "path": "tests/basic/no-slug-or-title.md",
@@ -426,7 +426,7 @@ Array [
     "content": "
 # No slug
 ",
-    "createdAt": "2022-08-18T21:49:39.349Z",
+    "createdAt": "",
     "description": "",
     "id": "no-slug",
     "path": "tests/basic/no-slug.md",
@@ -440,7 +440,7 @@ Array [
     "content": "
 # Nested File
 ",
-    "createdAt": "2022-08-18T21:49:39.348Z",
+    "createdAt": "",
     "description": "",
     "id": "nested-nested-file",
     "path": "tests/basic/nested/nested-file.md",
@@ -454,7 +454,7 @@ Array [
     "content": "
 # Hello world!
 ",
-    "createdAt": "2022-08-18T21:49:39.347Z",
+    "createdAt": "",
     "description": "",
     "id": "hello-world",
     "path": "tests/basic/hello.md",
@@ -473,7 +473,7 @@ Map {
     "content": "
 # Hello world!
 ",
-    "createdAt": "2022-08-18T21:49:39.347Z",
+    "createdAt": "",
     "description": "",
     "id": "hello-world",
     "path": "tests/basic/hello.md",
@@ -487,7 +487,7 @@ Map {
     "content": "
 # No slug or title
 ",
-    "createdAt": "2022-08-18T21:49:39.348Z",
+    "createdAt": "",
     "description": "",
     "id": "no-slug-or-title",
     "path": "tests/basic/no-slug-or-title.md",
@@ -501,7 +501,7 @@ Map {
     "content": "
 # No slug
 ",
-    "createdAt": "2022-08-18T21:49:39.349Z",
+    "createdAt": "",
     "description": "",
     "id": "no-slug",
     "path": "tests/basic/no-slug.md",
@@ -515,7 +515,7 @@ Map {
     "content": "
 # No title
 ",
-    "createdAt": "2022-08-18T21:49:39.350Z",
+    "createdAt": "",
     "description": "",
     "id": "no-title",
     "path": "tests/basic/no-title.md",
@@ -529,7 +529,7 @@ Map {
     "content": "
 # With description
 ",
-    "createdAt": "2022-08-18T21:49:39.351Z",
+    "createdAt": "",
     "description": "This is a description.",
     "id": "with-description",
     "path": "tests/basic/with-description.md",
@@ -543,7 +543,7 @@ Map {
     "content": "
 # Tags!
 ",
-    "createdAt": "2022-08-18T21:49:39.352Z",
+    "createdAt": "",
     "description": "",
     "id": "with-tags",
     "path": "tests/basic/with-tags.md",
@@ -566,7 +566,7 @@ Map {
     "content": "
 # Nested File
 ",
-    "createdAt": "2022-08-18T21:49:39.348Z",
+    "createdAt": "",
     "description": "",
     "id": "nested-nested-file",
     "path": "tests/basic/nested/nested-file.md",

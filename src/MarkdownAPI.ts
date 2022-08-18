@@ -5,7 +5,7 @@ import MiniSearch, { Options as MiniSearchOptions } from 'minisearch';
 import { remark } from 'remark';
 import strip from 'strip-markdown';
 import {
-  existsSync, readFileSync, statSync, writeFileSync,
+  existsSync, readFileSync, writeFileSync,
 } from 'fs';
 import { parse } from 'yaml';
 import deepmerge from 'deepmerge';
@@ -104,12 +104,10 @@ export class MarkdownAPI {
 
   public parseFile(path: string): ParsedFile {
     const output = matter(readFileSync(path, 'utf8'));
-    const stats = statSync(path);
-    const birthTime = stats.birthtime;
 
     let {
       // eslint-disable-next-line prefer-const
-      id, title, slug, tags, description, createdAt = birthTime.toISOString(),
+      id, title, slug, tags, description, createdAt = '',
     } = output.data;
 
     if (!title || !title.trim().length) {

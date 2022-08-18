@@ -8,7 +8,7 @@ Object {
     5.4,
     2,
     21.4,
-    6,
+    1,
     190.6,
   ],
   "documentCount": 5,
@@ -35,7 +35,7 @@ Object {
       5,
       2,
       34,
-      6,
+      1,
       211,
     ],
     "1": Array [
@@ -44,7 +44,7 @@ Object {
       5,
       2,
       13,
-      6,
+      1,
       160,
     ],
     "2": Array [
@@ -53,7 +53,7 @@ Object {
       5,
       2,
       16,
-      6,
+      1,
       215,
     ],
     "3": Array [
@@ -62,7 +62,7 @@ Object {
       6,
       2,
       27,
-      6,
+      1,
       215,
     ],
     "4": Array [
@@ -71,7 +71,7 @@ Object {
       6,
       2,
       17,
-      6,
+      1,
       152,
     ],
   },
@@ -2324,63 +2324,6 @@ Object {
       },
     ],
     Array [
-      "39",
-      Object {
-        "5": Object {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1,
-        },
-      },
-    ],
-    Array [
-      "354z",
-      Object {
-        "5": Object {
-          "0": 1,
-          "1": 1,
-        },
-      },
-    ],
-    Array [
-      "355z",
-      Object {
-        "5": Object {
-          "2": 1,
-          "3": 1,
-          "4": 1,
-        },
-      },
-    ],
-    Array [
-      "3",
-      Object {
-        "6": Object {
-          "2": 2,
-          "3": 2,
-          "4": 2,
-        },
-      },
-    ],
-    Array [
-      "31",
-      Object {
-        "6": Object {
-          "4": 1,
-        },
-      },
-    ],
-    Array [
-      "331",
-      Object {
-        "6": Object {
-          "4": 1,
-        },
-      },
-    ],
-    Array [
       "s",
       Object {
         "4": Object {
@@ -4394,14 +4337,26 @@ Object {
       },
     ],
     Array [
-      "18t21",
+      "43",
       Object {
-        "5": Object {
+        "6": Object {
           "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1,
+        },
+      },
+    ],
+    Array [
+      "430",
+      Object {
+        "6": Object {
           "4": 1,
+        },
+      },
+    ],
+    Array [
+      "zoological",
+      Object {
+        "6": Object {
+          "0": 1,
         },
       },
     ],
@@ -4475,42 +4430,6 @@ Object {
       Object {
         "6": Object {
           "4": 1,
-        },
-      },
-    ],
-    Array [
-      "49",
-      Object {
-        "5": Object {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1,
-        },
-      },
-    ],
-    Array [
-      "43",
-      Object {
-        "6": Object {
-          "0": 1,
-        },
-      },
-    ],
-    Array [
-      "430",
-      Object {
-        "6": Object {
-          "4": 1,
-        },
-      },
-    ],
-    Array [
-      "zoological",
-      Object {
-        "6": Object {
-          "0": 1,
         },
       },
     ],
@@ -4608,13 +4527,27 @@ Object {
       },
     ],
     Array [
-      "08",
+      "3",
       Object {
-        "5": Object {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1,
+        "6": Object {
+          "2": 2,
+          "3": 2,
+          "4": 2,
+        },
+      },
+    ],
+    Array [
+      "31",
+      Object {
+        "6": Object {
+          "4": 1,
+        },
+      },
+    ],
+    Array [
+      "331",
+      Object {
+        "6": Object {
           "4": 1,
         },
       },
@@ -4652,18 +4585,6 @@ Object {
       "91",
       Object {
         "6": Object {
-          "4": 1,
-        },
-      },
-    ],
-    Array [
-      "2022",
-      Object {
-        "5": Object {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1,
           "4": 1,
         },
       },
@@ -4740,7 +4661,7 @@ Object {
   "serializationVersion": 2,
   "storedFields": Object {
     "0": Object {
-      "createdAt": "2022-08-18T21:49:39.354Z",
+      "createdAt": "",
       "description": "The lion (Panthera leo) is a large cat of the genus Panthera native to Africa and India. It has a muscular, broad-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail.",
       "path": "tests/cats/lions/about-lions.md",
       "slug": "about-lions",
@@ -4751,7 +4672,7 @@ Object {
       "title": "About Lions",
     },
     "1": Object {
-      "createdAt": "2022-08-18T21:49:39.354Z",
+      "createdAt": "",
       "description": "The cougar (Puma concolor) is a large cat native to the Americas.",
       "path": "tests/cats/pumas/cougar.md",
       "slug": "cougar",
@@ -4762,7 +4683,7 @@ Object {
       "title": "Cougar",
     },
     "2": Object {
-      "createdAt": "2022-08-18T21:49:39.355Z",
+      "createdAt": "",
       "description": "The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera.",
       "path": "tests/cats/tigers/about-tigers.md",
       "slug": "about-tigers",
@@ -4773,7 +4694,7 @@ Object {
       "title": "About Tigers",
     },
     "3": Object {
-      "createdAt": "2022-08-18T21:49:39.355Z",
+      "createdAt": "",
       "description": "The Bengal tiger is a population of the Panthera tigris tigris subspecies. It ranks among the biggest wild cats alive today. It is considered to belong to the world's charismatic megafauna.",
       "path": "tests/cats/tigers/bengal-tiger.md",
       "slug": "bengal-tiger",
@@ -4784,7 +4705,7 @@ Object {
       "title": "Bengal Tiger",
     },
     "4": Object {
-      "createdAt": "2022-08-18T21:49:39.355Z",
+      "createdAt": "",
       "description": "The Indochinese tiger is a population of the Panthera tigris tigris subspecies that is native to Southeast Asia.",
       "path": "tests/cats/tigers/indochinese-tiger.md",
       "slug": "indochinese-tiger",

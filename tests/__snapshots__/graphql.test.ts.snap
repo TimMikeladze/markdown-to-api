@@ -28,7 +28,7 @@ The cougar is the second-largest cat in the New World, after the jaguar (Panther
 
 The cougar is an ambush predator that pursues a wide variety of prey. Primary food sources are ungulates, particularly deer, but it also hunts smaller prey such as rodents. It prefers habitats with dense underbrush and rocky areas for stalking, but also lives in open areas. The cougar is territorial and lives at low population densities. Individual home ranges depend on terrain, vegetation and abundance of prey. While large, it is not always the apex predator in its range, yielding prey it has killed to American black bears, grizzly bears and packs of wolves. It is reclusive and mostly avoids people. Fatal attacks on humans are rare, but increased in North America as more people entered cougar habitat and built farms.
 ",
-  "createdAt": "2022-08-18T21:49:39.354Z",
+  "createdAt": "",
   "description": "The cougar (Puma concolor) is a large cat native to the Americas.",
   "genus": "Puma",
   "id": "pumas-cougar",
@@ -63,7 +63,7 @@ Object {
   "count": 5,
   "results": Array [
     Object {
-      "createdAt": "2022-08-18T21:49:39.354Z",
+      "createdAt": "",
       "description": "The cougar (Puma concolor) is a large cat native to the Americas.",
       "id": "pumas-cougar",
       "match": Object {
@@ -86,7 +86,7 @@ Object {
       "title": "Cougar",
     },
     Object {
-      "createdAt": "2022-08-18T21:49:39.355Z",
+      "createdAt": "",
       "description": "The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera.",
       "id": "tigers-about-tigers",
       "match": Object {
@@ -109,7 +109,7 @@ Object {
       "title": "About Tigers",
     },
     Object {
-      "createdAt": "2022-08-18T21:49:39.354Z",
+      "createdAt": "",
       "description": "The lion (Panthera leo) is a large cat of the genus Panthera native to Africa and India. It has a muscular, broad-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail.",
       "id": "lions-about-lions",
       "match": Object {
@@ -132,7 +132,7 @@ Object {
       "title": "About Lions",
     },
     Object {
-      "createdAt": "2022-08-18T21:49:39.355Z",
+      "createdAt": "",
       "description": "The Bengal tiger is a population of the Panthera tigris tigris subspecies. It ranks among the biggest wild cats alive today. It is considered to belong to the world's charismatic megafauna.",
       "id": "tigers-bengal-tiger",
       "match": Object {
@@ -154,7 +154,7 @@ Object {
       "title": "Bengal Tiger",
     },
     Object {
-      "createdAt": "2022-08-18T21:49:39.355Z",
+      "createdAt": "",
       "description": "The Indochinese tiger is a population of the Panthera tigris tigris subspecies that is native to Southeast Asia.",
       "id": "tigers-indochinese-tiger",
       "match": Object {

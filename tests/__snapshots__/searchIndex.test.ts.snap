@@ -3,7 +3,7 @@
 exports[`search the index basic search 1`] = `
 Array [
   Object {
-    "createdAt": "2022-08-18T21:49:39.347Z",
+    "createdAt": "",
     "description": "",
     "id": "hello-world",
     "match": Object {
@@ -29,7 +29,7 @@ Array [
 exports[`search the index tag search 1`] = `
 Array [
   Object {
-    "createdAt": "2022-08-18T21:49:39.352Z",
+    "createdAt": "",
     "description": "",
     "id": "with-tags",
     "match": Object {

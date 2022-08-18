@@ -8,7 +8,7 @@ Object {
     5.142857142857143,
     1.1428571428571428,
     1.5714285714285714,
-    6,
+    1,
     3.142857142857143,
   ],
   "documentCount": 7,
@@ -37,7 +37,7 @@ Object {
       4,
       1,
       1,
-      6,
+      1,
       3,
     ],
     "1": Array [
@@ -46,7 +46,7 @@ Object {
       7,
       1,
       1,
-      6,
+      1,
       5,
     ],
     "2": Array [
@@ -55,7 +55,7 @@ Object {
       5,
       1,
       1,
-      6,
+      1,
       3,
     ],
     "3": Array [
@@ -64,7 +64,7 @@ Object {
       5,
       1,
       1,
-      6,
+      1,
       3,
     ],
     "4": Array [
@@ -73,7 +73,7 @@ Object {
       5,
       1,
       5,
-      6,
+      1,
       3,
     ],
     "5": Array [
@@ -82,7 +82,7 @@ Object {
       5,
       2,
       1,
-      6,
+      1,
       2,
     ],
     "6": Array [
@@ -91,7 +91,7 @@ Object {
       5,
       1,
       1,
-      6,
+      1,
       3,
     ],
   },
@@ -337,125 +337,6 @@ Object {
       },
     ],
     Array [
-      "352z",
-      Object {
-        "5": Object {
-          "5": 1,
-        },
-      },
-    ],
-    Array [
-      "351z",
-      Object {
-        "5": Object {
-          "4": 1,
-        },
-      },
-    ],
-    Array [
-      "350z",
-      Object {
-        "5": Object {
-          "3": 1,
-        },
-      },
-    ],
-    Array [
-      "349z",
-      Object {
-        "5": Object {
-          "2": 1,
-        },
-      },
-    ],
-    Array [
-      "348z",
-      Object {
-        "5": Object {
-          "1": 1,
-          "6": 1,
-        },
-      },
-    ],
-    Array [
-      "347z",
-      Object {
-        "5": Object {
-          "0": 1,
-        },
-      },
-    ],
-    Array [
-      "39",
-      Object {
-        "5": Object {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1,
-          "5": 1,
-          "6": 1,
-        },
-      },
-    ],
-    Array [
-      "49",
-      Object {
-        "5": Object {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1,
-          "5": 1,
-          "6": 1,
-        },
-      },
-    ],
-    Array [
-      "18t21",
-      Object {
-        "5": Object {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1,
-          "5": 1,
-          "6": 1,
-        },
-      },
-    ],
-    Array [
-      "08",
-      Object {
-        "5": Object {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1,
-          "5": 1,
-          "6": 1,
-        },
-      },
-    ],
-    Array [
-      "2022",
-      Object {
-        "5": Object {
-          "0": 1,
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1,
-          "5": 1,
-          "6": 1,
-        },
-      },
-    ],
-    Array [
       "md",
       Object {
         "2": Object {
@@ -505,7 +386,7 @@ Object {
   "serializationVersion": 2,
   "storedFields": Object {
     "0": Object {
-      "createdAt": "2022-08-18T21:49:39.347Z",
+      "createdAt": "",
       "description": "",
       "path": "tests/basic/hello.md",
       "slug": "hello-world",
@@ -513,7 +394,7 @@ Object {
       "title": "Hello",
     },
     "1": Object {
-      "createdAt": "2022-08-18T21:49:39.348Z",
+      "createdAt": "",
       "description": "",
       "path": "tests/basic/no-slug-or-title.md",
       "slug": "no-slug-or-title",
@@ -521,7 +402,7 @@ Object {
       "title": "no-slug-or-title",
     },
     "2": Object {
-      "createdAt": "2022-08-18T21:49:39.349Z",
+      "createdAt": "",
       "description": "",
       "path": "tests/basic/no-slug.md",
       "slug": "no-slug",
@@ -529,7 +410,7 @@ Object {
       "title": "No Slug",
     },
     "3": Object {
-      "createdAt": "2022-08-18T21:49:39.350Z",
+      "createdAt": "",
       "description": "",
       "path": "tests/basic/no-title.md",
       "slug": "no-title",
@@ -537,7 +418,7 @@ Object {
       "title": "no-title",
     },
     "4": Object {
-      "createdAt": "2022-08-18T21:49:39.351Z",
+      "createdAt": "",
       "description": "This is a description.",
       "path": "tests/basic/with-description.md",
       "slug": "with-description",
@@ -545,7 +426,7 @@ Object {
       "title": "With description",
     },
     "5": Object {
-      "createdAt": "2022-08-18T21:49:39.352Z",
+      "createdAt": "",
       "description": "",
       "path": "tests/basic/with-tags.md",
       "slug": "with-tags",
@@ -556,7 +437,7 @@ Object {
       "title": "With tags",
     },
     "6": Object {
-      "createdAt": "2022-08-18T21:49:39.348Z",
+      "createdAt": "",
       "description": "",
       "path": "tests/basic/nested/nested-file.md",
       "slug": "nested-file",
