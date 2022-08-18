@@ -6,7 +6,7 @@ export const typeDefs = gql`
   type Query {
     markdownFile(id: ID!): MarkdownFile!
     searchMarkdownFiles(text: String! options: MarkdownFileSearchOptions): MarkdownFileSearchResults!
-    autoSuggestMarkdownFileSearchs(text: String! options: MarkdownFileSearchOptions): MarkdownFileAutoSuggestResults!
+    autoSuggestMarkdownFileSearch(text: String! options: MarkdownFileSearchOptions): MarkdownFileAutoSuggestResults!
     markdownFileTags: [MarkdownFileTag!]!
   }
 

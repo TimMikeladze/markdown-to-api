@@ -11,6 +11,7 @@
   },
   "scripts": {
     "dev": "yarn build --watch --onSuccess \"yarn yalc:push\"",
+    "cli": "yarn build && node dist/cli.mjs",
     "yalc:push": "npx yalc push",
     "build": "tsup",
     "type-check": "tsc --noEmit",
@@ -25,7 +26,8 @@
   },
   "tsup": {
     "entry": [
-      "src/index.ts"
+      "src/index.ts",
+      "src/cli.ts"
     ],
     "treeshake": true,
     "sourcemap": true,
@@ -110,6 +112,7 @@
     "trim-newlines": ">=3.0.1"
   },
   "dependencies": {
+    "commander": "9.4.0",
     "deepmerge": "4.2.2",
     "globby": "13.1.2",
     "graphql-modules": "2.1.0",
