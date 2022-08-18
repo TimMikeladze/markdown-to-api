@@ -1,4 +1,4 @@
-import { MarkdownAPI } from '../src';
+import { MarkdownAPI } from '../src/MarkdownAPI';
 
 describe('getFile', () => {
   let mdapi: MarkdownAPI;
@@ -6,7 +6,6 @@ describe('getFile', () => {
     mdapi = new MarkdownAPI({
       directory: 'tests/basic',
     });
-    mdapi.init();
   });
 
   it('returns all files', () => {
@@ -15,13 +14,13 @@ describe('getFile', () => {
   });
 
   it('returns a file', () => {
-    const res = mdapi.getFile('tests/basic/hello-world');
+    const res = mdapi.getFile('basic/hello-world');
     expect(res).toBeDefined();
     expect(res).toMatchSnapshot();
   });
 
   it('does not return a file', () => {
-    const res = mdapi.getFile('tests/basic/dne');
+    const res = mdapi.getFile('basic/dne');
     expect(res).toBeUndefined();
   });
 });

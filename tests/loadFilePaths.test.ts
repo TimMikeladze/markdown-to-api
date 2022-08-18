@@ -1,4 +1,4 @@
-import { MarkdownAPI } from '../src';
+import { MarkdownAPI } from '../src/MarkdownAPI';
 
 describe('loadFilePaths', () => {
   it('loads all documents in the given path', () => {

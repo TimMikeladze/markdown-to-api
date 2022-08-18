@@ -1,11 +1,11 @@
 import { rmSync } from 'fs';
-import { MarkdownAPI } from '../src';
+import { MarkdownAPI } from '../src/MarkdownAPI';
 
 describe('loadIndexJSON', () => {
   beforeAll(() => {
-    (new MarkdownAPI({
+    new MarkdownAPI({
       directory: 'tests/cats',
-    }).init()).writeIndexJSON();
+    }).writeIndexJSON();
   });
 
   afterAll(() => {

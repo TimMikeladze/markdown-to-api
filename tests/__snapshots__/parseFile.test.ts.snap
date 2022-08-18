@@ -7,7 +7,7 @@ Object {
 ",
   "metadata": Object {
     "description": undefined,
-    "id": "tests/basic/no-slug",
+    "id": "basic/no-slug",
     "path": "tests/basic/no-slug.md",
     "slug": "no-slug",
     "tags": undefined,

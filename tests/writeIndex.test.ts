@@ -1,5 +1,5 @@
 import { existsSync, rmSync } from 'fs';
-import { MarkdownAPI } from '../src';
+import { MarkdownAPI } from '../src/MarkdownAPI';
 
 describe('writeIndexJSON', () => {
   afterAll(() => {
@@ -10,7 +10,7 @@ describe('writeIndexJSON', () => {
     const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
     });
-    mdapi.init();
+
     mdapi.writeIndexJSON();
     expect(existsSync('tests/cats/index.json')).toBe(true);
   });

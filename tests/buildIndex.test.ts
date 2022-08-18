@@ -1,9 +1,9 @@
-import { MarkdownAPI } from '../src';
+import { MarkdownAPI } from '../src/MarkdownAPI';
 
 it('builds an index', () => {
   const mdapi = new MarkdownAPI({
     directory: 'tests/basic',
   });
-  mdapi.init();
+
   expect(mdapi.getIndex()).toMatchSnapshot();
 });

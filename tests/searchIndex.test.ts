@@ -1,4 +1,4 @@
-import { MarkdownAPI } from '../src';
+import { MarkdownAPI } from '../src/MarkdownAPI';
 
 describe('search the index', () => {
   let mdapi: MarkdownAPI;
@@ -6,7 +6,6 @@ describe('search the index', () => {
     mdapi = new MarkdownAPI({
       directory: 'tests/basic',
     });
-    mdapi.init();
   });
 
   it('basic search', () => {

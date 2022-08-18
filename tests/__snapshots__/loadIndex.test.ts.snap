@@ -12,9 +12,9 @@ Object {
   ],
   "documentCount": 3,
   "documentIds": Object {
-    "0": "tests/cats/pumas/messi",
-    "1": "tests/cats/pumas/about",
-    "2": "tests/cats/tigers/about",
+    "0": "cats/pumas/messi",
+    "1": "cats/pumas/about",
+    "2": "cats/tigers/about",
   },
   "fieldIds": Object {
     "description": 4,

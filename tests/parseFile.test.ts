@@ -1,4 +1,4 @@
-import { MarkdownAPI } from '../src';
+import { MarkdownAPI } from '../src/MarkdownAPI';
 
 describe('parseFile', () => {
   it('no-slug', () => {

@@ -1,0 +1,492 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GraphQLModule can query for a file 1`] = `
+Object {
+  "content": "
+Messi was born in a zoo at Saransk, Russia. He was one of three newborn cougars at the zoo to be named after professional football players for currently Paris Saint-Germain and former FC Barcelona; Messi was named after Lionel Messi, and the other two were named Suarez and Neymar. The cubs were given these names because Saransk was one of several cities proposed to host the 2018 FIFA World Cup in Russia. Messi was later sold to a petting zoo in Penza when he was three months old.
+
+Messi was significantly smaller than other typical male cougars, and as the species is not native to Russia, he could not be released into the wild. He had numerous other health problems as well, which deemed him unable to live in a zoo or wildlife sanctuary either. Furthermore, workers at the petting zoo originally planned to euthanize him.
+",
+  "description": undefined,
+  "genus": "Puma",
+  "id": "cats/pumas/messi",
+  "metadata": Object {
+    "description": undefined,
+    "genus": "Puma",
+    "id": "cats/pumas/messi",
+    "path": "tests/cats/pumas/messi.md",
+    "slug": "messi",
+    "tags": Array [
+      "cat",
+      "puma",
+    ],
+    "title": "Messi",
+  },
+  "path": "tests/cats/pumas/messi.md",
+  "slug": "messi",
+  "strippedContent": "Messi was born in a zoo at Saransk, Russia. He was one of three newborn cougars at the zoo to be named after professional football players for currently Paris Saint-Germain and former FC Barcelona; Messi was named after Lionel Messi, and the other two were named Suarez and Neymar. The cubs were given these names because Saransk was one of several cities proposed to host the 2018 FIFA World Cup in Russia. Messi was later sold to a petting zoo in Penza when he was three months old.
+
+Messi was significantly smaller than other typical male cougars, and as the species is not native to Russia, he could not be released into the wild. He had numerous other health problems as well, which deemed him unable to live in a zoo or wildlife sanctuary either. Furthermore, workers at the petting zoo originally planned to euthanize him.
+",
+  "tags": Array [
+    "cat",
+    "puma",
+  ],
+  "title": "Messi",
+}
+`;
+
+exports[`GraphQLModule creates a GraphQLModule 1`] = `
+Array [
+  Object {
+    "definitions": Array [
+      Object {
+        "description": undefined,
+        "directives": Array [],
+        "fields": Array [
+          Object {
+            "arguments": Array [
+              Object {
+                "defaultValue": undefined,
+                "description": undefined,
+                "directives": Array [],
+                "kind": "InputValueDefinition",
+                "loc": Object {
+                  "end": 40,
+                  "start": 33,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 35,
+                    "start": 33,
+                  },
+                  "value": "id",
+                },
+                "type": Object {
+                  "kind": "NonNullType",
+                  "loc": Object {
+                    "end": 40,
+                    "start": 37,
+                  },
+                  "type": Object {
+                    "kind": "NamedType",
+                    "loc": Object {
+                      "end": 39,
+                      "start": 37,
+                    },
+                    "name": Object {
+                      "kind": "Name",
+                      "loc": Object {
+                        "end": 39,
+                        "start": 37,
+                      },
+                      "value": "ID",
+                    },
+                  },
+                },
+              },
+            ],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 56,
+              "start": 20,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 32,
+                "start": 20,
+              },
+              "value": "markdownFile",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 56,
+                "start": 43,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 55,
+                  "start": 43,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 55,
+                    "start": 43,
+                  },
+                  "value": "MarkdownFile",
+                },
+              },
+            },
+          },
+        ],
+        "interfaces": Array [],
+        "kind": "ObjectTypeDefinition",
+        "loc": Object {
+          "end": 60,
+          "start": 3,
+        },
+        "name": Object {
+          "kind": "Name",
+          "loc": Object {
+            "end": 13,
+            "start": 8,
+          },
+          "value": "Query",
+        },
+      },
+      Object {
+        "description": undefined,
+        "directives": Array [],
+        "fields": Array [
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 94,
+              "start": 87,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 89,
+                "start": 87,
+              },
+              "value": "id",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 94,
+                "start": 91,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 93,
+                  "start": 91,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 93,
+                    "start": 91,
+                  },
+                  "value": "ID",
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 112,
+              "start": 99,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 103,
+                "start": 99,
+              },
+              "value": "path",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 112,
+                "start": 105,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 111,
+                  "start": 105,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 111,
+                    "start": 105,
+                  },
+                  "value": "String",
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 130,
+              "start": 117,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 121,
+                "start": 117,
+              },
+              "value": "slug",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 130,
+                "start": 123,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 129,
+                  "start": 123,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 129,
+                    "start": 123,
+                  },
+                  "value": "String",
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 150,
+              "start": 135,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 139,
+                "start": 135,
+              },
+              "value": "tags",
+            },
+            "type": Object {
+              "kind": "ListType",
+              "loc": Object {
+                "end": 150,
+                "start": 141,
+              },
+              "type": Object {
+                "kind": "NonNullType",
+                "loc": Object {
+                  "end": 149,
+                  "start": 142,
+                },
+                "type": Object {
+                  "kind": "NamedType",
+                  "loc": Object {
+                    "end": 148,
+                    "start": 142,
+                  },
+                  "name": Object {
+                    "kind": "Name",
+                    "loc": Object {
+                      "end": 148,
+                      "start": 142,
+                    },
+                    "value": "String",
+                  },
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 169,
+              "start": 155,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 160,
+                "start": 155,
+              },
+              "value": "title",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 169,
+                "start": 162,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 168,
+                  "start": 162,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 168,
+                    "start": 162,
+                  },
+                  "value": "String",
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 193,
+              "start": 174,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 185,
+                "start": 174,
+              },
+              "value": "description",
+            },
+            "type": Object {
+              "kind": "NamedType",
+              "loc": Object {
+                "end": 193,
+                "start": 187,
+              },
+              "name": Object {
+                "kind": "Name",
+                "loc": Object {
+                  "end": 193,
+                  "start": 187,
+                },
+                "value": "String",
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 214,
+              "start": 198,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 205,
+                "start": 198,
+              },
+              "value": "content",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 214,
+                "start": 207,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 213,
+                  "start": 207,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 213,
+                    "start": 207,
+                  },
+                  "value": "String",
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 243,
+              "start": 219,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 234,
+                "start": 219,
+              },
+              "value": "strippedContent",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 243,
+                "start": 236,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 242,
+                  "start": 236,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 242,
+                    "start": 236,
+                  },
+                  "value": "String",
+                },
+              },
+            },
+          },
+        ],
+        "interfaces": Array [],
+        "kind": "ObjectTypeDefinition",
+        "loc": Object {
+          "end": 247,
+          "start": 63,
+        },
+        "name": Object {
+          "kind": "Name",
+          "loc": Object {
+            "end": 80,
+            "start": 68,
+          },
+          "value": "MarkdownFile",
+        },
+      },
+    ],
+    "kind": "Document",
+    "loc": Object {
+      "end": 248,
+      "start": 0,
+    },
+  },
+]
+`;

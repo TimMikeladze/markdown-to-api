@@ -1,8 +1,7 @@
-import { MarkdownAPI } from '../src';
+import { MarkdownAPI } from '../src/MarkdownAPI';
 
 it('throws errors if required fields are missing', () => {
-  const mdapi = new MarkdownAPI({
+  expect(() => new MarkdownAPI({
     directory: 'tests/required-fields',
-  });
-  expect(mdapi.init).toThrowError();
+  })).toThrowError();
 });
