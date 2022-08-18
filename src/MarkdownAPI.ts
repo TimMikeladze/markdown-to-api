@@ -4,13 +4,16 @@ import slugify from 'slugify';
 import MiniSearch, { Options as MiniSearchOptions } from 'minisearch';
 import { remark } from 'remark';
 import strip from 'strip-markdown';
-import { existsSync, readFileSync, writeFileSync } from 'fs';
+import {
+  existsSync, readFileSync, statSync, writeFileSync,
+} from 'fs';
 import { parse } from 'yaml';
 import deepmerge from 'deepmerge';
 
 const toSlug = (string: string): string => slugify(string, { lower: true, strict: true });
 
 export interface FileMetadata {
+  createdAt: string;
   description?: string;
   id: string,
   path: string,
@@ -67,7 +70,7 @@ export class MarkdownAPI {
 
   private miniSearch!: MiniSearch;
 
-  private files!: Map<string, ParsedFile>;
+  private fileMap!: Map<string, ParsedFile>;
 
   private readonly options: Options;
 
@@ -85,7 +88,7 @@ export class MarkdownAPI {
   public init() {
     this.config = this.loadConfig();
     this.filePaths = this.loadFilePaths();
-    this.files = this.loadFiles();
+    this.fileMap = this.loadFiles();
     if (this.options.useIndex && existsSync(this.getIndexPath())) {
       this.miniSearch = this.loadIndexJSON();
     } else {
@@ -98,11 +101,13 @@ export class MarkdownAPI {
 
   public parseFile(path: string): ParsedFile {
     const output = matter(readFileSync(path, 'utf8'));
+    const stats = statSync(path);
+    const birthTime = stats.birthtime;
 
     let {
       data: {
         // eslint-disable-next-line prefer-const
-        id, title, slug, tags, description,
+        id, title, slug, tags, description, createdAt = birthTime.toISOString(),
       },
     }: {
       data: Partial<FileMetadata>;
@@ -148,6 +153,7 @@ export class MarkdownAPI {
         path,
         tags,
         description,
+        createdAt,
         ...extraFields,
       },
       content: output.content,
@@ -240,17 +246,25 @@ export class MarkdownAPI {
       ...this.options.miniSearchOptions,
     });
 
-    miniSearch.addAll(Array.from(this.files.values()).map((x) => ({ ...x.metadata, ...x })));
+    miniSearch.addAll(Array.from(this.fileMap.values()).map((x) => ({ ...x.metadata, ...x })));
 
     return miniSearch;
   }
 
   public getFile(id: string): ParsedFile | undefined {
-    return this.files.get(id);
+    return this.fileMap.get(id);
   }
 
-  public getFiles(): Map<string, ParsedFile> {
-    return this.files;
+  public getFileMap(): Map<string, ParsedFile> {
+    return this.fileMap;
+  }
+
+  public getFiles(direction: 'desc' | 'asc', limit?: number): ParsedFile[] {
+    return Array.from(this.fileMap.values()).sort((a, b) => {
+      const dateA = new Date(a.metadata.createdAt);
+      const dateB = new Date(b.metadata.createdAt);
+      return direction === 'desc' ? dateB.getTime() - dateA.getTime() : dateA.getTime() - dateB.getTime();
+    }).slice(0, limit);
   }
 
   public getIndex() {
