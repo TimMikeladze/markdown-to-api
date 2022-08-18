@@ -1,7 +1,7 @@
 import { globbySync } from 'globby';
 import matter from 'gray-matter';
 import slugify from 'slugify';
-import MiniSearch from 'minisearch';
+import MiniSearch, { Options as MiniSearchOptions } from 'minisearch';
 import { remark } from 'remark';
 import strip from 'strip-markdown';
 import { existsSync, readFileSync, writeFileSync } from 'fs';
@@ -28,6 +28,7 @@ export interface Options {
   configPath?: string;
   directory: string;
   indexPath?: string;
+  miniSearchOptions: MiniSearchOptions<any>;
 }
 
 export interface Config {
@@ -71,6 +72,10 @@ export class MarkdownAPI {
   constructor(options: Options) {
     this.options = options;
     this.init();
+  }
+
+  public getOptions(): Options {
+    return this.options;
   }
 
   public init() {
@@ -212,6 +217,7 @@ export class MarkdownAPI {
   public buildIndex(): MiniSearch {
     const miniSearch = new MiniSearch({
       ...this.getIndexFields(),
+      ...this.options.miniSearchOptions,
     });
 
     miniSearch.addAll(Array.from(this.files.values()).map((x) => ({ ...x.metadata, ...x })));
@@ -247,6 +253,7 @@ export class MarkdownAPI {
     if (this.getIndexPath()) {
       return MiniSearch.loadJSON(readFileSync(this.getIndexPath(), 'utf8'), {
         ...this.getIndexFields(),
+        ...this.options.miniSearchOptions,
       });
     }
     throw new Error('No index path provided');

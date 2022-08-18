@@ -1,11 +1,13 @@
 import { createModule, gql } from 'graphql-modules';
+import { SearchOptions } from 'minisearch';
 import { MarkdownAPI, Options } from './MarkdownAPI';
 
 export const typeDefs = gql`
   type Query {
     markdownFile(id: ID!): MarkdownFile!
-    searchMarkdownFiles(text: String!): MarkdownFileSearchResults!
+    searchMarkdownFiles(text: String! options: MarkdownFileSearchOptions): MarkdownFileSearchResults!
   }
+
   type MarkdownFile {
     id: ID!
     path: String!
@@ -33,6 +35,25 @@ export const typeDefs = gql`
     tags: [String!]
     markdownFile: MarkdownFile!
   }
+
+  input MarkdownFileSearchOptions {
+    fields: [String!]
+    weights: MarkdownFileSearchOptionsWeights
+    prefix: Boolean
+    fuzzy: Boolean
+    maxFuzzy: Int
+    combineWith: MarkdownFileSearchOptionsCombineWith
+  }
+
+  enum MarkdownFileSearchOptionsCombineWith {
+    AND
+    OR
+  }
+
+  input MarkdownFileSearchOptionsWeights {
+    fuzzy: Float!
+    exact: Float!
+  }
 `;
 
 export const getResolvers = (mdapi: MarkdownAPI) => ({
@@ -47,8 +68,11 @@ export const getResolvers = (mdapi: MarkdownAPI) => ({
         ...file.metadata,
       };
     },
-    searchMarkdownFiles(_: any, { text }: { text: string }) {
-      const results = mdapi.getIndex().search(text);
+    searchMarkdownFiles(_: any, { text, options }: { options: SearchOptions, text: string }) {
+      const results = mdapi.getIndex().search(text, {
+        ...mdapi.getOptions(),
+        ...options,
+      });
       return {
         count: results.length,
         results,
