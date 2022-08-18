@@ -5,7 +5,7 @@ Object {
   "count": 1,
   "results": Array [
     Object {
-      "score": 11.339703517646557,
+      "score": 14.74233631787636,
       "suggestion": "cat tiger tigers",
       "terms": Array [
         "cat",
@@ -20,57 +20,54 @@ Object {
 exports[`createMarkdownAPIModule can query for a file 1`] = `
 Object {
   "content": "
-Messi was born in a zoo at Saransk, Russia. He was one of three newborn cougars at the zoo to be named after professional football players for currently Paris Saint-Germain and former FC Barcelona; Messi was named after Lionel Messi, and the other two were named Suarez and Neymar. The cubs were given these names because Saransk was one of several cities proposed to host the 2018 FIFA World Cup in Russia. Messi was later sold to a petting zoo in Penza when he was three months old.
+# Cougar
 
-Messi was significantly smaller than other typical male cougars, and as the species is not native to Russia, he could not be released into the wild. He had numerous other health problems as well, which deemed him unable to live in a zoo or wildlife sanctuary either. Furthermore, workers at the petting zoo originally planned to euthanize him.
+The cougar (Puma concolor) is a large cat native to the Americas. Its range spans from the Canadian Yukon to the southern Andes in South America and is the most widespread of any large wild terrestrial mammal in the Western Hemisphere. It is an adaptable, generalist species, occurring in most American habitat types. Due to its wide range, it has many names, including puma, mountain lion, catamount and panther.
+
+The cougar is the second-largest cat in the New World, after the jaguar (Panthera onca). Secretive and largely solitary by nature, the cougar is properly considered both nocturnal and crepuscular, although daytime sightings do occur. Despite its size, the cougar is more closely related to smaller felines, including the domestic cat (Felis catus) than to any species of the subfamily Pantherinae.
+
+The cougar is an ambush predator that pursues a wide variety of prey. Primary food sources are ungulates, particularly deer, but it also hunts smaller prey such as rodents. It prefers habitats with dense underbrush and rocky areas for stalking, but also lives in open areas. The cougar is territorial and lives at low population densities. Individual home ranges depend on terrain, vegetation and abundance of prey. While large, it is not always the apex predator in its range, yielding prey it has killed to American black bears, grizzly bears and packs of wolves. It is reclusive and mostly avoids people. Fatal attacks on humans are rare, but increased in North America as more people entered cougar habitat and built farms.
 ",
-  "createdAt": "2022-08-13T10:23:21.655Z",
-  "description": "A happy cat",
+  "createdAt": "2022-08-18T20:02:54.142Z",
+  "description": "The cougar (Puma concolor) is a large cat native to the Americas.",
   "genus": "Puma",
-  "id": "cats-pumas-messi",
-  "metadata": Object {
-    "createdAt": "2022-08-13T10:23:21.655Z",
-    "description": "A happy cat",
-    "genus": "Puma",
-    "id": "cats-pumas-messi",
-    "path": "tests/cats/pumas/messi.md",
-    "slug": "messi",
-    "tags": Array [
-      "cat",
-      "puma",
-    ],
-    "title": "Messi",
-  },
-  "path": "tests/cats/pumas/messi.md",
-  "slug": "messi",
-  "strippedContent": "Messi was born in a zoo at Saransk, Russia. He was one of three newborn cougars at the zoo to be named after professional football players for currently Paris Saint-Germain and former FC Barcelona; Messi was named after Lionel Messi, and the other two were named Suarez and Neymar. The cubs were given these names because Saransk was one of several cities proposed to host the 2018 FIFA World Cup in Russia. Messi was later sold to a petting zoo in Penza when he was three months old.
+  "id": "pumas-cougar",
+  "path": "tests/cats/pumas/cougar.md",
+  "slug": "cougar",
+  "strippedContent": "Cougar
 
-Messi was significantly smaller than other typical male cougars, and as the species is not native to Russia, he could not be released into the wild. He had numerous other health problems as well, which deemed him unable to live in a zoo or wildlife sanctuary either. Furthermore, workers at the petting zoo originally planned to euthanize him.
+The cougar (Puma concolor) is a large cat native to the Americas. Its range spans from the Canadian Yukon to the southern Andes in South America and is the most widespread of any large wild terrestrial mammal in the Western Hemisphere. It is an adaptable, generalist species, occurring in most American habitat types. Due to its wide range, it has many names, including puma, mountain lion, catamount and panther.
+
+The cougar is the second-largest cat in the New World, after the jaguar (Panthera onca). Secretive and largely solitary by nature, the cougar is properly considered both nocturnal and crepuscular, although daytime sightings do occur. Despite its size, the cougar is more closely related to smaller felines, including the domestic cat (Felis catus) than to any species of the subfamily Pantherinae.
+
+The cougar is an ambush predator that pursues a wide variety of prey. Primary food sources are ungulates, particularly deer, but it also hunts smaller prey such as rodents. It prefers habitats with dense underbrush and rocky areas for stalking, but also lives in open areas. The cougar is territorial and lives at low population densities. Individual home ranges depend on terrain, vegetation and abundance of prey. While large, it is not always the apex predator in its range, yielding prey it has killed to American black bears, grizzly bears and packs of wolves. It is reclusive and mostly avoids people. Fatal attacks on humans are rare, but increased in North America as more people entered cougar habitat and built farms.
 ",
   "tags": Array [
     "cat",
     "puma",
   ],
-  "title": "Messi",
+  "title": "Cougar",
 }
 `;
 
 exports[`createMarkdownAPIModule can search for files 1`] = `
 Object {
-  "count": 3,
+  "count": 5,
   "results": Array [
     Object {
-      "description": "A happy cat",
-      "id": "cats-pumas-messi",
+      "createdAt": "2022-08-18T20:02:54.142Z",
+      "description": "The cougar (Puma concolor) is a large cat native to the Americas.",
+      "id": "pumas-cougar",
       "match": Object {
         "cat": Array [
           "tags",
           "description",
+          "strippedContent",
         ],
       },
-      "path": "tests/cats/pumas/messi.md",
-      "score": 1.4420433159390948,
-      "slug": "messi",
+      "path": "tests/cats/pumas/cougar.md",
+      "score": 1.6449438295294794,
+      "slug": "cougar",
       "tags": Array [
         "cat",
         "puma",
@@ -78,41 +75,22 @@ Object {
       "terms": Array [
         "cat",
       ],
-      "title": "Messi",
+      "title": "Cougar",
     },
     Object {
-      "description": "",
-      "id": "cats-pumas-about",
+      "createdAt": "2022-08-18T20:10:45.477Z",
+      "description": "The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera.",
+      "id": "tigers-about-tigers",
       "match": Object {
         "cat": Array [
           "tags",
+          "description",
           "strippedContent",
         ],
       },
-      "path": "tests/cats/pumas/puma.md",
-      "score": 1.0082498727184037,
-      "slug": "about",
-      "tags": Array [
-        "cat",
-        "puma",
-      ],
-      "terms": Array [
-        "cat",
-      ],
-      "title": "About",
-    },
-    Object {
-      "description": "",
-      "id": "cats-tigers-about",
-      "match": Object {
-        "cat": Array [
-          "tags",
-          "strippedContent",
-        ],
-      },
-      "path": "tests/cats/tigers/about.md",
-      "score": 0.8043337403252361,
-      "slug": "about",
+      "path": "tests/cats/tigers/about-tigers.md",
+      "score": 1.4145958488973376,
+      "slug": "about-tigers",
       "tags": Array [
         "cat",
         "tiger",
@@ -120,7 +98,73 @@ Object {
       "terms": Array [
         "cat",
       ],
-      "title": "About",
+      "title": "About Tigers",
+    },
+    Object {
+      "createdAt": "2022-08-18T20:12:07.374Z",
+      "description": "The lion (Panthera leo) is a large cat of the genus Panthera native to Africa and India. It has a muscular, broad-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail.",
+      "id": "lions-about-lions",
+      "match": Object {
+        "cat": Array [
+          "tags",
+          "description",
+          "strippedContent",
+        ],
+      },
+      "path": "tests/cats/lions/about-lions.md",
+      "score": 1.2603093569990829,
+      "slug": "about-lions",
+      "tags": Array [
+        "cat",
+        "lion",
+      ],
+      "terms": Array [
+        "cat",
+      ],
+      "title": "About Lions",
+    },
+    Object {
+      "createdAt": "2022-08-18T20:09:27.342Z",
+      "description": "The Bengal tiger is a population of the Panthera tigris tigris subspecies. It ranks among the biggest wild cats alive today. It is considered to belong to the world's charismatic megafauna.",
+      "id": "tigers-bengal-tiger",
+      "match": Object {
+        "cat": Array [
+          "tags",
+          "strippedContent",
+        ],
+      },
+      "path": "tests/cats/tigers/bengal-tiger.md",
+      "score": 0.5486338138728774,
+      "slug": "bengal-tiger",
+      "tags": Array [
+        "cat",
+        "tiger",
+      ],
+      "terms": Array [
+        "cat",
+      ],
+      "title": "Bengal Tiger",
+    },
+    Object {
+      "createdAt": "2022-08-18T20:10:15.355Z",
+      "description": "The Indochinese tiger is a population of the Panthera tigris tigris subspecies that is native to Southeast Asia.",
+      "id": "tigers-indochinese-tiger",
+      "match": Object {
+        "cat": Array [
+          "tags",
+        ],
+      },
+      "path": "tests/cats/tigers/indochinese-tiger.md",
+      "score": 0.13051706548444453,
+      "slug": "indochinese-tiger",
+      "tags": Array [
+        "cat",
+        "tiger",
+      ],
+      "terms": Array [
+        "cat",
+      ],
+      "title": "Indochinese Tiger",
     },
   ],
 }
@@ -129,21 +173,24 @@ Object {
 exports[`createMarkdownAPIModule creates a GraphQLModule 1`] = `
 Array [
   "type Query {
+  countMarkdownFiles: Int
   markdownFile(id: ID!): MarkdownFile!
-  searchMarkdownFiles(text: String!, options: MarkdownFileSearchOptions): MarkdownFileSearchResults!
+  markdownFiles(direction: MarkdownFilesSortDirection, limit: Int, offset: Int): [MarkdownFile!]!
+  searchMarkdownFiles(text: String!, options: MarkdownFileSearchOptions, limit: Int, offset: Int): MarkdownFileSearchResults!
   autoSuggestMarkdownFileSearch(text: String!, options: MarkdownFileSearchOptions): MarkdownFileAutoSuggestResults!
   markdownFileTags: [MarkdownFileTag!]!
 }
 
 type MarkdownFile {
+  content: String!
+  strippedContent: String!
   id: ID!
   path: String!
   slug: String!
   tags: [String!]
   title: String!
   description: String
-  content: String!
-  strippedContent: String!
+  createdAt: String!
 }
 
 type MarkdownFileSearchResults {
@@ -160,6 +207,7 @@ type MarkdownFileSearchResult {
   slug: String!
   path: String!
   tags: [String!]
+  createdAt: String!
   markdownFile: MarkdownFile!
 }
 
@@ -196,6 +244,16 @@ enum MarkdownFileSearchOptionsCombineWith {
 input MarkdownFileSearchOptionsWeights {
   fuzzy: Float!
   exact: Float!
+}
+
+enum MarkdownFilesSortDirection {
+  asc
+  desc
+}
+
+enum MarkdownFilesSortBy {
+  title
+  createdAt
 }",
 ]
 `;

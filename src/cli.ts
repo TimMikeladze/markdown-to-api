@@ -29,7 +29,9 @@ try {
 
   mdapi.writeIndexJSON();
 
+  // eslint-disable-next-line no-console
   console.log(`Search index written to: ${mdapi.getIndexPath()}`);
 } catch (err: any) {
+  // eslint-disable-next-line no-console
   console.error(err.message);
 }

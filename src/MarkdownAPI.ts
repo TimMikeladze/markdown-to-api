@@ -12,20 +12,16 @@ import deepmerge from 'deepmerge';
 
 const toSlug = (string: string): string => slugify(string, { lower: true, strict: true });
 
-export interface FileMetadata {
-  createdAt: string;
-  description?: string;
-  id: string,
-  path: string,
-  slug?: string;
-  tags?: string[];
-  title?: string;
-}
-
 export interface ParsedFile {
   content: string;
-  metadata: FileMetadata;
+  createdAt: string;
+  description: string;
+  id: string,
+  path: string,
+  slug: string;
   strippedContent: string;
+  tags: string[];
+  title: string;
 }
 
 export interface Options {
@@ -105,13 +101,9 @@ export class MarkdownAPI {
     const birthTime = stats.birthtime;
 
     let {
-      data: {
-        // eslint-disable-next-line prefer-const
-        id, title, slug, tags, description, createdAt = birthTime.toISOString(),
-      },
-    }: {
-      data: Partial<FileMetadata>;
-    } = output;
+      // eslint-disable-next-line prefer-const
+      id, title, slug, tags, description, createdAt = birthTime.toISOString(),
+    } = output.data;
 
     if (!title || !title.trim().length) {
       title = path.split('/').pop()?.split('.').shift();
@@ -122,7 +114,7 @@ export class MarkdownAPI {
     }
 
     if (!id) {
-      const parts = path.split('/');
+      const parts = path.replace(this.options.directory, '').split('/');
       id = `${parts.slice(1, parts.length - 1).join('-')}-${slug}`;
     }
 
@@ -130,6 +122,10 @@ export class MarkdownAPI {
 
     if (!description) {
       description = '';
+    }
+
+    if (!tags) {
+      tags = [];
     }
 
     const defaultFieldKeys = Object.keys(defaultConfig.fields || {});
@@ -146,16 +142,14 @@ export class MarkdownAPI {
     const strippedContent = (MarkdownAPI.stripper.processSync(output.content)).toString();
 
     return {
-      metadata: {
-        id,
-        title,
-        slug,
-        path,
-        tags,
-        description,
-        createdAt,
-        ...extraFields,
-      },
+      id,
+      title,
+      slug,
+      path,
+      tags,
+      description,
+      createdAt,
+      ...extraFields,
       content: output.content,
       strippedContent,
     };
@@ -212,14 +206,14 @@ export class MarkdownAPI {
       errors = [
         ...errors,
         ...requiredFields.reduce<string[]>((res, requiredField) => {
-          if (requiredField && !((file.metadata as any)[requiredField])) {
-            return [...res, `Missing required field '${requiredField}' in ${file.metadata.path}`];
+          if (requiredField && !((file as any)[requiredField])) {
+            return [...res, `Missing required field '${requiredField}' in ${file.path}`];
           }
           return res;
         }, []),
       ];
 
-      map.set(file.metadata.id, file);
+      map.set(file.id, file);
 
       return map;
     }, new Map<string, ParsedFile>());
@@ -233,7 +227,7 @@ export class MarkdownAPI {
 
   // eslint-disable-next-line class-methods-use-this
   public getIndexFields() {
-    const fields = ['title', 'slug', 'path', 'tags', 'description'];
+    const fields = ['title', 'slug', 'path', 'tags', 'description', 'createdAt'];
     return {
       fields: [...fields, 'strippedContent'],
       storeFields: fields,
@@ -246,7 +240,7 @@ export class MarkdownAPI {
       ...this.options.miniSearchOptions,
     });
 
-    miniSearch.addAll(Array.from(this.fileMap.values()).map((x) => ({ ...x.metadata, ...x })));
+    miniSearch.addAll(Array.from(this.fileMap.values()).map((x) => ({ ...x })));
 
     return miniSearch;
   }
@@ -259,12 +253,29 @@ export class MarkdownAPI {
     return this.fileMap;
   }
 
-  public getFiles(direction: 'desc' | 'asc', limit?: number): ParsedFile[] {
+  public getFiles(
+    sortBy: 'createdAt' | 'title' = 'title',
+    direction: 'desc' | 'asc' = 'asc',
+    limit: number | undefined = undefined,
+    offset: number | undefined = undefined,
+  ): ParsedFile[] {
     return Array.from(this.fileMap.values()).sort((a, b) => {
-      const dateA = new Date(a.metadata.createdAt);
-      const dateB = new Date(b.metadata.createdAt);
-      return direction === 'desc' ? dateB.getTime() - dateA.getTime() : dateA.getTime() - dateB.getTime();
-    }).slice(0, limit);
+      if (sortBy === 'createdAt') {
+        const dateA = new Date(a.createdAt);
+        const dateB = new Date(b.createdAt);
+        return direction === 'desc' ? dateB.getTime() - dateA.getTime() : dateA.getTime() - dateB.getTime();
+      }
+      if (sortBy === 'title') {
+        return direction === 'desc'
+          ? b.title.localeCompare(a.title)
+          : a.title.localeCompare(b.title);
+      }
+      return 0;
+    }).slice(offset || 0, limit);
+  }
+
+  public countFiles(): number {
+    return this.fileMap.size;
   }
 
   public getIndex() {
@@ -296,4 +307,29 @@ export class MarkdownAPI {
   public getFilePaths(): string[] {
     return this.filePaths;
   }
+
+  public getStaticPaths = (options:{
+    direction?: 'desc' | 'asc',
+    fallback: boolean | 'blocking',
+    limit?: number | undefined,
+    offset?: number | undefined,
+    paramKey?: string
+    sortBy?: 'createdAt' | 'title'
+  } = {
+    fallback: false,
+    paramKey: 'id',
+  }) => () => ({
+    fallback: options.fallback,
+    paths: this.getFiles(options.sortBy, options.direction, options.limit, options.offset).map((file) => ({
+      params: { [options.paramKey as string]: file.id },
+    })),
+  });
+
+  public getStaticProps = (paramKey = 'id', propKey = 'file') => (context: {
+    params: { [key: string]: string };
+  }) => ({
+    props: {
+      [propKey]: this.getFile(context.params[paramKey]),
+    },
+  });
 }

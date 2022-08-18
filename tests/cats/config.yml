@@ -1,9 +1,12 @@
 tags:
   cat:
+    description: Fits into any box.
   puma:
     description: Puma is a large cat, also known as a mountain lion.
   tiger:
     description: Tiger is a very large cat.
+  lion:
+    description: Lions have manes.
 fields:
   tags:
     required: true

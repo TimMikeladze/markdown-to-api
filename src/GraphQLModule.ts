@@ -4,21 +4,29 @@ import { MarkdownAPI, Options } from './MarkdownAPI';
 
 export const typeDefs = gql`
   type Query {
+    countMarkdownFiles: Int
     markdownFile(id: ID!): MarkdownFile!
-    searchMarkdownFiles(text: String! options: MarkdownFileSearchOptions): MarkdownFileSearchResults!
+    markdownFiles(direction: MarkdownFilesSortDirection limit: Int offset: Int): [MarkdownFile!]!
+    searchMarkdownFiles(
+      text: String!
+      options: MarkdownFileSearchOptions
+      limit: Int
+      offset: Int):
+    MarkdownFileSearchResults!
     autoSuggestMarkdownFileSearch(text: String! options: MarkdownFileSearchOptions): MarkdownFileAutoSuggestResults!
     markdownFileTags: [MarkdownFileTag!]!
   }
 
   type MarkdownFile {
+    content: String!
+    strippedContent: String!
     id: ID!
     path: String!
     slug: String!
     tags: [String!]
     title: String!
     description: String
-    content: String!
-    strippedContent: String!
+    createdAt: String!
   }
 
   type MarkdownFileSearchResults {
@@ -35,6 +43,7 @@ export const typeDefs = gql`
     slug: String!
     path: String!
     tags: [String!]
+    createdAt: String!
     markdownFile: MarkdownFile!
   }
 
@@ -72,10 +81,23 @@ export const typeDefs = gql`
     fuzzy: Float!
     exact: Float!
   }
+
+  enum MarkdownFilesSortDirection {
+    asc
+    desc
+  }
+
+  enum MarkdownFilesSortBy {
+    title
+    createdAt
+  }
 `;
 
 export const getResolvers = (mdapi: MarkdownAPI) => ({
   Query: {
+    countMarkdownFiles() {
+      return mdapi.countFiles();
+    },
     markdownFileTags() {
       return mdapi.getTags();
     },
@@ -84,10 +106,7 @@ export const getResolvers = (mdapi: MarkdownAPI) => ({
       if (!file) {
         throw new Error(`File not found: ${id}`);
       }
-      return {
-        ...file,
-        ...file.metadata,
-      };
+      return file;
     },
     autoSuggestMarkdownFileSearch(_: any, { text, options }: { options?: SearchOptions, text: string; }) {
       const results = mdapi.getIndex().autoSuggest(text, {
@@ -99,15 +118,26 @@ export const getResolvers = (mdapi: MarkdownAPI) => ({
         results,
       };
     },
-    searchMarkdownFiles(_: any, { text, options }: { options?: SearchOptions, text: string }) {
+    searchMarkdownFiles(_: any, {
+      text, options, limit, offset,
+    }: { limit?: number, offset?: number; options?: SearchOptions, text: string }) {
       const results = mdapi.getIndex().search(text, {
         ...mdapi.getOptions(),
         ...options,
-      });
+      }).slice(offset || 0, limit);
       return {
         count: results.length,
         results,
       };
+    },
+    markdownFiles(
+      _: any,
+      {
+        sortBy, direction, limit, offset,
+      }:
+        { direction: 'asc' | 'desc', limit?: number, offset?: number, sortBy: 'createdAt' | 'title' },
+    ) {
+      return mdapi.getFiles(sortBy, direction, limit, offset);
     },
   },
   MarkdownFileSearchResult: {
@@ -116,10 +146,7 @@ export const getResolvers = (mdapi: MarkdownAPI) => ({
         throw new Error('selection set is missing id');
       }
       const file = mdapi.getFile(id);
-      return {
-        ...file,
-        ...file!.metadata,
-      };
+      return file;
     },
   },
 });

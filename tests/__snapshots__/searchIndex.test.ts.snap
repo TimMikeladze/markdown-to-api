@@ -3,8 +3,9 @@
 exports[`search the index basic search 1`] = `
 Array [
   Object {
+    "createdAt": "2022-08-13T00:03:28.460Z",
     "description": "",
-    "id": "basic-hello-world",
+    "id": "hello-world",
     "match": Object {
       "hello": Array [
         "title",
@@ -16,6 +17,7 @@ Array [
     "path": "tests/basic/hello.md",
     "score": 10.740574668720372,
     "slug": "hello-world",
+    "tags": Array [],
     "terms": Array [
       "hello",
     ],
@@ -27,15 +29,16 @@ Array [
 exports[`search the index tag search 1`] = `
 Array [
   Object {
+    "createdAt": "2022-08-13T08:36:12.283Z",
     "description": "",
-    "id": "basic-with-tags",
+    "id": "with-tags",
     "match": Object {
       "tag1": Array [
         "tags",
       ],
     },
     "path": "tests/basic/with-tags.md",
-    "score": 1.412417615826098,
+    "score": 2.138312652777948,
     "slug": "with-tags",
     "tags": Array [
       "tag1",

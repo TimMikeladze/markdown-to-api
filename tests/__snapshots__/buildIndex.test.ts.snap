@@ -6,25 +6,27 @@ Object {
     2.142857142857143,
     2.2857142857142856,
     5.142857142857143,
-    0.3333333333333333,
+    1.1428571428571428,
     1.5714285714285714,
+    6,
     3.142857142857143,
   ],
   "documentCount": 7,
   "documentIds": Object {
-    "0": "basic-hello-world",
-    "1": "basic-no-slug-or-title",
-    "2": "basic-no-slug",
-    "3": "basic-no-title",
-    "4": "basic-with-description",
-    "5": "basic-with-tags",
-    "6": "basic-nested-nested-filed",
+    "0": "hello-world",
+    "1": "no-slug-or-title",
+    "2": "no-slug",
+    "3": "no-title",
+    "4": "with-description",
+    "5": "with-tags",
+    "6": "nested-nested-file",
   },
   "fieldIds": Object {
+    "createdAt": 5,
     "description": 4,
     "path": 2,
     "slug": 1,
-    "strippedContent": 5,
+    "strippedContent": 6,
     "tags": 3,
     "title": 0,
   },
@@ -33,40 +35,45 @@ Object {
       1,
       2,
       4,
-      ,
       1,
+      1,
+      6,
       3,
     ],
     "1": Array [
       4,
       4,
       7,
-      ,
       1,
+      1,
+      6,
       5,
     ],
     "2": Array [
       2,
       2,
       5,
-      ,
       1,
+      1,
+      6,
       3,
     ],
     "3": Array [
       2,
       2,
       5,
-      ,
       1,
+      1,
+      6,
       3,
     ],
     "4": Array [
       2,
       2,
       5,
-      ,
+      1,
       5,
+      6,
       3,
     ],
     "5": Array [
@@ -75,36 +82,33 @@ Object {
       5,
       2,
       1,
+      6,
       2,
     ],
     "6": Array [
       2,
       2,
       5,
-      ,
       1,
+      1,
+      6,
       3,
     ],
   },
   "index": Array [
-    Array [
-      "filed",
-      Object {
-        "1": Object {
-          "6": 1,
-        },
-      },
-    ],
     Array [
       "file",
       Object {
         "0": Object {
           "6": 1,
         },
+        "1": Object {
+          "6": 1,
+        },
         "2": Object {
           "6": 1,
         },
-        "5": Object {
+        "6": Object {
           "6": 1,
         },
       },
@@ -121,7 +125,7 @@ Object {
         "2": Object {
           "6": 2,
         },
-        "5": Object {
+        "6": Object {
           "6": 1,
         },
       },
@@ -144,9 +148,58 @@ Object {
           "2": 1,
           "3": 1,
         },
+        "6": Object {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+        },
+      },
+    ],
+    Array [
+      "36",
+      Object {
+        "5": Object {
+          "5": 1,
+        },
+      },
+    ],
+    Array [
+      "385z",
+      Object {
+        "5": Object {
+          "4": 1,
+        },
+      },
+    ],
+    Array [
+      "31",
+      Object {
         "5": Object {
           "1": 1,
           "2": 1,
+        },
+      },
+    ],
+    Array [
+      "57",
+      Object {
+        "5": Object {
+          "6": 1,
+        },
+      },
+    ],
+    Array [
+      "58",
+      Object {
+        "5": Object {
+          "4": 1,
+        },
+      },
+    ],
+    Array [
+      "52",
+      Object {
+        "5": Object {
           "3": 1,
         },
       },
@@ -182,7 +235,7 @@ Object {
         "4": Object {
           "4": 1,
         },
-        "5": Object {
+        "6": Object {
           "4": 1,
         },
       },
@@ -202,7 +255,7 @@ Object {
           "4": 1,
           "5": 1,
         },
-        "5": Object {
+        "6": Object {
           "4": 1,
         },
       },
@@ -213,8 +266,93 @@ Object {
         "1": Object {
           "0": 1,
         },
+        "6": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "483z",
+      Object {
+        "5": Object {
+          "6": 1,
+        },
+      },
+    ],
+    Array [
+      "440z",
+      Object {
+        "5": Object {
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "436z",
+      Object {
+        "5": Object {
+          "1": 1,
+        },
+      },
+    ],
+    Array [
+      "41",
+      Object {
+        "5": Object {
+          "1": 1,
+          "2": 1,
+        },
+      },
+    ],
+    Array [
+      "460z",
+      Object {
         "5": Object {
           "0": 1,
+        },
+      },
+    ],
+    Array [
+      "12",
+      Object {
+        "5": Object {
+          "5": 1,
+        },
+      },
+    ],
+    Array [
+      "13t08",
+      Object {
+        "5": Object {
+          "4": 1,
+          "5": 1,
+        },
+      },
+    ],
+    Array [
+      "13t00",
+      Object {
+        "5": Object {
+          "0": 1,
+          "3": 1,
+          "6": 1,
+        },
+      },
+    ],
+    Array [
+      "168z",
+      Object {
+        "5": Object {
+          "3": 1,
+        },
+      },
+    ],
+    Array [
+      "18t19",
+      Object {
+        "5": Object {
+          "1": 1,
+          "2": 1,
         },
       },
     ],
@@ -246,7 +384,7 @@ Object {
         "2": Object {
           "5": 1,
         },
-        "5": Object {
+        "6": Object {
           "5": 1,
         },
       },
@@ -274,7 +412,7 @@ Object {
           "1": 1,
           "3": 1,
         },
-        "5": Object {
+        "6": Object {
           "1": 1,
           "3": 1,
         },
@@ -306,7 +444,7 @@ Object {
         "2": Object {
           "1": 1,
         },
-        "5": Object {
+        "6": Object {
           "1": 1,
         },
       },
@@ -326,9 +464,85 @@ Object {
           "1": 1,
           "2": 1,
         },
-        "5": Object {
+        "6": Object {
           "1": 1,
           "2": 1,
+        },
+      },
+    ],
+    Array [
+      "23",
+      Object {
+        "5": Object {
+          "6": 1,
+        },
+      },
+    ],
+    Array [
+      "283z",
+      Object {
+        "5": Object {
+          "5": 1,
+        },
+      },
+    ],
+    Array [
+      "28",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "2022",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+        },
+      },
+    ],
+    Array [
+      "06",
+      Object {
+        "5": Object {
+          "4": 1,
+        },
+      },
+    ],
+    Array [
+      "04",
+      Object {
+        "5": Object {
+          "3": 1,
+        },
+      },
+    ],
+    Array [
+      "03",
+      Object {
+        "5": Object {
+          "0": 1,
+        },
+      },
+    ],
+    Array [
+      "08",
+      Object {
+        "5": Object {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
         },
       },
     ],
@@ -372,7 +586,7 @@ Object {
         "2": Object {
           "0": 1,
         },
-        "5": Object {
+        "6": Object {
           "0": 1,
         },
       },
@@ -382,36 +596,47 @@ Object {
   "serializationVersion": 2,
   "storedFields": Object {
     "0": Object {
+      "createdAt": "2022-08-13T00:03:28.460Z",
       "description": "",
       "path": "tests/basic/hello.md",
       "slug": "hello-world",
+      "tags": Array [],
       "title": "Hello",
     },
     "1": Object {
+      "createdAt": "2022-08-18T19:41:31.436Z",
       "description": "",
       "path": "tests/basic/no-slug-or-title.md",
       "slug": "no-slug-or-title",
+      "tags": Array [],
       "title": "no-slug-or-title",
     },
     "2": Object {
+      "createdAt": "2022-08-18T19:41:31.440Z",
       "description": "",
       "path": "tests/basic/no-slug.md",
       "slug": "no-slug",
+      "tags": Array [],
       "title": "No Slug",
     },
     "3": Object {
+      "createdAt": "2022-08-13T00:04:52.168Z",
       "description": "",
       "path": "tests/basic/no-title.md",
       "slug": "no-title",
+      "tags": Array [],
       "title": "no-title",
     },
     "4": Object {
+      "createdAt": "2022-08-13T08:58:06.385Z",
       "description": "This is a description.",
       "path": "tests/basic/with-description.md",
       "slug": "with-description",
+      "tags": Array [],
       "title": "With description",
     },
     "5": Object {
+      "createdAt": "2022-08-13T08:36:12.283Z",
       "description": "",
       "path": "tests/basic/with-tags.md",
       "slug": "with-tags",
@@ -422,9 +647,11 @@ Object {
       "title": "With tags",
     },
     "6": Object {
+      "createdAt": "2022-08-13T00:23:57.483Z",
       "description": "",
       "path": "tests/basic/nested/nested-file.md",
-      "slug": "nested-filed",
+      "slug": "nested-file",
+      "tags": Array [],
       "title": "Nested File",
     },
   },

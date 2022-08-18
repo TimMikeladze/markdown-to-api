@@ -1,5 +1,21 @@
 import { MarkdownAPI } from '../src/MarkdownAPI';
 
+const config = {
+  tags:
+    {
+      cat: { description: 'Fits into any box.' },
+      puma: { description: 'Puma is a large cat, also known as a mountain lion.' },
+      tiger: { description: 'Tiger is a very large cat.' },
+      lion: { description: 'Lions have manes.' },
+    },
+  fields:
+    {
+      tags: { required: true },
+      genus: { required: true },
+      url: null,
+    },
+};
+
 describe('loadConfig', () => {
   it('uses default config', () => {
     const mdapi = new MarkdownAPI({
@@ -23,20 +39,7 @@ describe('loadConfig', () => {
   it('uses js object config', () => {
     const mdapi = new MarkdownAPI({
       directory: 'tests/cats',
-      config: {
-        tags:
-          {
-            cat: null,
-            puma: { description: 'Puma is a large cat, also known as a mountain lion.' },
-            tiger: { description: 'Tiger is a very large cat.' },
-          },
-        fields:
-          {
-            tags: { required: true },
-            genus: { required: true },
-            url: null,
-          },
-      },
+      config,
     });
     expect(mdapi.getConfig()).toMatchSnapshot();
   });
@@ -47,20 +50,7 @@ describe('loadConfig', () => {
     });
     const mdapi2 = new MarkdownAPI({
       directory: 'tests/cats',
-      config: {
-        tags:
-          {
-            cat: null,
-            puma: { description: 'Puma is a large cat, also known as a mountain lion.' },
-            tiger: { description: 'Tiger is a very large cat.' },
-          },
-        fields:
-          {
-            tags: { required: true },
-            genus: { required: true },
-            url: null,
-          },
-      },
+      config,
     });
     expect(mdapi1.getConfig()).toMatchObject(mdapi2.getConfig());
   });

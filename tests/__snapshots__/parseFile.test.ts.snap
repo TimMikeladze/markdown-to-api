@@ -5,16 +5,14 @@ Object {
   "content": "
 # No slug
 ",
-  "metadata": Object {
-    "createdAt": "2022-08-13T00:05:34.241Z",
-    "description": "",
-    "id": "basic-no-slug",
-    "path": "tests/basic/no-slug.md",
-    "slug": "no-slug",
-    "tags": undefined,
-    "title": "No Slug",
-  },
+  "createdAt": "2022-08-18T19:41:31.440Z",
+  "description": "",
+  "id": "no-slug",
+  "path": "tests/basic/no-slug.md",
+  "slug": "no-slug",
   "strippedContent": "No slug
 ",
+  "tags": Array [],
+  "title": "No Slug",
 }
 `;

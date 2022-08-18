@@ -18,7 +18,12 @@ Object {
     "url": null,
   },
   "tags": Object {
-    "cat": null,
+    "cat": Object {
+      "description": "Fits into any box.",
+    },
+    "lion": Object {
+      "description": "Lions have manes.",
+    },
     "puma": Object {
       "description": "Puma is a large cat, also known as a mountain lion.",
     },
@@ -47,7 +52,12 @@ Object {
     "url": null,
   },
   "tags": Object {
-    "cat": null,
+    "cat": Object {
+      "description": "Fits into any box.",
+    },
+    "lion": Object {
+      "description": "Lions have manes.",
+    },
     "puma": Object {
       "description": "Puma is a large cat, also known as a mountain lion.",
     },
@@ -76,7 +86,12 @@ Object {
     "url": null,
   },
   "tags": Object {
-    "cat": null,
+    "cat": Object {
+      "description": "Fits into any box.",
+    },
+    "lion": Object {
+      "description": "Lions have manes.",
+    },
     "puma": Object {
       "description": "Puma is a large cat, also known as a mountain lion.",
     },
@@ -105,7 +120,12 @@ Object {
     "url": null,
   },
   "tags": Object {
-    "cat": null,
+    "cat": Object {
+      "description": "Fits into any box.",
+    },
+    "lion": Object {
+      "description": "Lions have manes.",
+    },
     "puma": Object {
       "description": "Puma is a large cat, also known as a mountain lion.",
     },

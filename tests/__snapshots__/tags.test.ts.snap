@@ -3,7 +3,7 @@
 exports[`loads tag from config 1`] = `
 Array [
   Object {
-    "description": "",
+    "description": "Fits into any box.",
     "name": "cat",
   },
   Object {
@@ -13,6 +13,10 @@ Array [
   Object {
     "description": "Tiger is a very large cat.",
     "name": "tiger",
+  },
+  Object {
+    "description": "Lions have manes.",
+    "name": "lion",
   },
 ]
 `;
