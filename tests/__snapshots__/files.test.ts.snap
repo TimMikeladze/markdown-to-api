@@ -1,0 +1,580 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`files counts files 1`] = `7`;
+
+exports[`files get a file 1`] = `
+Object {
+  "content": "
+# Hello world!
+",
+  "createdAt": "2022-08-18T21:49:39.347Z",
+  "description": "",
+  "id": "hello-world",
+  "path": "tests/basic/hello.md",
+  "slug": "hello-world",
+  "strippedContent": "Hello world!
+",
+  "tags": Array [],
+  "title": "Hello",
+}
+`;
+
+exports[`files get all files createdAt ascending 1`] = `
+Array [
+  Object {
+    "content": "
+# Hello world!
+",
+    "createdAt": "2022-08-18T21:49:39.347Z",
+    "description": "",
+    "id": "hello-world",
+    "path": "tests/basic/hello.md",
+    "slug": "hello-world",
+    "strippedContent": "Hello world!
+",
+    "tags": Array [],
+    "title": "Hello",
+  },
+  Object {
+    "content": "
+# No slug or title
+",
+    "createdAt": "2022-08-18T21:49:39.348Z",
+    "description": "",
+    "id": "no-slug-or-title",
+    "path": "tests/basic/no-slug-or-title.md",
+    "slug": "no-slug-or-title",
+    "strippedContent": "No slug or title
+",
+    "tags": Array [],
+    "title": "no-slug-or-title",
+  },
+  Object {
+    "content": "
+# Nested File
+",
+    "createdAt": "2022-08-18T21:49:39.348Z",
+    "description": "",
+    "id": "nested-nested-file",
+    "path": "tests/basic/nested/nested-file.md",
+    "slug": "nested-file",
+    "strippedContent": "Nested File
+",
+    "tags": Array [],
+    "title": "Nested File",
+  },
+  Object {
+    "content": "
+# No slug
+",
+    "createdAt": "2022-08-18T21:49:39.349Z",
+    "description": "",
+    "id": "no-slug",
+    "path": "tests/basic/no-slug.md",
+    "slug": "no-slug",
+    "strippedContent": "No slug
+",
+    "tags": Array [],
+    "title": "No Slug",
+  },
+  Object {
+    "content": "
+# No title
+",
+    "createdAt": "2022-08-18T21:49:39.350Z",
+    "description": "",
+    "id": "no-title",
+    "path": "tests/basic/no-title.md",
+    "slug": "no-title",
+    "strippedContent": "No title
+",
+    "tags": Array [],
+    "title": "no-title",
+  },
+  Object {
+    "content": "
+# With description
+",
+    "createdAt": "2022-08-18T21:49:39.351Z",
+    "description": "This is a description.",
+    "id": "with-description",
+    "path": "tests/basic/with-description.md",
+    "slug": "with-description",
+    "strippedContent": "With description
+",
+    "tags": Array [],
+    "title": "With description",
+  },
+  Object {
+    "content": "
+# Tags!
+",
+    "createdAt": "2022-08-18T21:49:39.352Z",
+    "description": "",
+    "id": "with-tags",
+    "path": "tests/basic/with-tags.md",
+    "slug": "with-tags",
+    "strippedContent": "Tags!
+",
+    "tags": Array [
+      Object {
+        "id": "tag1",
+        "name": "tag1",
+      },
+      Object {
+        "id": "tag2",
+        "name": "tag2",
+      },
+    ],
+    "title": "With tags",
+  },
+]
+`;
+
+exports[`files get all files createdAt descending 1`] = `
+Array [
+  Object {
+    "content": "
+# Tags!
+",
+    "createdAt": "2022-08-18T21:49:39.352Z",
+    "description": "",
+    "id": "with-tags",
+    "path": "tests/basic/with-tags.md",
+    "slug": "with-tags",
+    "strippedContent": "Tags!
+",
+    "tags": Array [
+      Object {
+        "id": "tag1",
+        "name": "tag1",
+      },
+      Object {
+        "id": "tag2",
+        "name": "tag2",
+      },
+    ],
+    "title": "With tags",
+  },
+  Object {
+    "content": "
+# With description
+",
+    "createdAt": "2022-08-18T21:49:39.351Z",
+    "description": "This is a description.",
+    "id": "with-description",
+    "path": "tests/basic/with-description.md",
+    "slug": "with-description",
+    "strippedContent": "With description
+",
+    "tags": Array [],
+    "title": "With description",
+  },
+  Object {
+    "content": "
+# No title
+",
+    "createdAt": "2022-08-18T21:49:39.350Z",
+    "description": "",
+    "id": "no-title",
+    "path": "tests/basic/no-title.md",
+    "slug": "no-title",
+    "strippedContent": "No title
+",
+    "tags": Array [],
+    "title": "no-title",
+  },
+  Object {
+    "content": "
+# No slug
+",
+    "createdAt": "2022-08-18T21:49:39.349Z",
+    "description": "",
+    "id": "no-slug",
+    "path": "tests/basic/no-slug.md",
+    "slug": "no-slug",
+    "strippedContent": "No slug
+",
+    "tags": Array [],
+    "title": "No Slug",
+  },
+  Object {
+    "content": "
+# No slug or title
+",
+    "createdAt": "2022-08-18T21:49:39.348Z",
+    "description": "",
+    "id": "no-slug-or-title",
+    "path": "tests/basic/no-slug-or-title.md",
+    "slug": "no-slug-or-title",
+    "strippedContent": "No slug or title
+",
+    "tags": Array [],
+    "title": "no-slug-or-title",
+  },
+  Object {
+    "content": "
+# Nested File
+",
+    "createdAt": "2022-08-18T21:49:39.348Z",
+    "description": "",
+    "id": "nested-nested-file",
+    "path": "tests/basic/nested/nested-file.md",
+    "slug": "nested-file",
+    "strippedContent": "Nested File
+",
+    "tags": Array [],
+    "title": "Nested File",
+  },
+  Object {
+    "content": "
+# Hello world!
+",
+    "createdAt": "2022-08-18T21:49:39.347Z",
+    "description": "",
+    "id": "hello-world",
+    "path": "tests/basic/hello.md",
+    "slug": "hello-world",
+    "strippedContent": "Hello world!
+",
+    "tags": Array [],
+    "title": "Hello",
+  },
+]
+`;
+
+exports[`files get all files title ascending 1`] = `
+Array [
+  Object {
+    "content": "
+# Hello world!
+",
+    "createdAt": "2022-08-18T21:49:39.347Z",
+    "description": "",
+    "id": "hello-world",
+    "path": "tests/basic/hello.md",
+    "slug": "hello-world",
+    "strippedContent": "Hello world!
+",
+    "tags": Array [],
+    "title": "Hello",
+  },
+  Object {
+    "content": "
+# Nested File
+",
+    "createdAt": "2022-08-18T21:49:39.348Z",
+    "description": "",
+    "id": "nested-nested-file",
+    "path": "tests/basic/nested/nested-file.md",
+    "slug": "nested-file",
+    "strippedContent": "Nested File
+",
+    "tags": Array [],
+    "title": "Nested File",
+  },
+  Object {
+    "content": "
+# No slug
+",
+    "createdAt": "2022-08-18T21:49:39.349Z",
+    "description": "",
+    "id": "no-slug",
+    "path": "tests/basic/no-slug.md",
+    "slug": "no-slug",
+    "strippedContent": "No slug
+",
+    "tags": Array [],
+    "title": "No Slug",
+  },
+  Object {
+    "content": "
+# No slug or title
+",
+    "createdAt": "2022-08-18T21:49:39.348Z",
+    "description": "",
+    "id": "no-slug-or-title",
+    "path": "tests/basic/no-slug-or-title.md",
+    "slug": "no-slug-or-title",
+    "strippedContent": "No slug or title
+",
+    "tags": Array [],
+    "title": "no-slug-or-title",
+  },
+  Object {
+    "content": "
+# No title
+",
+    "createdAt": "2022-08-18T21:49:39.350Z",
+    "description": "",
+    "id": "no-title",
+    "path": "tests/basic/no-title.md",
+    "slug": "no-title",
+    "strippedContent": "No title
+",
+    "tags": Array [],
+    "title": "no-title",
+  },
+  Object {
+    "content": "
+# With description
+",
+    "createdAt": "2022-08-18T21:49:39.351Z",
+    "description": "This is a description.",
+    "id": "with-description",
+    "path": "tests/basic/with-description.md",
+    "slug": "with-description",
+    "strippedContent": "With description
+",
+    "tags": Array [],
+    "title": "With description",
+  },
+  Object {
+    "content": "
+# Tags!
+",
+    "createdAt": "2022-08-18T21:49:39.352Z",
+    "description": "",
+    "id": "with-tags",
+    "path": "tests/basic/with-tags.md",
+    "slug": "with-tags",
+    "strippedContent": "Tags!
+",
+    "tags": Array [
+      Object {
+        "id": "tag1",
+        "name": "tag1",
+      },
+      Object {
+        "id": "tag2",
+        "name": "tag2",
+      },
+    ],
+    "title": "With tags",
+  },
+]
+`;
+
+exports[`files get all files title descending 1`] = `
+Array [
+  Object {
+    "content": "
+# Tags!
+",
+    "createdAt": "2022-08-18T21:49:39.352Z",
+    "description": "",
+    "id": "with-tags",
+    "path": "tests/basic/with-tags.md",
+    "slug": "with-tags",
+    "strippedContent": "Tags!
+",
+    "tags": Array [
+      Object {
+        "id": "tag1",
+        "name": "tag1",
+      },
+      Object {
+        "id": "tag2",
+        "name": "tag2",
+      },
+    ],
+    "title": "With tags",
+  },
+  Object {
+    "content": "
+# With description
+",
+    "createdAt": "2022-08-18T21:49:39.351Z",
+    "description": "This is a description.",
+    "id": "with-description",
+    "path": "tests/basic/with-description.md",
+    "slug": "with-description",
+    "strippedContent": "With description
+",
+    "tags": Array [],
+    "title": "With description",
+  },
+  Object {
+    "content": "
+# No title
+",
+    "createdAt": "2022-08-18T21:49:39.350Z",
+    "description": "",
+    "id": "no-title",
+    "path": "tests/basic/no-title.md",
+    "slug": "no-title",
+    "strippedContent": "No title
+",
+    "tags": Array [],
+    "title": "no-title",
+  },
+  Object {
+    "content": "
+# No slug or title
+",
+    "createdAt": "2022-08-18T21:49:39.348Z",
+    "description": "",
+    "id": "no-slug-or-title",
+    "path": "tests/basic/no-slug-or-title.md",
+    "slug": "no-slug-or-title",
+    "strippedContent": "No slug or title
+",
+    "tags": Array [],
+    "title": "no-slug-or-title",
+  },
+  Object {
+    "content": "
+# No slug
+",
+    "createdAt": "2022-08-18T21:49:39.349Z",
+    "description": "",
+    "id": "no-slug",
+    "path": "tests/basic/no-slug.md",
+    "slug": "no-slug",
+    "strippedContent": "No slug
+",
+    "tags": Array [],
+    "title": "No Slug",
+  },
+  Object {
+    "content": "
+# Nested File
+",
+    "createdAt": "2022-08-18T21:49:39.348Z",
+    "description": "",
+    "id": "nested-nested-file",
+    "path": "tests/basic/nested/nested-file.md",
+    "slug": "nested-file",
+    "strippedContent": "Nested File
+",
+    "tags": Array [],
+    "title": "Nested File",
+  },
+  Object {
+    "content": "
+# Hello world!
+",
+    "createdAt": "2022-08-18T21:49:39.347Z",
+    "description": "",
+    "id": "hello-world",
+    "path": "tests/basic/hello.md",
+    "slug": "hello-world",
+    "strippedContent": "Hello world!
+",
+    "tags": Array [],
+    "title": "Hello",
+  },
+]
+`;
+
+exports[`files return file map 1`] = `
+Map {
+  "hello-world" => Object {
+    "content": "
+# Hello world!
+",
+    "createdAt": "2022-08-18T21:49:39.347Z",
+    "description": "",
+    "id": "hello-world",
+    "path": "tests/basic/hello.md",
+    "slug": "hello-world",
+    "strippedContent": "Hello world!
+",
+    "tags": Array [],
+    "title": "Hello",
+  },
+  "no-slug-or-title" => Object {
+    "content": "
+# No slug or title
+",
+    "createdAt": "2022-08-18T21:49:39.348Z",
+    "description": "",
+    "id": "no-slug-or-title",
+    "path": "tests/basic/no-slug-or-title.md",
+    "slug": "no-slug-or-title",
+    "strippedContent": "No slug or title
+",
+    "tags": Array [],
+    "title": "no-slug-or-title",
+  },
+  "no-slug" => Object {
+    "content": "
+# No slug
+",
+    "createdAt": "2022-08-18T21:49:39.349Z",
+    "description": "",
+    "id": "no-slug",
+    "path": "tests/basic/no-slug.md",
+    "slug": "no-slug",
+    "strippedContent": "No slug
+",
+    "tags": Array [],
+    "title": "No Slug",
+  },
+  "no-title" => Object {
+    "content": "
+# No title
+",
+    "createdAt": "2022-08-18T21:49:39.350Z",
+    "description": "",
+    "id": "no-title",
+    "path": "tests/basic/no-title.md",
+    "slug": "no-title",
+    "strippedContent": "No title
+",
+    "tags": Array [],
+    "title": "no-title",
+  },
+  "with-description" => Object {
+    "content": "
+# With description
+",
+    "createdAt": "2022-08-18T21:49:39.351Z",
+    "description": "This is a description.",
+    "id": "with-description",
+    "path": "tests/basic/with-description.md",
+    "slug": "with-description",
+    "strippedContent": "With description
+",
+    "tags": Array [],
+    "title": "With description",
+  },
+  "with-tags" => Object {
+    "content": "
+# Tags!
+",
+    "createdAt": "2022-08-18T21:49:39.352Z",
+    "description": "",
+    "id": "with-tags",
+    "path": "tests/basic/with-tags.md",
+    "slug": "with-tags",
+    "strippedContent": "Tags!
+",
+    "tags": Array [
+      Object {
+        "id": "tag1",
+        "name": "tag1",
+      },
+      Object {
+        "id": "tag2",
+        "name": "tag2",
+      },
+    ],
+    "title": "With tags",
+  },
+  "nested-nested-file" => Object {
+    "content": "
+# Nested File
+",
+    "createdAt": "2022-08-18T21:49:39.348Z",
+    "description": "",
+    "id": "nested-nested-file",
+    "path": "tests/basic/nested/nested-file.md",
+    "slug": "nested-file",
+    "strippedContent": "Nested File
+",
+    "tags": Array [],
+    "title": "Nested File",
+  },
+}
+`;

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseFile no-slug 1`] = `
+Object {
+  "content": "
+# No slug
+",
+  "createdAt": "2022-08-18T21:49:39.349Z",
+  "description": "",
+  "id": "no-slug",
+  "path": "tests/basic/no-slug.md",
+  "slug": "no-slug",
+  "strippedContent": "No slug
+",
+  "tags": Array [],
+  "title": "No Slug",
+}
+`;
