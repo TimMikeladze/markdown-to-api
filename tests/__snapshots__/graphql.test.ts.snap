@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`createMarkdownAPIModule can autosuggest search terms 1`] = `
+Object {
+  "count": 1,
+  "results": Array [
+    Object {
+      "score": 11.339703517646557,
+      "suggestion": "cat tiger tigers",
+      "terms": Array [
+        "cat",
+        "tiger",
+        "tigers",
+      ],
+    },
+  ],
+}
+`;
+
 exports[`createMarkdownAPIModule can query for a file 1`] = `
 Object {
   "content": "
@@ -311,51 +328,165 @@ Array [
             },
           },
           Object {
-            "arguments": Array [],
+            "arguments": Array [
+              Object {
+                "defaultValue": undefined,
+                "description": undefined,
+                "directives": Array [],
+                "kind": "InputValueDefinition",
+                "loc": Object {
+                  "end": 207,
+                  "start": 194,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 198,
+                    "start": 194,
+                  },
+                  "value": "text",
+                },
+                "type": Object {
+                  "kind": "NonNullType",
+                  "loc": Object {
+                    "end": 207,
+                    "start": 200,
+                  },
+                  "type": Object {
+                    "kind": "NamedType",
+                    "loc": Object {
+                      "end": 206,
+                      "start": 200,
+                    },
+                    "name": Object {
+                      "kind": "Name",
+                      "loc": Object {
+                        "end": 206,
+                        "start": 200,
+                      },
+                      "value": "String",
+                    },
+                  },
+                },
+              },
+              Object {
+                "defaultValue": undefined,
+                "description": undefined,
+                "directives": Array [],
+                "kind": "InputValueDefinition",
+                "loc": Object {
+                  "end": 242,
+                  "start": 208,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 215,
+                    "start": 208,
+                  },
+                  "value": "options",
+                },
+                "type": Object {
+                  "kind": "NamedType",
+                  "loc": Object {
+                    "end": 242,
+                    "start": 217,
+                  },
+                  "name": Object {
+                    "kind": "Name",
+                    "loc": Object {
+                      "end": 242,
+                      "start": 217,
+                    },
+                    "value": "MarkdownFileSearchOptions",
+                  },
+                },
+              },
+            ],
             "description": undefined,
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 200,
+              "end": 276,
               "start": 163,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 179,
+                "end": 193,
                 "start": 163,
+              },
+              "value": "autoSuggestMarkdownFileSearchs",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 276,
+                "start": 245,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 275,
+                  "start": 245,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 275,
+                    "start": 245,
+                  },
+                  "value": "MarkdownFileAutoSuggestResults",
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 318,
+              "start": 281,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 297,
+                "start": 281,
               },
               "value": "markdownFileTags",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 200,
-                "start": 181,
+                "end": 318,
+                "start": 299,
               },
               "type": Object {
                 "kind": "ListType",
                 "loc": Object {
-                  "end": 199,
-                  "start": 181,
+                  "end": 317,
+                  "start": 299,
                 },
                 "type": Object {
                   "kind": "NonNullType",
                   "loc": Object {
-                    "end": 198,
-                    "start": 182,
+                    "end": 316,
+                    "start": 300,
                   },
                   "type": Object {
                     "kind": "NamedType",
                     "loc": Object {
-                      "end": 197,
-                      "start": 182,
+                      "end": 315,
+                      "start": 300,
                     },
                     "name": Object {
                       "kind": "Name",
                       "loc": Object {
-                        "end": 197,
-                        "start": 182,
+                        "end": 315,
+                        "start": 300,
                       },
                       "value": "MarkdownFileTag",
                     },
@@ -368,7 +499,7 @@ Array [
         "interfaces": Array [],
         "kind": "ObjectTypeDefinition",
         "loc": Object {
-          "end": 204,
+          "end": 322,
           "start": 3,
         },
         "name": Object {
@@ -390,34 +521,34 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 239,
-              "start": 232,
+              "end": 357,
+              "start": 350,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 234,
-                "start": 232,
+                "end": 352,
+                "start": 350,
               },
               "value": "id",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 239,
-                "start": 236,
+                "end": 357,
+                "start": 354,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 238,
-                  "start": 236,
+                  "end": 356,
+                  "start": 354,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 238,
-                    "start": 236,
+                    "end": 356,
+                    "start": 354,
                   },
                   "value": "ID",
                 },
@@ -430,34 +561,34 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 257,
-              "start": 244,
+              "end": 375,
+              "start": 362,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 248,
-                "start": 244,
+                "end": 366,
+                "start": 362,
               },
               "value": "path",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 257,
-                "start": 250,
+                "end": 375,
+                "start": 368,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 256,
-                  "start": 250,
+                  "end": 374,
+                  "start": 368,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 256,
-                    "start": 250,
+                    "end": 374,
+                    "start": 368,
                   },
                   "value": "String",
                 },
@@ -470,34 +601,34 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 275,
-              "start": 262,
+              "end": 393,
+              "start": 380,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 266,
-                "start": 262,
+                "end": 384,
+                "start": 380,
               },
               "value": "slug",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 275,
-                "start": 268,
+                "end": 393,
+                "start": 386,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 274,
-                  "start": 268,
+                  "end": 392,
+                  "start": 386,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 274,
-                    "start": 268,
+                    "end": 392,
+                    "start": 386,
                   },
                   "value": "String",
                 },
@@ -510,40 +641,40 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 295,
-              "start": 280,
+              "end": 413,
+              "start": 398,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 284,
-                "start": 280,
+                "end": 402,
+                "start": 398,
               },
               "value": "tags",
             },
             "type": Object {
               "kind": "ListType",
               "loc": Object {
-                "end": 295,
-                "start": 286,
+                "end": 413,
+                "start": 404,
               },
               "type": Object {
                 "kind": "NonNullType",
                 "loc": Object {
-                  "end": 294,
-                  "start": 287,
+                  "end": 412,
+                  "start": 405,
                 },
                 "type": Object {
                   "kind": "NamedType",
                   "loc": Object {
-                    "end": 293,
-                    "start": 287,
+                    "end": 411,
+                    "start": 405,
                   },
                   "name": Object {
                     "kind": "Name",
                     "loc": Object {
-                      "end": 293,
-                      "start": 287,
+                      "end": 411,
+                      "start": 405,
                     },
                     "value": "String",
                   },
@@ -557,34 +688,34 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 314,
-              "start": 300,
+              "end": 432,
+              "start": 418,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 305,
-                "start": 300,
+                "end": 423,
+                "start": 418,
               },
               "value": "title",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 314,
-                "start": 307,
+                "end": 432,
+                "start": 425,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 313,
-                  "start": 307,
+                  "end": 431,
+                  "start": 425,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 313,
-                    "start": 307,
+                    "end": 431,
+                    "start": 425,
                   },
                   "value": "String",
                 },
@@ -597,28 +728,28 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 338,
-              "start": 319,
+              "end": 456,
+              "start": 437,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 330,
-                "start": 319,
+                "end": 448,
+                "start": 437,
               },
               "value": "description",
             },
             "type": Object {
               "kind": "NamedType",
               "loc": Object {
-                "end": 338,
-                "start": 332,
+                "end": 456,
+                "start": 450,
               },
               "name": Object {
                 "kind": "Name",
                 "loc": Object {
-                  "end": 338,
-                  "start": 332,
+                  "end": 456,
+                  "start": 450,
                 },
                 "value": "String",
               },
@@ -630,34 +761,34 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 359,
-              "start": 343,
+              "end": 477,
+              "start": 461,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 350,
-                "start": 343,
+                "end": 468,
+                "start": 461,
               },
               "value": "content",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 359,
-                "start": 352,
+                "end": 477,
+                "start": 470,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 358,
-                  "start": 352,
+                  "end": 476,
+                  "start": 470,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 358,
-                    "start": 352,
+                    "end": 476,
+                    "start": 470,
                   },
                   "value": "String",
                 },
@@ -670,34 +801,34 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 388,
-              "start": 364,
+              "end": 506,
+              "start": 482,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 379,
-                "start": 364,
+                "end": 497,
+                "start": 482,
               },
               "value": "strippedContent",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 388,
-                "start": 381,
+                "end": 506,
+                "start": 499,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 387,
-                  "start": 381,
+                  "end": 505,
+                  "start": 499,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 387,
-                    "start": 381,
+                    "end": 505,
+                    "start": 499,
                   },
                   "value": "String",
                 },
@@ -708,14 +839,14 @@ Array [
         "interfaces": Array [],
         "kind": "ObjectTypeDefinition",
         "loc": Object {
-          "end": 392,
-          "start": 208,
+          "end": 510,
+          "start": 326,
         },
         "name": Object {
           "kind": "Name",
           "loc": Object {
-            "end": 225,
-            "start": 213,
+            "end": 343,
+            "start": 331,
           },
           "value": "MarkdownFile",
         },
@@ -730,34 +861,34 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 444,
-              "start": 433,
+              "end": 562,
+              "start": 551,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 438,
-                "start": 433,
+                "end": 556,
+                "start": 551,
               },
               "value": "count",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 444,
-                "start": 440,
+                "end": 562,
+                "start": 558,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 443,
-                  "start": 440,
+                  "end": 561,
+                  "start": 558,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 443,
-                    "start": 440,
+                    "end": 561,
+                    "start": 558,
                   },
                   "value": "Int",
                 },
@@ -770,46 +901,46 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 486,
-              "start": 449,
+              "end": 604,
+              "start": 567,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 456,
-                "start": 449,
+                "end": 574,
+                "start": 567,
               },
               "value": "results",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 486,
-                "start": 458,
+                "end": 604,
+                "start": 576,
               },
               "type": Object {
                 "kind": "ListType",
                 "loc": Object {
-                  "end": 485,
-                  "start": 458,
+                  "end": 603,
+                  "start": 576,
                 },
                 "type": Object {
                   "kind": "NonNullType",
                   "loc": Object {
-                    "end": 484,
-                    "start": 459,
+                    "end": 602,
+                    "start": 577,
                   },
                   "type": Object {
                     "kind": "NamedType",
                     "loc": Object {
-                      "end": 483,
-                      "start": 459,
+                      "end": 601,
+                      "start": 577,
                     },
                     "name": Object {
                       "kind": "Name",
                       "loc": Object {
-                        "end": 483,
-                        "start": 459,
+                        "end": 601,
+                        "start": 577,
                       },
                       "value": "MarkdownFileSearchResult",
                     },
@@ -822,14 +953,14 @@ Array [
         "interfaces": Array [],
         "kind": "ObjectTypeDefinition",
         "loc": Object {
-          "end": 490,
-          "start": 396,
+          "end": 608,
+          "start": 514,
         },
         "name": Object {
           "kind": "Name",
           "loc": Object {
-            "end": 426,
-            "start": 401,
+            "end": 544,
+            "start": 519,
           },
           "value": "MarkdownFileSearchResults",
         },
@@ -844,34 +975,34 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 537,
-              "start": 530,
+              "end": 655,
+              "start": 648,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 532,
-                "start": 530,
+                "end": 650,
+                "start": 648,
               },
               "value": "id",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 537,
-                "start": 534,
+                "end": 655,
+                "start": 652,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 536,
-                  "start": 534,
+                  "end": 654,
+                  "start": 652,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 536,
-                    "start": 534,
+                    "end": 654,
+                    "start": 652,
                   },
                   "value": "ID",
                 },
@@ -884,28 +1015,28 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 561,
-              "start": 542,
+              "end": 679,
+              "start": 660,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 553,
-                "start": 542,
+                "end": 671,
+                "start": 660,
               },
               "value": "description",
             },
             "type": Object {
               "kind": "NamedType",
               "loc": Object {
-                "end": 561,
-                "start": 555,
+                "end": 679,
+                "start": 673,
               },
               "name": Object {
                 "kind": "Name",
                 "loc": Object {
-                  "end": 561,
-                  "start": 555,
+                  "end": 679,
+                  "start": 673,
                 },
                 "value": "String",
               },
@@ -917,34 +1048,34 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 579,
-              "start": 566,
+              "end": 697,
+              "start": 684,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 571,
-                "start": 566,
+                "end": 689,
+                "start": 684,
               },
               "value": "score",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 579,
-                "start": 573,
+                "end": 697,
+                "start": 691,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 578,
-                  "start": 573,
+                  "end": 696,
+                  "start": 691,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 578,
-                    "start": 573,
+                    "end": 696,
+                    "start": 691,
                   },
                   "value": "Float",
                 },
@@ -957,40 +1088,40 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 600,
-              "start": 584,
+              "end": 718,
+              "start": 702,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 589,
-                "start": 584,
+                "end": 707,
+                "start": 702,
               },
               "value": "terms",
             },
             "type": Object {
               "kind": "ListType",
               "loc": Object {
-                "end": 600,
-                "start": 591,
+                "end": 718,
+                "start": 709,
               },
               "type": Object {
                 "kind": "NonNullType",
                 "loc": Object {
-                  "end": 599,
-                  "start": 592,
+                  "end": 717,
+                  "start": 710,
                 },
                 "type": Object {
                   "kind": "NamedType",
                   "loc": Object {
-                    "end": 598,
-                    "start": 592,
+                    "end": 716,
+                    "start": 710,
                   },
                   "name": Object {
                     "kind": "Name",
                     "loc": Object {
-                      "end": 598,
-                      "start": 592,
+                      "end": 716,
+                      "start": 710,
                     },
                     "value": "String",
                   },
@@ -1004,227 +1135,40 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 619,
-              "start": 605,
+              "end": 737,
+              "start": 723,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 610,
-                "start": 605,
+                "end": 728,
+                "start": 723,
               },
               "value": "title",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 619,
-                "start": 612,
+                "end": 737,
+                "start": 730,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 618,
-                  "start": 612,
+                  "end": 736,
+                  "start": 730,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 618,
-                    "start": 612,
+                    "end": 736,
+                    "start": 730,
                   },
                   "value": "String",
                 },
               },
             },
           },
-          Object {
-            "arguments": Array [],
-            "description": undefined,
-            "directives": Array [],
-            "kind": "FieldDefinition",
-            "loc": Object {
-              "end": 637,
-              "start": 624,
-            },
-            "name": Object {
-              "kind": "Name",
-              "loc": Object {
-                "end": 628,
-                "start": 624,
-              },
-              "value": "slug",
-            },
-            "type": Object {
-              "kind": "NonNullType",
-              "loc": Object {
-                "end": 637,
-                "start": 630,
-              },
-              "type": Object {
-                "kind": "NamedType",
-                "loc": Object {
-                  "end": 636,
-                  "start": 630,
-                },
-                "name": Object {
-                  "kind": "Name",
-                  "loc": Object {
-                    "end": 636,
-                    "start": 630,
-                  },
-                  "value": "String",
-                },
-              },
-            },
-          },
-          Object {
-            "arguments": Array [],
-            "description": undefined,
-            "directives": Array [],
-            "kind": "FieldDefinition",
-            "loc": Object {
-              "end": 655,
-              "start": 642,
-            },
-            "name": Object {
-              "kind": "Name",
-              "loc": Object {
-                "end": 646,
-                "start": 642,
-              },
-              "value": "path",
-            },
-            "type": Object {
-              "kind": "NonNullType",
-              "loc": Object {
-                "end": 655,
-                "start": 648,
-              },
-              "type": Object {
-                "kind": "NamedType",
-                "loc": Object {
-                  "end": 654,
-                  "start": 648,
-                },
-                "name": Object {
-                  "kind": "Name",
-                  "loc": Object {
-                    "end": 654,
-                    "start": 648,
-                  },
-                  "value": "String",
-                },
-              },
-            },
-          },
-          Object {
-            "arguments": Array [],
-            "description": undefined,
-            "directives": Array [],
-            "kind": "FieldDefinition",
-            "loc": Object {
-              "end": 675,
-              "start": 660,
-            },
-            "name": Object {
-              "kind": "Name",
-              "loc": Object {
-                "end": 664,
-                "start": 660,
-              },
-              "value": "tags",
-            },
-            "type": Object {
-              "kind": "ListType",
-              "loc": Object {
-                "end": 675,
-                "start": 666,
-              },
-              "type": Object {
-                "kind": "NonNullType",
-                "loc": Object {
-                  "end": 674,
-                  "start": 667,
-                },
-                "type": Object {
-                  "kind": "NamedType",
-                  "loc": Object {
-                    "end": 673,
-                    "start": 667,
-                  },
-                  "name": Object {
-                    "kind": "Name",
-                    "loc": Object {
-                      "end": 673,
-                      "start": 667,
-                    },
-                    "value": "String",
-                  },
-                },
-              },
-            },
-          },
-          Object {
-            "arguments": Array [],
-            "description": undefined,
-            "directives": Array [],
-            "kind": "FieldDefinition",
-            "loc": Object {
-              "end": 707,
-              "start": 680,
-            },
-            "name": Object {
-              "kind": "Name",
-              "loc": Object {
-                "end": 692,
-                "start": 680,
-              },
-              "value": "markdownFile",
-            },
-            "type": Object {
-              "kind": "NonNullType",
-              "loc": Object {
-                "end": 707,
-                "start": 694,
-              },
-              "type": Object {
-                "kind": "NamedType",
-                "loc": Object {
-                  "end": 706,
-                  "start": 694,
-                },
-                "name": Object {
-                  "kind": "Name",
-                  "loc": Object {
-                    "end": 706,
-                    "start": 694,
-                  },
-                  "value": "MarkdownFile",
-                },
-              },
-            },
-          },
-        ],
-        "interfaces": Array [],
-        "kind": "ObjectTypeDefinition",
-        "loc": Object {
-          "end": 711,
-          "start": 494,
-        },
-        "name": Object {
-          "kind": "Name",
-          "loc": Object {
-            "end": 523,
-            "start": 499,
-          },
-          "value": "MarkdownFileSearchResult",
-        },
-      },
-      Object {
-        "description": undefined,
-        "directives": Array [],
-        "fields": Array [
           Object {
             "arguments": Array [],
             "description": undefined,
@@ -1240,7 +1184,7 @@ Array [
                 "end": 746,
                 "start": 742,
               },
-              "value": "name",
+              "value": "slug",
             },
             "type": Object {
               "kind": "NonNullType",
@@ -1271,28 +1215,215 @@ Array [
             "directives": Array [],
             "kind": "FieldDefinition",
             "loc": Object {
-              "end": 779,
+              "end": 773,
               "start": 760,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 771,
+                "end": 764,
                 "start": 760,
+              },
+              "value": "path",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 773,
+                "start": 766,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 772,
+                  "start": 766,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 772,
+                    "start": 766,
+                  },
+                  "value": "String",
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 793,
+              "start": 778,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 782,
+                "start": 778,
+              },
+              "value": "tags",
+            },
+            "type": Object {
+              "kind": "ListType",
+              "loc": Object {
+                "end": 793,
+                "start": 784,
+              },
+              "type": Object {
+                "kind": "NonNullType",
+                "loc": Object {
+                  "end": 792,
+                  "start": 785,
+                },
+                "type": Object {
+                  "kind": "NamedType",
+                  "loc": Object {
+                    "end": 791,
+                    "start": 785,
+                  },
+                  "name": Object {
+                    "kind": "Name",
+                    "loc": Object {
+                      "end": 791,
+                      "start": 785,
+                    },
+                    "value": "String",
+                  },
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 825,
+              "start": 798,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 810,
+                "start": 798,
+              },
+              "value": "markdownFile",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 825,
+                "start": 812,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 824,
+                  "start": 812,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 824,
+                    "start": 812,
+                  },
+                  "value": "MarkdownFile",
+                },
+              },
+            },
+          },
+        ],
+        "interfaces": Array [],
+        "kind": "ObjectTypeDefinition",
+        "loc": Object {
+          "end": 829,
+          "start": 612,
+        },
+        "name": Object {
+          "kind": "Name",
+          "loc": Object {
+            "end": 641,
+            "start": 617,
+          },
+          "value": "MarkdownFileSearchResult",
+        },
+      },
+      Object {
+        "description": undefined,
+        "directives": Array [],
+        "fields": Array [
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 873,
+              "start": 860,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 864,
+                "start": 860,
+              },
+              "value": "name",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 873,
+                "start": 866,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 872,
+                  "start": 866,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 872,
+                    "start": 866,
+                  },
+                  "value": "String",
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 897,
+              "start": 878,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 889,
+                "start": 878,
               },
               "value": "description",
             },
             "type": Object {
               "kind": "NamedType",
               "loc": Object {
-                "end": 779,
-                "start": 773,
+                "end": 897,
+                "start": 891,
               },
               "name": Object {
                 "kind": "Name",
                 "loc": Object {
-                  "end": 779,
-                  "start": 773,
+                  "end": 897,
+                  "start": 891,
                 },
                 "value": "String",
               },
@@ -1302,14 +1433,14 @@ Array [
         "interfaces": Array [],
         "kind": "ObjectTypeDefinition",
         "loc": Object {
-          "end": 783,
-          "start": 715,
+          "end": 901,
+          "start": 833,
         },
         "name": Object {
           "kind": "Name",
           "loc": Object {
-            "end": 735,
-            "start": 720,
+            "end": 853,
+            "start": 838,
           },
           "value": "MarkdownFileTag",
         },
@@ -1324,40 +1455,40 @@ Array [
             "directives": Array [],
             "kind": "InputValueDefinition",
             "loc": Object {
-              "end": 842,
-              "start": 825,
+              "end": 960,
+              "start": 943,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 831,
-                "start": 825,
+                "end": 949,
+                "start": 943,
               },
               "value": "fields",
             },
             "type": Object {
               "kind": "ListType",
               "loc": Object {
-                "end": 842,
-                "start": 833,
+                "end": 960,
+                "start": 951,
               },
               "type": Object {
                 "kind": "NonNullType",
                 "loc": Object {
-                  "end": 841,
-                  "start": 834,
+                  "end": 959,
+                  "start": 952,
                 },
                 "type": Object {
                   "kind": "NamedType",
                   "loc": Object {
-                    "end": 840,
-                    "start": 834,
+                    "end": 958,
+                    "start": 952,
                   },
                   "name": Object {
                     "kind": "Name",
                     "loc": Object {
-                      "end": 840,
-                      "start": 834,
+                      "end": 958,
+                      "start": 952,
                     },
                     "value": "String",
                   },
@@ -1371,28 +1502,28 @@ Array [
             "directives": Array [],
             "kind": "InputValueDefinition",
             "loc": Object {
-              "end": 888,
-              "start": 847,
+              "end": 1006,
+              "start": 965,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 854,
-                "start": 847,
+                "end": 972,
+                "start": 965,
               },
               "value": "weights",
             },
             "type": Object {
               "kind": "NamedType",
               "loc": Object {
-                "end": 888,
-                "start": 856,
+                "end": 1006,
+                "start": 974,
               },
               "name": Object {
                 "kind": "Name",
                 "loc": Object {
-                  "end": 888,
-                  "start": 856,
+                  "end": 1006,
+                  "start": 974,
                 },
                 "value": "MarkdownFileSearchOptionsWeights",
               },
@@ -1404,28 +1535,28 @@ Array [
             "directives": Array [],
             "kind": "InputValueDefinition",
             "loc": Object {
-              "end": 908,
-              "start": 893,
+              "end": 1026,
+              "start": 1011,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 899,
-                "start": 893,
+                "end": 1017,
+                "start": 1011,
               },
               "value": "prefix",
             },
             "type": Object {
               "kind": "NamedType",
               "loc": Object {
-                "end": 908,
-                "start": 901,
+                "end": 1026,
+                "start": 1019,
               },
               "name": Object {
                 "kind": "Name",
                 "loc": Object {
-                  "end": 908,
-                  "start": 901,
+                  "end": 1026,
+                  "start": 1019,
                 },
                 "value": "Boolean",
               },
@@ -1437,28 +1568,28 @@ Array [
             "directives": Array [],
             "kind": "InputValueDefinition",
             "loc": Object {
-              "end": 927,
-              "start": 913,
+              "end": 1045,
+              "start": 1031,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 918,
-                "start": 913,
+                "end": 1036,
+                "start": 1031,
               },
               "value": "fuzzy",
             },
             "type": Object {
               "kind": "NamedType",
               "loc": Object {
-                "end": 927,
-                "start": 920,
+                "end": 1045,
+                "start": 1038,
               },
               "name": Object {
                 "kind": "Name",
                 "loc": Object {
-                  "end": 927,
-                  "start": 920,
+                  "end": 1045,
+                  "start": 1038,
                 },
                 "value": "Boolean",
               },
@@ -1470,28 +1601,28 @@ Array [
             "directives": Array [],
             "kind": "InputValueDefinition",
             "loc": Object {
-              "end": 945,
-              "start": 932,
+              "end": 1063,
+              "start": 1050,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 940,
-                "start": 932,
+                "end": 1058,
+                "start": 1050,
               },
               "value": "maxFuzzy",
             },
             "type": Object {
               "kind": "NamedType",
               "loc": Object {
-                "end": 945,
-                "start": 942,
+                "end": 1063,
+                "start": 1060,
               },
               "name": Object {
                 "kind": "Name",
                 "loc": Object {
-                  "end": 945,
-                  "start": 942,
+                  "end": 1063,
+                  "start": 1060,
                 },
                 "value": "Int",
               },
@@ -1503,28 +1634,28 @@ Array [
             "directives": Array [],
             "kind": "InputValueDefinition",
             "loc": Object {
-              "end": 999,
-              "start": 950,
+              "end": 1117,
+              "start": 1068,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 961,
-                "start": 950,
+                "end": 1079,
+                "start": 1068,
               },
               "value": "combineWith",
             },
             "type": Object {
               "kind": "NamedType",
               "loc": Object {
-                "end": 999,
-                "start": 963,
+                "end": 1117,
+                "start": 1081,
               },
               "name": Object {
                 "kind": "Name",
                 "loc": Object {
-                  "end": 999,
-                  "start": 963,
+                  "end": 1117,
+                  "start": 1081,
                 },
                 "value": "MarkdownFileSearchOptionsCombineWith",
               },
@@ -1533,14 +1664,14 @@ Array [
         ],
         "kind": "InputObjectTypeDefinition",
         "loc": Object {
-          "end": 1003,
-          "start": 787,
+          "end": 1121,
+          "start": 905,
         },
         "name": Object {
           "kind": "Name",
           "loc": Object {
-            "end": 818,
-            "start": 793,
+            "end": 936,
+            "start": 911,
           },
           "value": "MarkdownFileSearchOptions",
         },
@@ -1548,16 +1679,284 @@ Array [
       Object {
         "description": undefined,
         "directives": Array [],
-        "kind": "EnumTypeDefinition",
+        "fields": Array [
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 1178,
+              "start": 1167,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 1172,
+                "start": 1167,
+              },
+              "value": "count",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 1178,
+                "start": 1174,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 1177,
+                  "start": 1174,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 1177,
+                    "start": 1174,
+                  },
+                  "value": "Int",
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 1225,
+              "start": 1183,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 1190,
+                "start": 1183,
+              },
+              "value": "results",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 1225,
+                "start": 1192,
+              },
+              "type": Object {
+                "kind": "ListType",
+                "loc": Object {
+                  "end": 1224,
+                  "start": 1192,
+                },
+                "type": Object {
+                  "kind": "NonNullType",
+                  "loc": Object {
+                    "end": 1223,
+                    "start": 1193,
+                  },
+                  "type": Object {
+                    "kind": "NamedType",
+                    "loc": Object {
+                      "end": 1222,
+                      "start": 1193,
+                    },
+                    "name": Object {
+                      "kind": "Name",
+                      "loc": Object {
+                        "end": 1222,
+                        "start": 1193,
+                      },
+                      "value": "MarkdownFileAutoSuggestResult",
+                    },
+                  },
+                },
+              },
+            },
+          },
+        ],
+        "interfaces": Array [],
+        "kind": "ObjectTypeDefinition",
         "loc": Object {
-          "end": 1069,
-          "start": 1007,
+          "end": 1229,
+          "start": 1125,
         },
         "name": Object {
           "kind": "Name",
           "loc": Object {
-            "end": 1048,
-            "start": 1012,
+            "end": 1160,
+            "start": 1130,
+          },
+          "value": "MarkdownFileAutoSuggestResults",
+        },
+      },
+      Object {
+        "description": undefined,
+        "directives": Array [],
+        "fields": Array [
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 1293,
+              "start": 1274,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 1284,
+                "start": 1274,
+              },
+              "value": "suggestion",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 1293,
+                "start": 1286,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 1292,
+                  "start": 1286,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 1292,
+                    "start": 1286,
+                  },
+                  "value": "String",
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 1315,
+              "start": 1298,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 1303,
+                "start": 1298,
+              },
+              "value": "terms",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 1315,
+                "start": 1305,
+              },
+              "type": Object {
+                "kind": "ListType",
+                "loc": Object {
+                  "end": 1314,
+                  "start": 1305,
+                },
+                "type": Object {
+                  "kind": "NonNullType",
+                  "loc": Object {
+                    "end": 1313,
+                    "start": 1306,
+                  },
+                  "type": Object {
+                    "kind": "NamedType",
+                    "loc": Object {
+                      "end": 1312,
+                      "start": 1306,
+                    },
+                    "name": Object {
+                      "kind": "Name",
+                      "loc": Object {
+                        "end": 1312,
+                        "start": 1306,
+                      },
+                      "value": "String",
+                    },
+                  },
+                },
+              },
+            },
+          },
+          Object {
+            "arguments": Array [],
+            "description": undefined,
+            "directives": Array [],
+            "kind": "FieldDefinition",
+            "loc": Object {
+              "end": 1333,
+              "start": 1320,
+            },
+            "name": Object {
+              "kind": "Name",
+              "loc": Object {
+                "end": 1325,
+                "start": 1320,
+              },
+              "value": "score",
+            },
+            "type": Object {
+              "kind": "NonNullType",
+              "loc": Object {
+                "end": 1333,
+                "start": 1327,
+              },
+              "type": Object {
+                "kind": "NamedType",
+                "loc": Object {
+                  "end": 1332,
+                  "start": 1327,
+                },
+                "name": Object {
+                  "kind": "Name",
+                  "loc": Object {
+                    "end": 1332,
+                    "start": 1327,
+                  },
+                  "value": "Float",
+                },
+              },
+            },
+          },
+        ],
+        "interfaces": Array [],
+        "kind": "ObjectTypeDefinition",
+        "loc": Object {
+          "end": 1337,
+          "start": 1233,
+        },
+        "name": Object {
+          "kind": "Name",
+          "loc": Object {
+            "end": 1267,
+            "start": 1238,
+          },
+          "value": "MarkdownFileAutoSuggestResult",
+        },
+      },
+      Object {
+        "description": undefined,
+        "directives": Array [],
+        "kind": "EnumTypeDefinition",
+        "loc": Object {
+          "end": 1403,
+          "start": 1341,
+        },
+        "name": Object {
+          "kind": "Name",
+          "loc": Object {
+            "end": 1382,
+            "start": 1346,
           },
           "value": "MarkdownFileSearchOptionsCombineWith",
         },
@@ -1567,14 +1966,14 @@ Array [
             "directives": Array [],
             "kind": "EnumValueDefinition",
             "loc": Object {
-              "end": 1058,
-              "start": 1055,
+              "end": 1392,
+              "start": 1389,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 1058,
-                "start": 1055,
+                "end": 1392,
+                "start": 1389,
               },
               "value": "AND",
             },
@@ -1584,14 +1983,14 @@ Array [
             "directives": Array [],
             "kind": "EnumValueDefinition",
             "loc": Object {
-              "end": 1065,
-              "start": 1063,
+              "end": 1399,
+              "start": 1397,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 1065,
-                "start": 1063,
+                "end": 1399,
+                "start": 1397,
               },
               "value": "OR",
             },
@@ -1608,34 +2007,34 @@ Array [
             "directives": Array [],
             "kind": "InputValueDefinition",
             "loc": Object {
-              "end": 1131,
-              "start": 1118,
+              "end": 1465,
+              "start": 1452,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 1123,
-                "start": 1118,
+                "end": 1457,
+                "start": 1452,
               },
               "value": "fuzzy",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 1131,
-                "start": 1125,
+                "end": 1465,
+                "start": 1459,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 1130,
-                  "start": 1125,
+                  "end": 1464,
+                  "start": 1459,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 1130,
-                    "start": 1125,
+                    "end": 1464,
+                    "start": 1459,
                   },
                   "value": "Float",
                 },
@@ -1648,34 +2047,34 @@ Array [
             "directives": Array [],
             "kind": "InputValueDefinition",
             "loc": Object {
-              "end": 1149,
-              "start": 1136,
+              "end": 1483,
+              "start": 1470,
             },
             "name": Object {
               "kind": "Name",
               "loc": Object {
-                "end": 1141,
-                "start": 1136,
+                "end": 1475,
+                "start": 1470,
               },
               "value": "exact",
             },
             "type": Object {
               "kind": "NonNullType",
               "loc": Object {
-                "end": 1149,
-                "start": 1143,
+                "end": 1483,
+                "start": 1477,
               },
               "type": Object {
                 "kind": "NamedType",
                 "loc": Object {
-                  "end": 1148,
-                  "start": 1143,
+                  "end": 1482,
+                  "start": 1477,
                 },
                 "name": Object {
                   "kind": "Name",
                   "loc": Object {
-                    "end": 1148,
-                    "start": 1143,
+                    "end": 1482,
+                    "start": 1477,
                   },
                   "value": "Float",
                 },
@@ -1685,14 +2084,14 @@ Array [
         ],
         "kind": "InputObjectTypeDefinition",
         "loc": Object {
-          "end": 1153,
-          "start": 1073,
+          "end": 1487,
+          "start": 1407,
         },
         "name": Object {
           "kind": "Name",
           "loc": Object {
-            "end": 1111,
-            "start": 1079,
+            "end": 1445,
+            "start": 1413,
           },
           "value": "MarkdownFileSearchOptionsWeights",
         },
@@ -1700,7 +2099,7 @@ Array [
     ],
     "kind": "Document",
     "loc": Object {
-      "end": 1154,
+      "end": 1488,
       "start": 0,
     },
   },

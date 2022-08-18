@@ -6,6 +6,7 @@ export const typeDefs = gql`
   type Query {
     markdownFile(id: ID!): MarkdownFile!
     searchMarkdownFiles(text: String! options: MarkdownFileSearchOptions): MarkdownFileSearchResults!
+    autoSuggestMarkdownFileSearchs(text: String! options: MarkdownFileSearchOptions): MarkdownFileAutoSuggestResults!
     markdownFileTags: [MarkdownFileTag!]!
   }
 
@@ -51,6 +52,17 @@ export const typeDefs = gql`
     combineWith: MarkdownFileSearchOptionsCombineWith
   }
 
+  type MarkdownFileAutoSuggestResults {
+    count: Int!
+    results: [MarkdownFileAutoSuggestResult!]!
+  }
+
+  type MarkdownFileAutoSuggestResult {
+    suggestion: String!
+    terms: [String!]!
+    score: Float!
+  }
+
   enum MarkdownFileSearchOptionsCombineWith {
     AND
     OR
@@ -75,6 +87,16 @@ export const getResolvers = (mdapi: MarkdownAPI) => ({
       return {
         ...file,
         ...file.metadata,
+      };
+    },
+    autoSuggestMarkdownFileSearch(_: any, { text, options }: { options?: SearchOptions, text: string; }) {
+      const results = mdapi.getIndex().autoSuggest(text, {
+        ...mdapi.getOptions(),
+        ...options,
+      });
+      return {
+        count: results.length,
+        results,
       };
     },
     searchMarkdownFiles(_: any, { text, options }: { options?: SearchOptions, text: string }) {

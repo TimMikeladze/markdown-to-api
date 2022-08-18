@@ -31,4 +31,12 @@ describe('createMarkdownAPIModule', () => {
     const res = getResolvers(mdapi).Query.searchMarkdownFiles({}, { text: 'cat' });
     expect(res).toMatchSnapshot();
   });
+
+  it('can autosuggest search terms', async () => {
+    const mdapi = new MarkdownAPI({
+      directory: 'tests/cats',
+    });
+    const res = getResolvers(mdapi).Query.autoSuggestMarkdownFileSearch({}, { text: 'cat tiger' });
+    expect(res).toMatchSnapshot();
+  });
 });
