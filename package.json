@@ -1,13 +1,18 @@
 {
   "name": "markdown-to-api",
-  "description": "",
+  "description": "Generates a minisearch powered GraphQL API from a directory of markdown files with an optional front-matter yaml schema.",
   "version": "0.0.1",
   "author": "Tim Mikeladze <tim.mikeladze@gmail.com>",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "markdown",
+    "markdown api",
+    "markdown graphql",
+    "markdown nextjs"
+  ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:TimMikeladze/markdown-to-api.git"
   },
   "scripts": {
     "dev": "yarn build --watch --onSuccess \"yarn yalc:push\"",
@@ -21,8 +26,7 @@
     "test:ci": "yarn test --ci --coverage",
     "test:watch": "jest --watch",
     "prepare": "husky install",
-    "commit": "cz",
-    "release": "release"
+    "commit": "cz"
   },
   "tsup": {
     "entry": [
@@ -37,7 +41,8 @@
     "format": [
       "cjs",
       "esm"
-    ]
+    ],
+    "splitting": false
   },
   "types": "./dist/index.d.ts",
   "exports": {
@@ -92,7 +97,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-test-renderer": "18.2.0",
-    "release": "6.3.1",
     "ts-jest": "28.0.7",
     "tsup": "6.2.2",
     "typescript": "4.7.4"
